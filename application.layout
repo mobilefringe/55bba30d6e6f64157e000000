@@ -34,7 +34,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <script src="http:/assets.codecloudapp.com/sites/56095beb6e6f6477cf020000/application/x-javascript/1443470772000/underscore-min.js"></script>
+        <script src="http://assets.codecloudapp.com/sites/56095beb6e6f6477cf020000/application/x-javascript/1443470772000/underscore-min.js"></script>
         <!--MallMaverick v1.0-->
         <script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
         <script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
@@ -56,7 +56,7 @@
         <div class="site_container">
             <header>
                 <div class="top_logos">
-                    <a href="/"><img src="http:/assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/24ac5b317a383812fad7eab38651125a/mp_logo_2.png" class="main_logo" alt="logo"></a>
+                    <a href="/"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/24ac5b317a383812fad7eab38651125a/mp_logo_2.png" class="main_logo" alt="logo"></a>
                     <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/SKPremierFashion.jpg" class="logo_2" alt="logo 2">
                 </div>
                 <div id="menu_mobile" class="show_phone">
