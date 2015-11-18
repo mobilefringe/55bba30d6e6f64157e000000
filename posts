@@ -27,7 +27,7 @@
 </div>
 <div id="blog_container">
     <script id="blog_template" type="x-tmpl-mustache/text">
-        <div class="promo_container mobile_padding .hidden_now">
+        <div class="promo_container mobile_padding hidden_now">
             <div class="promo_one">
                 <p class="blog_heading">STYLE NEWS {{published_on}}</p>
                 <h2 class="blog_name_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
