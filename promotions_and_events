@@ -76,13 +76,8 @@
         function renderAll (){
             var events = getEventsList();
             today = new Date();
-            webDate = new Date(val.show_on_web_date + "T08:00:00Z")
-            if (today >= webDate && val.is_featured == false) {
-             promo_array.push(val)
-            } 
-            if (val.is_featured == true){
-             feature_promo_array.push(val)
-            }
+            webDate = new Date(val.show_on_web_date + "T06:00:00Z")
+                 
             $.each(events, function(i, v){
                 v.type="events";
             });
