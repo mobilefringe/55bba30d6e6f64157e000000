@@ -74,10 +74,16 @@
     $(document).ready(function(e) {
         init(e);
         function renderAll (){
+            var all_array = []
             var events = getEventsList();
             today = new Date();
-            webDate = new Date(val.show_on_web_date + "T06:00:00Z")
-                 
+                 webDate = new Date(val.show_on_web_date + "T08:00:00Z")
+                 if (today >= webDate && val.is_featured == false) {
+                     promo_array.push(val)
+                 } 
+                 if (val.is_featured == true){
+                     feature_promo_array.push(val)
+                 }
             $.each(events, function(i, v){
                 v.type="events";
             });
@@ -87,6 +93,11 @@
                 v.type="promotions";
             });
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
+            $.each(promos_events, function(i,val){
+                if (today >= webDate) {
+                    promo_array.push(val)
+                }
+            });
             renderPromosEvents('#promo_container', '#promo_template', promos_events);
             init_side();
             show_content();
