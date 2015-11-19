@@ -77,7 +77,7 @@
             var all_array = []
             var events = getEventsList();
             today = new Date();
-                 webDate = new Date(val.show_on_web_date + "T08:00:00Z")
+
                  if (today >= webDate && val.is_featured == false) {
                      promo_array.push(val)
                  } 
@@ -94,6 +94,7 @@
             });
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
             $.each(promos_events, function(i,val){
+                webDate = new Date(val.show_on_web_date + "T08:00:00Z")
                 if (today >= webDate) {
                     all_array.push(val)
                 }
