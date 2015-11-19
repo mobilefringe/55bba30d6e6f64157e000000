@@ -98,7 +98,7 @@
                     all_array.push(val)
                 }
             });
-            renderPromosEvents('#promo_container', '#promo_template', promos_events);
+            renderPromosEvents('#promo_container', '#promo_template', all_array);
             init_side();
             show_content();
         }
