@@ -77,13 +77,6 @@
             var all_array = []
             var events = getEventsList();
             today = new Date();
-
-                 if (today >= webDate && val.is_featured == false) {
-                     promo_array.push(val)
-                 } 
-                 if (val.is_featured == true){
-                     feature_promo_array.push(val)
-                 }
             $.each(events, function(i, v){
                 v.type="events";
             });
