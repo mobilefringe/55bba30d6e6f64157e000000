@@ -95,7 +95,7 @@
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
             $.each(promos_events, function(i,val){
                 if (today >= webDate) {
-                    promo_array.push(val)
+                    all_array.push(val)
                 }
             });
             renderPromosEvents('#promo_container', '#promo_template', promos_events);
