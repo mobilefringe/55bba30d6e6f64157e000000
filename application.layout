@@ -40,7 +40,7 @@
         <script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
         <script>
-            setEndPoint('http://midtown2.mallmaverick.com/api/v2/midtown2/all.json');
+            setEndPoint('http://midtown2.mallmaverick.com/api/v2/midtown2/all.json.gz');
         </script>
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
