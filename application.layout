@@ -56,8 +56,8 @@
         <div class="site_container">
             <header>
                 <div class="top_logos">
-                    <a href="/"><img src="http://assets.codecloudapp.com/sites/565ccfc26e6f6459cb030000/image/jpeg/1449087690000/Premier-Fashion-Dest_wordmark.jpg" class="main_logo" alt="logo"></a>
-                    <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/SKPremierFashion.jpg" class="logo_2" alt="logo 2">
+                    <a href="/"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/24ac5b317a383812fad7eab38651125a/mp_logo_2.png" class="main_logo" alt="logo"></a>
+                    <img src="http://assets.codecloudapp.com/sites/565ccfc26e6f6459cb030000/image/jpeg/1449087690000/Premier-Fashion-Dest_wordmark.jpg" class="logo_2" alt="logo 2">
                 </div>
                 <div id="menu_mobile" class="show_phone">
                     <nav role="navigation" class="navbar navbar-default">
