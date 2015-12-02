@@ -1,0 +1,74 @@
+<div class="green_bar blog_line"></div>
+<div class="blog_header mobile_padding">
+    <a href="/posts"><b>MIDTOWN</b> BLOG</a>
+     <div class="blog_searcher_div" >
+        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
+        <i id="close_blog_search" class="fa fa-times-circle"></i>
+        <div id="blog_results">
+        </div>
+    </div>
+    <div class="margin_28"></div>
+    <img src="http://assets.codecloudapp.com/sites/565ccfc26e6f6459cb030000/image/jpeg/1449087702000/MP_holiday_banner.jpeg" class="width_100" alt="">
+    <div id="blog_links_container">
+        <script id="blog_links_template" type="x-tmpl-mustache/text">
+            <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
+        </script>
+    </div>
+    <div class="dropdown cat_dd">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <div id="blog_links_container_2">
+                <script id="blog_links_template_2" type="x-tmpl-mustache/text">
+                    <li><a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a></li>
+                </script>
+            </div>
+        </ul>
+    </div>
+</div>
+    <div id="blog_container">
+            <script id="blog_template" type="x-tmpl-mustache/text">
+                <div class="promo_container mobile_padding">
+                    <div class="promo_one">
+                        <p class="blog_heading">STYLE NEWS {{published_on}}</p>
+                        <h2 class="blog_name_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
+                        <p class="blog_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
+                        <p class="blog_sharer share_links">
+                            Share
+                            <a target="_blank" href="http://www.facebook.com/sharer.php?u=http://midtownplaza.ca/posts/{{slug}}">
+                                <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_facebook.png" class="details_share_icons" alt="share fb" />
+                            </a>
+                            <a target="_blank" href="http://twitter.com/share?text={{title}}&url=http://midtownplaza.ca/posts/{{slug}}">
+                                <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_twitter.png" class="details_share_icons" alt="share twitter" />
+                            </a>
+                            <a onclick="pinIt()" style="padding: 0;border: 0;background: none;cursor:pointer">
+                                <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_pinterest.png" class="details_share_icons" alt="share pinterest" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="promo_two">
+                        <img src="{{post_image}}" alt="blog" class="img_auto" />
+                        <p class="blog_details_tags">{{tag_list}}</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr class="blog_box_separator"></hr>
+                </div>
+            </script>
+        </div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var blogs = getBlogList()
+            var posts = getAllPublishedPosts();
+            var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
+            renderPosts("#blog_container", "#blog_template", published_posts);
+            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            renderBlogs("#blog_links_container_2", "#blog_links_template_2", blogs);
+            show_content();
+            blog_searcher();
+            
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
