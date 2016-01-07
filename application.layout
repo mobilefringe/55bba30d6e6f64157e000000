@@ -34,6 +34,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <script src="http://assets.codecloudapp.com/sites/56095beb6e6f6477cf020000/application/x-javascript/1443470772000/underscore-min.js"></script>
         <!--MallMaverick v1.0-->
         <script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
