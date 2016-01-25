@@ -1,0 +1,200 @@
+<html lang="en">
+    <head>
+        <meta property="og:title" content="{{meta_title}}">
+        <meta property="og:description" content="{{meta_description}}">
+        <meta property="og:image" content="{{meta_image}}">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{meta_description}}">
+        <meta name="keywords" content="{{meta_keywords}}">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,initial-scale=1">
+        <title>{{meta_title}}</title>
+         <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        
+         ga('create', 'UA-40014802-37', 'auto');
+         ga('send', 'pageview');
+
+    </script>
+        <!-- css -->
+        <link type="text/css" rel="stylesheet" href="https://testbucketblurt.s3-us-west-2.amazonaws.com/sites/540373d34a616d0cccaf0000/368584aaeda8ec2d1f80a5f777235d72/font-awesome.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/flexslider.css" rel="stylesheet">
+        <link rel="stylesheet" href="/application.css">
+        <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+        <!-- js -->
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!--MallMaverick v1.0-->
+        <script src="http://mallmaverick.codecloudapp.com/mallmaverick.js?v=0.3"></script>
+        <script src="http://mallmaverick.codecloudapp.com/mustache_mallmaverick.js?v=0.3"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
+        <script>
+            setEndPoint('http://midtown2.mallmaverick.com/api/v2/midtown2/all.json');
+        </script>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="/helpers.js"></script>
+        <script src="/application.js"></script>
+        <script src="/helpers.js"></script>
+    </head>
+    <body>
+        <div class="site_container">
+            <header>
+                <div class="top_logos">
+                    <a href="/"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/24ac5b317a383812fad7eab38651125a/mp_logo_2.png" class="main_logo" alt="logo"></a>
+                    <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/SKPremierFashion.jpg" class="logo_2" alt="logo 2">
+                </div>
+                <div id="menu_mobile" class="show_phone">
+                    <nav role="navigation" class="navbar navbar-default">
+                        <div class="navbar-header text-center">
+                            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collection of nav links and other content for toggling -->
+                        <div id="navbarCollapse" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav text-center">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Shopping
+                                    </a>
+                                    <ul class="dropdown-menu center_menu">
+                                        <li><a href="/stores">Directory</a></li>
+                                        <li><a href="/hours">Hours</a></li>
+                                        <li><a href="/parking">Parking</a></li>
+                                      </ul>
+                                </li>
+                                <li><a href="/promotions_and_events">Promotions & Events</a></li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Style
+                                    </a>
+                                    <ul class="dropdown-menu center_menu">
+                                        <li><a href="/posts">Blog</a></li>
+                                        <li><a href="/fashions/midtown2-shop-the-look--2">Shop the Look</a></li>
+                                      </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Guest Services
+                                    </a>
+                                    <ul class="dropdown-menu center_menu">
+                                        <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
+                                        <li><a href="/pages/midtown2-accessibility">Security & Accessibility</a></li>
+                                      </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Contact
+                                    </a>
+                                    <ul class="dropdown-menu center_menu">
+                                        <li><a href="/jobs">Careers</a></li>
+                                        <li><a href="/pages/midtown2-contact-us">About/Contact Us</a></li>
+                                        <li><a href="/pages/midtown2-leasing">Leasing Information</a></li>
+                                      </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div id="menu">
+                    <div class="row no_margin">
+                        <div class="menu_link text-left">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Shopping</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
+                                    <li><a href="/stores">Directory</a></li>
+                                    <li><a href="/hours">Hours</a></li>
+                                    <li><a href="/parking">Parking</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu_divider"></div>
+                        <div class="menu_link ">
+                            <a href="/promotions_and_events" id="promos_menu">Promotion & Events</a>
+                        </div>
+                        <div class="menu_divider"></div>
+                        <div class="menu_link">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Style</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
+                                    <li><a href="/posts">Blog</a></li>
+                                    <li><a href="/fashions/midtown2-shop-the-look--2">Shop the Look</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu_divider"></div>
+                        <div class="menu_link">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
+                                    <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
+                                    <li><a href="/pages/midtown2-accessibility">Security & Accessibilty</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu_divider"></div>
+                        <div class="menu_link text-right">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu4" style=" left: inherit; right: -1px; ">
+                                    <li><a href="/jobs">Careers</a></li>
+                                    <li><a href="/pages/midtown2-contact-us">About/Contact Us</a></li>
+                                    <li><a href="/pages/midtown2-leasing">Leasing Information</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="yield">
+                {{yield}}
+            </div>
+            <div class="trim_screen custom_spl_banner" style=" text-align: center; ">
+                <br />
+                <a href="https://secure.humanitariancoalition.ca/index.php" id="syria_link" target="_blank">
+                    <img alt="syria help" class="visible-phone" src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/708/original/syrie_Bigbox_EN_12millions_49ko.gif?1442846474" />
+                    <img alt="syria help" class="hidden-phone" src="http://cdn.mallmaverick.com/system/site_images/photos/000/012/705/original/syrie_Leaderboard_EN_12millions_49ko.gif?1442846474" />
+                </a>
+            </div>
+            <br />
+            <script>
+                $(document).ready(function(e){
+                    $('#syria_link').click(function(e){
+                        var url = $(this).attr("href");
+                        ga('send', 'event', 'Outbound Links', e.currentTarget.host, url);
+                    });
+                });
+            </script>
+            
+            <footer class="footer">
+                <p class="social_footer">
+                    <a href="https://www.facebook.com/MidtownPlazaSaskatoon"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Facebook_icon.jpg" class="" alt="fb"></a>
+                    <a href="https://twitter.com/midtownplazaSK"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Twitter_icon.jpg" class="" alt="twitter"></a>
+                    <a href="http://www.pinterest.com/midtownplazask/"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Pinterest_icon.jpg" class="" alt="pinterest"></a>
+                    <a href="https://instagram.com/midtownplaza"><img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Instagram_icon.jpg" class="" alt="instagram"></a>
+                </p>
+                <p class="no_margin">©2015 MIDTOWN PLAZA | <a href="/pages/midtown2-privacy-policy">PRIVACY POLICY</a> | POWERED BY <a href="http://www.mallmaverick.com" target="_blank">MALL MAVERICK</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
+
