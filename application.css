@@ -110,12 +110,12 @@ body{
     display: block;
     padding: 5px;
     color: #fff;
-    background-color: #e6edee;
+    background-color: #eeece5;
     cursor: pointer;
 }
 
 .controls {
-    background-color: #7da8ae;
+    background-color: #c6c494;
     left: 0;
     top: 0;
     width: 100%;
@@ -269,7 +269,7 @@ body{
 }
 
 #success_subscribe{
-    background: #7da8ae;
+    background: #c6c494;
     width: 335px;
     height: 100%;
     position: absolute;
@@ -292,7 +292,7 @@ body{
 }
 
 .green_bar{
-    background:#7da8ae;
+    background:#c6c494;
     height:40px;
     margin-bottom:14px;
 }
@@ -353,7 +353,7 @@ a{
 .flex-control-paging li a{
     height:16px;
     width:16px;
-    background: #e6edee;
+    background: #eeece5;
     box-shadow: none;
 }
 
@@ -477,14 +477,14 @@ a{
 }
 
 .newsletter_box{
-    background: #7da8ae;
+    background: #c6c494;
     height:172px;
     padding:20px;
     position: relative;
 }
 
 .giftcards_box{
-    background: #e6edee;
+    background: #eeece5;
     height:172px;
     padding:20px;
     text-align:center;
@@ -528,7 +528,7 @@ a{
 
 .btn_mp{
     color: #fff;
-    background-color: #7da8ae;
+    background-color: #c6c494;
     border: 1px solid;
     height: 30px;
     width: 96px;
@@ -546,7 +546,7 @@ a{
 }
 
 .hours_box{
-    background: #ba9d17;
+    background: #e57fcb;
     height:172px;
     padding:20px;
 }
@@ -651,7 +651,7 @@ a{
 .feature_2_header{
     margin-top: 8px;
     font-size: 18px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
@@ -660,14 +660,14 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     margin-bottom: 36px;
 }
 
 .store_list_heading2 {
     font-size: 16px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: 500;
     margin-bottom: 32px;
     margin-top: 0;
@@ -714,7 +714,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -729,7 +729,7 @@ a{
     margin-top: 15px;
     font-size:15px;
     margin-bottom:36px;
-    color: #ba9d17;
+    color: #e57fcb;
     text-decoration:underline;
     display:inline-block;
 }
@@ -742,7 +742,7 @@ a{
 }
 
 .promo_circle{
-    color: #ba9d17;
+    color: #e57fcb;
     font-size: 12px;
     width:25px;
 }
@@ -825,25 +825,25 @@ a{
 .read_more{
     font-family: 'EB Garamond';
     font-size:16px;
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:underline;
 }
 
 .read_more:hover{
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:underline;
 }
 
 .read_more:focus{
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:underline;
 }
 .back_btn{
-    color:#ba9d17;
+    color:#e57fcb;
 }
 
 .back_btn:hover{
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:none;
 }
 
@@ -891,7 +891,7 @@ a{
 }
 
 .promo_name{
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     font-size: 18px;
     margin-bottom:0;
@@ -927,7 +927,7 @@ a{
 }
 
 .closing_date{
-    color:#ba9d17;
+    color:#e57fcb;
     font-weight: 500;
     font-size: 16px;
     margin: 5px 0;
@@ -936,7 +936,7 @@ a{
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -946,7 +946,7 @@ a{
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #ba9d17;
+    color: #e57fcb;
 }
 
 .job_div{
@@ -1007,7 +1007,7 @@ a{
 
 .promo_name_header{
     font-size: 18px;
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1025,7 +1025,7 @@ a{
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #ba9d17;
+    color: #e57fcb;
 }
 .blog_name_header{
     text-transform:uppercase;
@@ -1078,7 +1078,7 @@ a{
 }
 .fashion_heading{
     font-size: 16px;
-    color: #ba9d17;
+    color: #e57fcb;
     margin:10px 0;
 }
 
@@ -1112,7 +1112,7 @@ a{
     line-height:1.1;
 }
 .blog_heading{
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
@@ -1123,12 +1123,12 @@ a{
 .blog_read_more{
     font-family: 'EB Garamond';
     font-size:18px;
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:underline;
 }
 
 .blog_read_more:hover{
-    color:#ba9d17;
+    color:#e57fcb;
     text-decoration:underline;
 }
 .blog_details_container{
@@ -1157,7 +1157,7 @@ a{
     line-height: 15px;
 }
 .blog_details_dates{
-    color: #ba9d17;
+    color: #e57fcb;
     font-weight: bold;
     font-size: 18px;
     margin-top: 0;
