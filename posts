@@ -3,6 +3,10 @@
         margin-top:0;
         background: #eeecec;
     }
+    
+    .blog_details_container{
+        font-family:museo;   
+    }
     .site_container{
         padding-top:10px;
         background:#fff;
