@@ -10,20 +10,20 @@
     
 </div>
  <div id="blog_links_container">
-        <script id="blog_links_template" type="x-tmpl-mustache/text">
-            <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
-        </script>
-    </div>
-    <div class="dropdown cat_dd">
-        <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-            <div id="blog_links_container_2">
-                <script id="blog_links_template_2" type="x-tmpl-mustache/text">
-                    <li><a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a></li>
-                </script>
-            </div>
-        </ul>
-    </div>
+    <script id="blog_links_template" type="x-tmpl-mustache/text">
+        <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
+    </script>
+</div>
+<div class="dropdown cat_dd">
+    <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
+    <ul class="dropdown-menu">
+        <div id="blog_links_container_2">
+            <script id="blog_links_template_2" type="x-tmpl-mustache/text">
+                <li><a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a></li>
+            </script>
+        </div>
+    </ul>
+</div>
     <div id="blog_container">
             <script id="blog_template" type="x-tmpl-mustache/text">
                 <div class="promo_container mobile_padding">
