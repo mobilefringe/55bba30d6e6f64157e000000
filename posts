@@ -24,6 +24,8 @@
         </div>
     </ul>
 </div>
+
+
 <div id="blog_container">
     <script id="blog_template" type="x-tmpl-mustache/text">
         <div class="promo_container mobile_padding">
