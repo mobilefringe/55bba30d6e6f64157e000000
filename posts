@@ -22,6 +22,7 @@
             </p>
         </div>
     </div>
+    <hr class="blog_box_separator">
 </div>
 <div class="dropdown cat_dd">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
