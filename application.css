@@ -1194,6 +1194,10 @@ a{
     font-weight:300;
 }
 
+.blog_blurb p{
+    margin-left:10px;
+}
+
 .cat_dd{
     display: none;
 }
