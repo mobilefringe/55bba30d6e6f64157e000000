@@ -1,4 +1,40 @@
-
+<style>
+    body{
+        margin-top:0;
+        background: #eeecec;
+    }
+    
+    .yield{
+        font-family:museo;   
+    }
+    .site_container{
+        padding-top:10px;
+        background:#fff;
+        width:1120px;
+        padding-left:40px;
+        padding-right:40px
+    }
+    .footer{
+        margin-left:-40px;
+        margin-right: -40px;
+        padding-left:40px;
+        padding-right:40px
+    }
+    .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #fff;
+    }
+    .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #fff;
+       opacity:  1;
+    }
+    .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #fff;
+       opacity:  1;
+    }
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #fff;
+    }
+</style>
 <div class="green_bar blog_line"></div>
 <div class="blog_header mobile_padding">
     <a href="/posts"><b>MIDTOWN</b> BLOG</a>
