@@ -1111,7 +1111,9 @@ a{
     margin-top: -14px;
     line-height:1.1;
     padding-top:28px;
-    background:#e57fcb
+    background:#e57fcb;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .blog_heading{
     color: #e57fcb;
