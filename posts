@@ -36,7 +36,7 @@
 <div class="blog_header mobile_padding">
     <a href="/posts">MIDTOWN BLOG</a>
      <div class="blog_searcher_div" >
-        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
+        <input type="text" class="" placeholder="Blog Search" id="blog_search" />
         <i id="close_blog_search" class="fa fa-times-circle"></i>
         <div id="blog_results">
         </div>
