@@ -1,7 +1,7 @@
 <style>
     body{
         margin-top:0;
-        
+        background: #eeecec;
     }
 </style>
 
