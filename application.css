@@ -1213,7 +1213,7 @@ a{
     padding-bottom:28px;
 }
 #blog_search:focus{
-    border-color:#ccc; 
+    border-color:#fff; 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
