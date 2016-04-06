@@ -5,7 +5,10 @@
     }
     .site_container{
         padding-top:10px;
-        background:#fff
+        background:#fff;
+        width:1120px;
+        padding-left:40px;
+        padding-right:40xp;
     }
 </style>
 
