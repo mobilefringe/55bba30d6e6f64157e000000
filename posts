@@ -16,7 +16,9 @@
         padding-left:40px;
         padding-right:40px
     }
-    
+    ::-webkit-input-placeholder{
+        color: #fff;
+    }
     input:-moz-placeholder{color:red}
 input:-ms-input-placeholder{color:red}
 </style>
