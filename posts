@@ -18,19 +18,19 @@
     }
     
     ::-webkit-input-placeholder {
-       color: red;
+       color: #fff;
     }
     
     :-moz-placeholder { /* Firefox 18- */
-       color: red;  
+       color: #fff;  
     }
     
     ::-moz-placeholder {  /* Firefox 19+ */
-       color: red;  
+       color: #fff;  
     }
     
     :-ms-input-placeholder {  
-       color: red;  
+       color: #fff;  
     }
 </style>
 
