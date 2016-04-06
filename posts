@@ -4,7 +4,7 @@
         background: #eeecec;
     }
     
-    .blog_details_container{
+    .yield{
         font-family:museo;   
     }
     .site_container{
