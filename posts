@@ -10,6 +10,10 @@
         padding-left:40px;
         padding-right:40px
     }
+    .footer{
+        margin-left:-40px;
+        margin-right: -40px;
+    }
 </style>
 
 <div class="green_bar blog_line"></div>
