@@ -5,7 +5,7 @@
     }
     .site_container{
         margin-top:10px;
-        backgrouns:#fff
+        background:#fff
     }
 </style>
 
