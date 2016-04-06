@@ -31,6 +31,9 @@ body{
     width:300px;
     border-radius:0;
     padding-right: 30px;
+    background: #e57fcb;
+    color:#fff;
+    
 }
 
 #close_blog_search{
