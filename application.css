@@ -1108,8 +1108,9 @@ a{
     border-bottom: 1px solid #ccc;
     font-weight: 300;
     font-size: 28px;
-    margin-top: 28px;
+    margin-top: -14px;
     line-height:1.1;
+    padding-top:28px;
 }
 .blog_heading{
     color: #e57fcb;
