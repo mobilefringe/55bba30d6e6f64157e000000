@@ -3,6 +3,10 @@
         margin-top:0;
         background: #eeecec;
     }
+    .site_container{
+        margin-top:10px;
+        backgrouns:#fff
+    }
 </style>
 
 <div class="green_bar blog_line"></div>
