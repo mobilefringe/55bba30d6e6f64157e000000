@@ -7,9 +7,7 @@
         <div id="blog_results">
         </div>
     </div>
-    <div class="margin_28"></div>
-    <!--<img src="http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000/image/jpeg/1449087702000/MP_holiday_banner.jpeg" class="width_100" alt="Blog banner">-->
-   
+    
 </div>
  <div id="blog_links_container">
         <script id="blog_links_template" type="x-tmpl-mustache/text">
