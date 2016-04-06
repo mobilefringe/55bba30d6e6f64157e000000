@@ -16,18 +16,18 @@
         padding-left:40px;
         padding-right:40px
     }
-    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
         color:    #fff;
     }
-    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
        color:    #fff;
        opacity:  1;
     }
-    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
        color:    #fff;
        opacity:  1;
     }
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
        color:    #fff;
     }
 </style>
