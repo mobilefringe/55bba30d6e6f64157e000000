@@ -10,7 +10,7 @@
 </div>
 <div class="blog_blurb">
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div id="blog_links_container">
                 <script id="blog_links_template" type="x-tmpl-mustache/text">
                     <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
@@ -20,7 +20,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
             </p>
         </div>
-        <div class="col-md-4 text-right">
+        <div class="col-md-3 text-right">
             <img src="http://placehold.it/175x175">
         </div>
     </div>
