@@ -21,8 +21,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
         </div>
+        <hr class="blog_box_separator">
     </div>
-    <hr class="blog_box_separator">
+    
 </div>
 <div class="dropdown cat_dd">
     <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
