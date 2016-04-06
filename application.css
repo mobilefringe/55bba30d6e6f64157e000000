@@ -1186,6 +1186,10 @@ a{
     text-align:left;
 }
 
+.blog_blurb{
+    margin-bottom:15px;
+}
+
 .cat_dd{
     display: none;
 }
