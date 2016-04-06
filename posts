@@ -16,6 +16,22 @@
         padding-left:40px;
         padding-right:40px
     }
+    
+    ::-webkit-input-placeholder {
+       color: red;
+    }
+    
+    :-moz-placeholder { /* Firefox 18- */
+       color: red;  
+    }
+    
+    ::-moz-placeholder {  /* Firefox 19+ */
+       color: red;  
+    }
+    
+    :-ms-input-placeholder {  
+       color: red;  
+    }
 </style>
 
 <div class="green_bar blog_line"></div>
