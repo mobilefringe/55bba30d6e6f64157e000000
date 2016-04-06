@@ -17,8 +17,8 @@
         padding-right:40px
     }
     
-    input:-moz-placeholder{color:#999}
-input:-ms-input-placeholder{color:#999}
+    input:-moz-placeholder{color:red}
+input:-ms-input-placeholder{color:red}
 </style>
 
 <div class="green_bar blog_line"></div>
