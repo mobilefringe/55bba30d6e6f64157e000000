@@ -1115,7 +1115,7 @@ a{
     padding-right: 25px;
 }
 
-.blog_header a{
+.blog_header>a{
     color:#fff;
 }
 .blog_heading{
