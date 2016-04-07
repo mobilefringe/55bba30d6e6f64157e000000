@@ -1273,6 +1273,11 @@ a{
     #post_container{
         padding:0;
     }
+    .side_blog_box{
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+    }
     .blog_blurb .col-md-8, .blog_blurb .col-md-4{
         padding-left:0;
         padding-right:0;
