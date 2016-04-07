@@ -1285,6 +1285,7 @@ a{
     }
     .blog_photo{
         width:100%;
+        margin-bottom:20px;
     }
     .blog_details_heading{
         line-height:25px;
