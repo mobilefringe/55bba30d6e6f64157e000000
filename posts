@@ -51,7 +51,7 @@
 </style>
 
 <div class="green_bar blog_line"></div>
-<div class="blog_header mobile_padding">
+<div class="blog_header">
     <a href="/posts">MIDTOWN BLOG</a>
      <div class="blog_searcher_div" >
         <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
