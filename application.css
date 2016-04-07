@@ -1262,11 +1262,14 @@ a{
     }
 }
 @media(max-width:800px){
-    .blurb_blurb .row{
+    .blog_blurb .row{
         margin-left:0;
         margin-right:0;
     }
-    
+    .blog_blurb .col-md-8, .blog_blurb .col-md-4{
+        padding-left:0;
+        padding-right:0;
+    }
     .blog_details_heading{
         line-height:25px;
     }
