@@ -1274,6 +1274,10 @@ a{
     .blog_header{
         padding:20px 7px;
     }
+    .blog_photo{
+        width:100%;
+        padding:0 7px;
+    }
     .blog_details_heading{
         line-height:25px;
     }
