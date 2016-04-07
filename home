@@ -90,7 +90,7 @@
         <div class="feature_insider" id="home_blog_container">
             <script id="home_blog_template" type="x-tmpl-mustache/text">
                 <div class="feature_insider_left show_phone">
-                    <img alt="blog" class="feature_image" src="http://placehold.it/175x175" />
+                    <img alt="blog" class="feature_image" src="http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000/image/jpeg/1460041082000/Midtown-blog-logo.jpg" />
                 </div>
                 <div class="feature_insider_right">
                     <h3 class="feature_2_header">{{published_on}}</h3>
@@ -99,7 +99,7 @@
                     <a class="read_more" href="/posts/{{slug}}">read more</a>
                 </div>
                 <div class="feature_insider_left hide_phone">
-                    <img alt="blog" class="feature_image" src="http://placehold.it/175x175" />
+                    <img alt="blog" class="feature_image" src="http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000/image/jpeg/1460041082000/Midtown-blog-logo.jpg" />
                 </div>
             </script>
         </div>
