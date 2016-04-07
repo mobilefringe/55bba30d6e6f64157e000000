@@ -34,6 +34,15 @@
     .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
        color:    #fff;
     }
+    
+    @media(max-width:800px){
+        .footer{
+            margin-left:0;
+            padding-left:0;
+            margin-right:0;
+            margin-right:0;
+        }
+    }
 </style>
 
 <div class="green_bar blog_line"></div>
