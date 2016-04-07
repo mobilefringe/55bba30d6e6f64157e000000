@@ -1274,7 +1274,9 @@ a{
         padding-left:0;
         padding-right:0;
     }
-    
+    .blog_blurb{
+        padding:0 7px;
+    }
     .blog_header{
         padding:20px 7px;
     }
