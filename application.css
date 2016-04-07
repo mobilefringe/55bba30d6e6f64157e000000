@@ -1277,6 +1277,9 @@ a{
     .blog_blurb{
         padding:0 7px;
     }
+    .blog_blurb p{
+        margin-left:0;
+    }
     .blog_header{
         padding:20px 7px;
     }
