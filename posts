@@ -61,6 +61,16 @@
     </div>
 </div>
 <div class="blog_blurb">
+    <div class="dropdown cat_dd">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+            <div id="blog_links_container_2">
+                <script id="blog_links_template_2" type="x-tmpl-mustache/text">
+                    <li><a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a></li>
+                </script>
+            </div>
+        </ul>
+    </div>
     <div class="row">
         <div class="col-md-8">
             <div id="blog_links_container">
@@ -77,16 +87,6 @@
         </div>
     </div>
     
-</div>
-<div class="dropdown cat_dd">
-    <a href="#" data-toggle="dropdown" class="dropdown-toggle my_toggle">Filter by category &nbsp;&nbsp;&nbsp; <b class="caret"></b></a>
-    <ul class="dropdown-menu">
-        <div id="blog_links_container_2">
-            <script id="blog_links_template_2" type="x-tmpl-mustache/text">
-                <li><a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a></li>
-            </script>
-        </div>
-    </ul>
 </div>
 
 
