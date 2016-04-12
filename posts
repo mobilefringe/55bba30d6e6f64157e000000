@@ -122,7 +122,7 @@
             var posts = getAllPublishedPosts();
             var banner = getRepoDetailsByName('blog banner').images[0];
             if (banner != undefined){
-                $('#blog_banner').attr('img', banner.photo_url_abs)
+                $('#blog_banner').attr('src', banner.photo_url_abs)
             }
             
             var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
