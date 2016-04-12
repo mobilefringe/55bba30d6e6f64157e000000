@@ -78,7 +78,7 @@
                     <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
                 </script>
             </div>
-            <img id="blog_banner" src="http://placehold.it/1040x200" />
+            <img id="blog_banner" src="http://placehold.it/1040x200" class="width_100" />
         </div>
     </div>
     
