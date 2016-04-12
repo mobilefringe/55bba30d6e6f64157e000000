@@ -70,7 +70,6 @@
                 </script>
             </div>
         </ul>
-        <img id="blog_banner" src="http://placehold.it/940x500" />
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
@@ -79,6 +78,7 @@
                     <a href="/posts_categories/{{slug}}" class="post_categories">{{name}}</a>
                 </script>
             </div>
+            <img id="blog_banner" src="http://placehold.it/940x500" />
         </div>
     </div>
     
