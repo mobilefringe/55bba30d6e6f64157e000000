@@ -2,7 +2,7 @@
     .yield{
         font-family:museo;   
     }
-    .blog_links_container{
+    #blog_links_container{
         margin: 0 -10px;
     }
     
