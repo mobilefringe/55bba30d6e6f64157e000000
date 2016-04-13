@@ -120,6 +120,10 @@
             var blogs = getBlogList()
             var posts = getAllPublishedPosts();
             var pathArray = window.location.pathname.split( '/' );
+            var banner = getRepoDetailsByName('blog banner').images[0];
+            if (banner != undefined){
+                $('#blog_banner').attr('src', banner.photo_url_abs)
+            }
             var slug = pathArray[pathArray.length-1];
             var posts = getBlogDataBySlug(slug).posts;
             var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
