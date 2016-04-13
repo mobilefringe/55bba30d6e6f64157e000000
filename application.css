@@ -1236,7 +1236,7 @@ a{
     padding-bottom:28px;
 }
 #blog_search:focus{
-    border-color:#fff; 
+    border-color:#ccc; 
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
