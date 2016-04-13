@@ -12,6 +12,38 @@
     font-weight:700;
 }
 
+ body{
+        margin-top:0;
+        background: #eeecec;
+    }
+    .site_container{
+        padding-top:10px;
+        background:#fff;
+        width:1120px;
+        padding-left:40px;
+        padding-right:40px
+    }
+    .footer{
+        margin-left:-40px;
+        margin-right: -40px;
+        padding-left:40px;
+        padding-right:40px
+    }
+    
+    @media(max-width:800px){
+        .site_container{
+            width:100%;
+            padding-right:0;
+            padding-left:0;
+        }
+        .footer{
+            margin-left:0;
+            padding-left:0;
+            margin-right:0;
+            margin-right:0;
+        }
+    }
+
 
 body{
     margin-top:10px;
