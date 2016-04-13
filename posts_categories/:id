@@ -42,7 +42,7 @@
     <script id="blog_template" type="x-tmpl-mustache/text">
         <div class="promo_container mobile_padding">
             <div class="promo_one">
-                <p class="blog_heading">STYLE NEWS {{published_on}}</p>
+                <p class="blog_heading no_margin">STYLE NEWS {{published_on}}</p>
                 <h2 class="blog_name_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
                 <p class="blog_description">{{description_short}}<br /> <a href="/posts/{{slug}}" class="blog_read_more">read more</a></p>
                 <p class="blog_sharer share_links">
