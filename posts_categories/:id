@@ -20,20 +20,6 @@
         padding-left:40px;
         padding-right:40px
     }
-    .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-        color:    #fff;
-    }
-    .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-       color:    #fff;
-       opacity:  1;
-    }
-    .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
-       color:    #fff;
-       opacity:  1;
-    }
-    .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
-       color:    #fff;
-    }
     
     @media(max-width:800px){
         .site_container{
