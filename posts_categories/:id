@@ -2,7 +2,9 @@
     .yield{
         font-family:museo;   
     }
-    
+    #blog_links_container{
+        margin: 0 -10px;
+    }
 </style>
 
 <div class="green_bar blog_line"></div>
