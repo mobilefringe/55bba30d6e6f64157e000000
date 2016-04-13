@@ -1441,6 +1441,8 @@ a{
     }
     .footer{
         text-align:center;
+        margin-left:0;
+        margin-right:0;
     }
     #menu{
         display:none
