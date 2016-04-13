@@ -1263,7 +1263,8 @@ a{
     }
     .site_container{
         width:100%;
-        
+        padding-left:0px;
+        padding-right:0;
     }
     .feature_insider_right{
         width:210px;
