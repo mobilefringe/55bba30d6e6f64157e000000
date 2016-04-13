@@ -1200,6 +1200,14 @@ a{
     font-size:18px;
 }
 
+
+.blog_cats_side{
+    border-left: 1px solid #ccc;
+    margin-left: 1px;
+    margin-bottom: 50px;
+    
+}
+
 .promo_container .blog_details_tags{
     text-align:left;
 }
