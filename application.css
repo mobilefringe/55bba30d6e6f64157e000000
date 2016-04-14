@@ -1031,6 +1031,7 @@ a{
 .description{
     font-size:16px;
     word-wrap: break-word;
+    font-family:museo;
 }
 
 .details_header{
