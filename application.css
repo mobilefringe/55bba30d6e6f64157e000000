@@ -321,6 +321,7 @@ body{
 .page_header{
     margin-bottom:36px !important;   
     text-transform:uppercase;
+    font-family:museo;
 }
 
 .show_phone{
@@ -669,6 +670,7 @@ a{
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
+    font-family:museo;
 }
 
 .store_list_heading {
