@@ -1,14 +1,7 @@
 /*Created 2015-07-31 by Rajbir Karan Singh*/
-
 @font-face { 
     font-family: museo; 
-    src: url('http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000//1419706258000/Museo 300.otf');
-    font-weight:300;
-}
-
-@font-face { 
-    font-family: museo; 
-    src: url('http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000//1419706258000/Museo 700.otf');
+    src: url('http://assets.codecloudapp.com/sites/570529a56e6f6407e7040000//1460658965000/MuseoSans_900.otf');
     font-weight:700;
 }
 
