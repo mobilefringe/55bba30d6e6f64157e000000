@@ -1,7 +1,5 @@
 <style>
-    .yield{
-        font-family:arial;   
-    }
+    
     .blog_heading, .blog_name_header{
         font-family:museo;
     }
