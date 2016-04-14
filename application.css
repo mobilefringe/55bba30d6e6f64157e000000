@@ -571,6 +571,7 @@ a{
     font-weight:bold;
     font-size:18px;
     display:inline-block;
+    font-family:museo;
 }
 
 .check_hours{
@@ -676,6 +677,7 @@ a{
     color: #e57fcb;
     font-weight: bold;
     margin-bottom: 36px;
+    font-family:museo;
 }
 
 .store_list_heading2 {
