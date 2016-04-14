@@ -2,6 +2,9 @@
     .yield{
         font-family:arial;   
     }
+    .blog_heading, .blog_name_header{
+        font-family:museo;
+    }
     #blog_links_container{
         margin: 0 -10px;
     }
