@@ -1,7 +1,7 @@
 <style>
-    /*.yield{*/
-    /*    font-family:museo;   */
-    /*}*/
+    .yield{
+        font-family:arial;   
+    }
     #blog_links_container{
         margin: 0 -10px;
     }
