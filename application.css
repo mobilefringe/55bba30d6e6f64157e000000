@@ -1181,6 +1181,7 @@ a{
     text-transform: uppercase;
     margin-bottom: 20px;
     line-height: 15px;
+    font-family: museo;
 }
 .blog_details_dates{
     color: #e57fcb;
