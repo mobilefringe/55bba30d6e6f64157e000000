@@ -123,7 +123,7 @@ function addZero(i) {
     return i;
 }
 function get_month (id){
-    val month = ""
+    var month = ""
     switch(id) {
         case 0:
             month = "January";
