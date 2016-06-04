@@ -22,7 +22,7 @@
                         </a>
                     </span>
                 </p>
-                <p class="details_description">{{{rich_description}}}</p>
+                <p class="details_description">{{description}}</p>
             </script>
         </div>
         <a href="/promotions_and_events" class="back_btn"><i class="fa fa-chevron-left"></i> &nbsp;BACK</a>
