@@ -89,7 +89,7 @@
                                     </a>
                                     <ul class="dropdown-menu center_menu">
                                         <li><a href="/posts">Blog</a></li>
-                                        <li><a href="/fashions/midtown2-summer">Shop the Look</a></li>
+                                        <li><a href="/fashions/midtown2-fall-fashion">Shop the Look</a></li>
                                       </ul>
                                 </li>
                                 <li class="dropdown">
@@ -137,7 +137,7 @@
                                 <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Style</a>
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
                                     <li><a href="/posts">Blog</a></li>
-                                    <li><a href="/fashions/midtown2-summer">Shop the Look</a></li>
+                                    <li><a href="/fashions/midtown2-fall-fashion">Shop the Look</a></li>
                                 </ul>
                             </div>
                         </div>
