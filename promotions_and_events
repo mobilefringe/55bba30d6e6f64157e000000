@@ -76,7 +76,7 @@
         function renderAll (){
             var all_array = []
             var events = getEventsList();
-            today = new Date();
+            
             $.each(events, function(i, v){
                 v.type="events";
             });
@@ -86,7 +86,14 @@
                 v.type="promotions";
             });
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
-            console.log(promos_events)
+            $.each( promos_events , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos_events.push(val);
+                } 
+            });
+            
             renderPromosEvents('#promo_container', '#promo_template', promos_events);
             init_side();
             show_content();
