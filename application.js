@@ -710,7 +710,7 @@ function renderHomeHours(container, template, collection){
             val.h = "Closed";
         }
         if (val.is_holiday == true){
-            val.day = val.holiday_name;
+            val.day = val.holiday_name + ", ";
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
