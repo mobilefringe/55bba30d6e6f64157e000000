@@ -310,8 +310,8 @@ function renderGeneral(container, template, collection, type){
             else{
                 val.store_name = "Midtown Plaza";
             }
-            start = new Date (val.start_date );
-            end = new Date (val.end_date);
+            start = moment(val.start_end).tz(getPropertyTimeZone());
+            end = moment(val.end_date).tz(getPropertyTimeZone());
             val.closing_date = get_month(end.getMonth()) + " " + end.getDate() + ", " + end.getFullYear();
             if (val.contact_name == ""){
                 val.contact_name = "N/A" ;               
