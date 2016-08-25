@@ -326,10 +326,11 @@ function renderGeneral(container, template, collection, type){
         if(type=="events"){
             var start = moment(val.start_end).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
-            if (start.toDateString() == end.toDateString()) {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-            } else {
-                val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+            if (start.format("DMY") == end.format("DMY")){
+                val.dates = start.format("MMMM D")
+            }
+            else{
+                val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
             }
         }
         var rendered = Mustache.render(template_html,val);
