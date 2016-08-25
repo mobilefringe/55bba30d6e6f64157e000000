@@ -595,8 +595,8 @@ function renderPosts(container, template, collection){
             val.description_shorter = val.body;
         }
         val.counter = counter;
-        var date_blog = new Date(val.publish_date);
-        val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
+        var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
+        val.published_on = 
         if (val.tag != undefined){
             val.tag_list = val.tag.join(', ');
         }
