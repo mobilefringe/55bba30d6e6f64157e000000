@@ -324,8 +324,8 @@ function renderGeneral(container, template, collection, type){
             }
         }
         if(type=="events"){
-            start = new Date (val.start_date);
-            end = new Date (val.end_date);
+            var start = moment(val.start_end).tz(getPropertyTimeZone());
+            var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.toDateString() == end.toDateString()) {
                 val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
             } else {
