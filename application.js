@@ -596,7 +596,7 @@ function renderPosts(container, template, collection){
         }
         val.counter = counter;
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.published_on = 
+        val.published_on = date_blog.format("MMMM D, YYY")
         if (val.tag != undefined){
             val.tag_list = val.tag.join(', ');
         }
