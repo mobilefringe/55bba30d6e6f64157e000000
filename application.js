@@ -151,10 +151,10 @@ function renderStoreExtras(container, template, type, ids){
             val.dates = start.format("MMMM D")
         }
         else{
-            val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
+            val.dates = start.format("MMMM D") + " - " + end.format("MMMM D");
         }
         
-        val.closing_date = get_month(end.getMonth()) + " " + end.getDate() + ", " + end.getFullYear();
+        val.closing_date = end.format("MMMM D");
         if (val.contact_name == ""){
             val.contact_name = "N/A" ;               
         }
