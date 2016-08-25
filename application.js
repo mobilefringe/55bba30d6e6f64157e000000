@@ -145,7 +145,7 @@ function renderStoreExtras(container, template, type, ids){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        var start = moment(val.end_date).tz(getPropertyTimeZone());
+        var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMMM D")
