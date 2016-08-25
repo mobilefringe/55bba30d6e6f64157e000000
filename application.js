@@ -283,7 +283,7 @@ function renderGeneral(container, template, collection, type){
             }
             
             
-            var start = moment(val.start_end).tz(getPropertyTimeZone());
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMMM D")
@@ -308,7 +308,7 @@ function renderGeneral(container, template, collection, type){
             else{
                 val.store_name = "Midtown Plaza";
             }
-            var start = moment(val.start_end).tz(getPropertyTimeZone());
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             val.closing_date = end.format("MMMM D, YYYY")
             if (val.contact_name == ""){
@@ -322,7 +322,7 @@ function renderGeneral(container, template, collection, type){
             }
         }
         if(type=="events"){
-            var start = moment(val.start_end).tz(getPropertyTimeZone());
+            var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMMM D")
