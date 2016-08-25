@@ -148,13 +148,13 @@ function renderStoreExtras(container, template, type, ids){
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMMM D")
+            val.dates = start.format("MMMM D, YYYY")
         }
         else{
-            val.dates = start.format("MMMM D") + " - " + end.format("MMMM D");
+            val.dates = start.format("MMMM D, YYYY") + " - " + end.format("MMMM D, YYYY");
         }
         
-        val.closing_date = end.format("MMMM D");
+        val.closing_date = end.format("MMMM D, YYYY");
         if (val.contact_name == ""){
             val.contact_name = "N/A" ;               
         }
