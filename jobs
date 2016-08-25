@@ -79,6 +79,7 @@
         init(e);
         function renderAll (){
             var jobs = getJobsList().sortBy(function(o){ return o.name });
+            var published_jobs = [];
             $.each( jobs , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
