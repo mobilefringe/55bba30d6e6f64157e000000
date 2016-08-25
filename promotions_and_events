@@ -86,6 +86,7 @@
                 v.type="promotions";
             });
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
+            var published_promos_events = [];
             $.each( promos_events , function( key, val ){
                 today = moment();
                 webDate = moment(val.show_on_web_date)
@@ -94,7 +95,7 @@
                 } 
             });
             
-            renderPromosEvents('#promo_container', '#promo_template', promos_events);
+            renderPromosEvents('#promo_container', '#promo_template', published_promos_events);
             init_side();
             show_content();
         }
