@@ -86,7 +86,7 @@
                 v.type="promotions";
             });
             var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
-            
+            console.log(promos_events)
             renderPromosEvents('#promo_container', '#promo_template', all_array);
             init_side();
             show_content();
