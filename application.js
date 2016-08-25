@@ -145,17 +145,15 @@ function renderStoreExtras(container, template, type, ids){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        //specifying the timezone so date wont go back 1.day
-        start = new Date (val.start_date);
-        end = new Date (val.end_date);
-        
-        if (start.toDateString() == end.toDateString()) {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate());    
-        } else {
-            val.dates = (get_month(start.getMonth()))+" "+(start.getDate())+" - "+get_month(end.getMonth())+" "+end.getDate();    
+        var start = moment(val.start_end).tz(getPropertyTimeZone());
+        var end = moment(val.end_date).tz(getPropertyTimeZone());
+        if (start.format("DMY") == end.format("DMY")){
+            val.dates = start.format("MMMM D")
         }
+        else{
+            val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
+        }
+        
         val.closing_date = get_month(end.getMonth()) + " " + end.getDate() + ", " + end.getFullYear();
         if (val.contact_name == ""){
             val.contact_name = "N/A" ;               
