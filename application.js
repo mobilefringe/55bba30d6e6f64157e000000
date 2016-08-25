@@ -185,38 +185,36 @@ function renderHours(container, template, collection, type){
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == false) {
                 switch(val.day_of_week) {
-                case 0:
-                    val.day = "Sunday";
-                    break;
-                case 1:
-                    val.day = "Monday";
-                    break;
-                case 2:
-                    val.day = "Tuesday";
-                    break;
-                case 3:
-                    val.day = "Wednesday";
-                    break;
-                case 4:
-                    val.day = "Thursday";
-                    break;
-                case 5:
-                    val.day = "Friday";
-                    break;
-                case 6:
-                    val.day = "Saturday";
-                    break;
+                    case 0:
+                        val.day = "Sunday";
+                        break;
+                    case 1:
+                        val.day = "Monday";
+                        break;
+                    case 2:
+                        val.day = "Tuesday";
+                        break;
+                    case 3:
+                        val.day = "Wednesday";
+                        break;
+                    case 4:
+                        val.day = "Thursday";
+                        break;
+                    case 5:
+                        val.day = "Friday";
+                        break;
+                    case 6:
+                        val.day = "Saturday";
+                        break;
+                }
+                if (val.open_time && val.close_time && val.is_closed == false){
+                    var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
+                    var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
+                    val.h = open_time + " - " + close_time;
+                } else {
+                    "Closed";
+                }
                 
-            }
-            if (val.open_time && val.close_time && val.is_closed == false){
-                var open_time = new Date (val.open_time);
-                var close_time = new Date (val.close_time);
-                val.open_time = convert_hour(open_time);
-                val.close_time = convert_hour(close_time);    
-                val.h = val.open_time+ " - " + val.close_time;
-            } else {
-                "Closed";
-            }
                 item_list.push(val);
             }
         });
@@ -227,21 +225,12 @@ function renderHours(container, template, collection, type){
     if (type == "holiday_hours") {
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
-                holiday = new Date (val.holiday_date + "T06:00:00Z");
-                var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-                val.formatted_date = get_month(holiday.getMonth()) + " " +holiday.getDate();
+                holiday = moment(val.holiday_date);
+                val.formatted_date = in_my_time_zone(holiday, "MMM D");
                 if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = new Date (val.open_time);
-                    var close_time = new Date (val.close_time);
-                    val.open_time = convert_hour(open_time);
-                    val.close_time = convert_hour(close_time);    
-                    if (val.open_time == "0:00 AM"){
-                        val.open_time = "12:00 AM";
-                    }
-                     if (val.close_time == "0:00 AM"){
-                        val.close_time = "12:00 AM";
-                    }
-                    val.h = val.open_time+ " - " + val.close_time;
+                    var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
+                    var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
+                    val.h = open_time + " - " + close_time;   
                 } else {
                     val.h = "Closed";
                 }
@@ -251,6 +240,7 @@ function renderHours(container, template, collection, type){
         collection = [];
         collection = item_list;
     }
+    
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
