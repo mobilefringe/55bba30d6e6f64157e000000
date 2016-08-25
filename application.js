@@ -228,8 +228,8 @@ function renderHours(container, template, collection, type){
                 holiday = moment(val.holiday_date);
                 val.formatted_date = in_my_time_zone(holiday, "MMM D");
                 if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
-                    var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
+                    var open_time = in_my_time_zone(moment(val.open_time), "h:mm a");
+                    var close_time = in_my_time_zone(moment(val.close_time), "h:mm a");
                     val.h = open_time + " - " + close_time;   
                 } else {
                     val.h = "Closed";
