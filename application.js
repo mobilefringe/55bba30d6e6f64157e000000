@@ -645,7 +645,7 @@ function renderPostDetails(container, template, collection){
             val.description_short = val.body;
         }
         var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
-        val.published_on = date_blog.format("MMMM D,     YYYY")
+        val.published_on = date_blog.format("MMMM ,     YYYY")
         var next_p = getNextPublishedPostBySlug(val.slug);
         var prev_p = getPrevPublishedPostBySlug(val.slug);
         if (next_p == undefined){
