@@ -709,7 +709,7 @@ function renderHomeHours(container, template, collection){
         val.day = get_day(val.day_of_week);
         var d = moment().tz(getPropertyTimeZone());
         val.month = d.format("MMM");
-        val.weekday = d.format("dd");
+        val.weekday = d.format("DD");
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
             var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
