@@ -644,8 +644,8 @@ function renderPostDetails(container, template, collection){
         else{
             val.description_short = val.body;
         }
-        var date_blog = new Date(val.publish_date);
-        val.published_on = get_month(date_blog.getMonth()) + " " + date_blog.getDate() + ", " + date_blog.getFullYear();
+        var date_blog = moment(val.publish_date).tz(getPropertyTimeZone());
+        val.published_on = date_blog.format("MMMM D,     YYYY")
         var next_p = getNextPublishedPostBySlug(val.slug);
         var prev_p = getPrevPublishedPostBySlug(val.slug);
         if (next_p == undefined){
