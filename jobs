@@ -87,7 +87,7 @@
                     published_jobs.push(val);
                 } 
             });
-            renderGeneral($('#jobs_container'), $('#jobs_template'), jobs, "jobs");
+            renderGeneral($('#jobs_container'), $('#jobs_template'), published_jobs, "jobs");
             init_side();
             show_content();
             $('.collapse').on('show.bs.collapse', function () {
