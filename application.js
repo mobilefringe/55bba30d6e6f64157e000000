@@ -168,7 +168,12 @@ function renderStoreExtras(container, template, type, ids){
         if (val.promo_image_url_abs != undefined){
             val.image_url = val.promo_image_url_abs;
         }
-        var rendered = Mustache.render(template_html,val);
+        var today = moment();
+        var webDate = moment(val.show_on_web_date);
+        if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+            var rendered = Mustache.render(template_html,val);
+        }
+        
         item_rendered.push(rendered);
     }) ;
     $(container).html(item_rendered.join(''));
