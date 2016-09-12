@@ -1,0 +1,106 @@
+<style>
+    h2{
+        font-size: 18px;
+        color: #737463;
+        font-weight: bold;
+    }
+    #mm_page_content h3{
+        color: #737463;
+        border-top:1px solid #ccc;
+        padding-top:20px;
+        font-size:18px;
+    }
+    #mm_page_content h4{
+        color: #737463;
+        padding-top:20px;
+        font-size:18px;
+    }
+    
+</style>
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <div id="404_msg" class="hidden_now"><p>Sorry we can't find the page you're looking for</p></div>
+        <h2 class="feature_2_header page_header" id="page_title"></h2>
+        <div id="mm_page_content"></div>
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="http://assets.codecloudapp.com/sites/55bba30d6e6f64157e000000/f80b2b0cc97fadff100319399f8b2e1e/midtown_gc_360_360.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="http://mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" id="newsletter_agree" />I agree to receive newsletters from Midtown Plaza.</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        function renderAll (){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            prefix = get_prefix();
+            var pages_json = "http://midtown2.mallmaverick.com/pages/" + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                $('#page_title').text(data.title);
+                $('#mm_page_content').html(data.body);
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            }); 
+            init_side();
+            show_content();
+            $('iframe').addClass('scrolloff');
+            $('#map_frame').on('click', function () {
+                $('iframe').removeClass('scrolloff');
+            });
+            $("#map_frame").mouseleave(function () {
+                $('iframe').addClass('scrolloff');
+            });
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
