@@ -740,7 +740,20 @@ function renderBlogs(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-
+function renderPopUp(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html); 
+    if(collection.photo_link == "" || collection.photo_link === null){
+       collection.css = "style=cursor:default;";
+       collection.no_link = "return false";
+    }
+    collection.image_url_abs = "http://cdn.mallmaverick.com" + collection.photo_url
+    var rendered = Mustache.render(template_html,collection);
+    item_rendered.push(rendered);
+    $(container).html(item_rendered.join(''));
+}
 
 
 
