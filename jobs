@@ -1,0 +1,100 @@
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <h2 class="careers_heading">CAREERS</h2>
+        <div id="jobs_container">
+            <script id="jobs_template" type="x-tmpl-mustache/text">
+                <div class="collapse_parent">
+                    <h2 class="jobs_header font_16"><a data-toggle="collapse" data-parent="#jobs_container" href="#{{slug}}">{{store_name}}<span class="jobs_arrow">></span></a></h2>
+                    <p class="promo_date font_16">{{name}}</p>
+                    <p class="closing_date">Closing date: {{closing_date}}</p>
+                    <div id="{{slug}}" class="panel-collapse collapse job_div">
+                        <p>{{job_type}}</p>
+                        <div>{{{rich_description}}}</div>
+                        <br />
+                        <div style="{{hide_contact}}">
+                            <p class="promo_date">Contact</p>
+                            <p>{{contact_name}}</p>
+                            <p>{{contact_email}}</p>
+                        </div>
+                    </div>
+                    <hr class="jobs_separator">
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/f80b2b0cc97fadff100319399f8b2e1e/midtown_gc_360_360.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" id="newsletter_agree" />I agree to receive newsletters from Midtown Plaza.</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var jobs = getJobsList().sortBy(function(o){ return o.name });
+            var published_jobs = [];
+            $.each( jobs , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date)
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_jobs.push(val);
+                } 
+            });
+            renderGeneral($('#jobs_container'), $('#jobs_template'), published_jobs, "jobs");
+            init_side();
+            show_content();
+            $('.collapse').on('show.bs.collapse', function () {
+                $(this).parent().attr('class')
+           })
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
