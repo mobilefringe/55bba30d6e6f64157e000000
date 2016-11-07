@@ -699,7 +699,7 @@ function init_side(){
 function renderHomeHours(container, template, collection){
     var item_list = [];
     var item_rendered = [];
-    var template_html = $(template).html();
+    var template_html = $(todays_hours_template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(collection);    
     $.each( item_list , function( key, val ) {
