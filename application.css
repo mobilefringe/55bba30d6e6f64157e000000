@@ -845,12 +845,12 @@ a{
 .read_more{
     font-family: 'EB Garamond';
     font-size:16px;
-    color:#737463;
+    color:#1a6068;
     text-decoration:underline;
 }
 
 .read_more:hover{
-    color:#737463;
+    color:#1a6068;
     text-decoration:underline;
 }
 
