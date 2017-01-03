@@ -5,13 +5,13 @@
         font-weight: bold;
     }
     #mm_page_content h3{
-        color: #68396f;
+        color: #93a6a0;
         border-top:1px solid #ccc;
         padding-top:20px;
         font-size:18px;
     }
     #mm_page_content h4{
-        color: #68396f;
+        color: #93a6a0;
         padding-top:20px;
         font-size:18px;
     }
