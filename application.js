@@ -461,7 +461,7 @@ function renderPromoDetails(container, template, collection){
                 val.url=store_details.slug;
                 
             }
-            val.alt_promo_image_url = getImageURL(val.promo_image_url);
+            val.alt_promo_image_url = getCloudinaryImageURL(val.promo_image_url);
         }
         if (val.store_name == undefined){
             val.store_name = "Midtown Plaza";
