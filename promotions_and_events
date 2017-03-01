@@ -57,7 +57,7 @@
                     <div class="feature_insider_right">
                         <h3 class="feature_2_header">{{published_on}}</h3>
                         <p class="feature_2_dates">{{title}}</p>
-                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <p class="feature_2_description">{{{rich_description}}}</p>
                         <a class="read_more" href="/posts/{{slug}}">read more</a>
                     </div>
                     <div class="feature_insider_left pull-right">
