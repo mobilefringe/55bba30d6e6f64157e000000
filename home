@@ -75,22 +75,22 @@
             </script>
         </div>
     </div>
-    <div class="feature_column">
-        <h3 class="feature_header">Style</h3>
-        <div class="feature_insider" id="home_fashion_container">
-            <script id="home_fashion_template" type="x-tmpl-mustache/text">
-                <div class="feature_insider_left">
-                    <img alt="shop the look" class="feature_image" src="{{image_url}}" />
-                </div>
-                <div class="feature_insider_right">
-                    <h3 class="feature_2_header">SHOP THE LOOK</h3>
-                    <p class="feature_2_blog">{{name}}</p>
-                    <p class="feature_2_description">{{description_short}}</p>
-                    <a class="read_more" href="/fashions/{{slug}}">read more</a>
-                </div>
-            </script>
-        </div>
-    </div>
+    <!--<div class="feature_column">-->
+    <!--    <h3 class="feature_header">Style</h3>-->
+    <!--    <div class="feature_insider" id="home_fashion_container">-->
+    <!--        <script id="home_fashion_template" type="x-tmpl-mustache/text">-->
+    <!--            <div class="feature_insider_left">-->
+    <!--                <img alt="shop the look" class="feature_image" src="{{image_url}}" />-->
+    <!--            </div>-->
+    <!--            <div class="feature_insider_right">-->
+    <!--                <h3 class="feature_2_header">SHOP THE LOOK</h3>-->
+    <!--                <p class="feature_2_blog">{{name}}</p>-->
+    <!--                <p class="feature_2_description">{{description_short}}</p>-->
+    <!--                <a class="read_more" href="/fashions/{{slug}}">read more</a>-->
+    <!--            </div>-->
+    <!--        </script>-->
+    <!--    </div>-->
+    <!--</div>-->
     <div class="feature_column">
         <h3 class="feature_header">Blog</h3>
         <div class="feature_insider" id="home_blog_container">
