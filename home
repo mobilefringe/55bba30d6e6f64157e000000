@@ -110,6 +110,10 @@
             </script>
         </div>
     </div>
+    <div class="feature_column">
+        <h3 class="footer_explore">INSTAGRAM</h3>
+        <div id="instafeed"></div>
+    </div>
     <div class="clearfix"></div>
 </div>
 <script>
