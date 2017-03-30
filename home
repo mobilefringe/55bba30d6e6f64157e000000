@@ -161,4 +161,9 @@
         }
         loadMallDataCached(renderAll); 
     })
+    
+    
+    function render_instagram(data){
+        $('#instafeed').html(data)
+    }
 </script>
