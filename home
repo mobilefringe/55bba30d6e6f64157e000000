@@ -120,7 +120,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            get_instagram("//dixieoutlet.mallmaverick.com/api/v2/dixieoutlet/social.json", 9, 'thumbnail', render_instagram)
+            get_instagram("//dixieoutlet.mallmaverick.com/api/v2/dixieoutlet/social.json", 6, 'thumbnail', render_instagram)
             
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner',banners);
