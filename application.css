@@ -1273,7 +1273,13 @@ a{
 .contest_desc {
     margin-bottom: 20px;
 }
-
+#contest_form input {
+    
+}
+.help-block{
+    margin-bottom: -20px;
+    margin-top:0;
+}
 @media(max-width:1024px){
     .popup_home{
         width:90%;
