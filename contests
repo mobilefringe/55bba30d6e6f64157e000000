@@ -1,0 +1,97 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="header_banner events_banner">
+    <div class="main_container">
+        <h4 class="header_banner_heading">Contest</h4>
+    </div>
+</div>
+<div class="main_container mobile_padding">
+    <div class="details_row">
+        <div class="details_col_3 hidden_phone">
+            <img src="//codecloud.cdn.speedyrails.net/sites/57f3bee46e6f643959000000/image/jpeg/undefined/dgvr_440x1200_side_events.jpg" />
+        </div>
+        <div class="details_col_9" id="contest_details_container">
+            <script id="contest_details_template" type="x-tmpl-mustache/text">
+                <img src="{{alt_photo_url}}" class="details_image" style="{{promo_image}}" />
+                <p class="colored_link">{{name}}</p>
+                <div class="details_desc margin_30">{{{rich_description}}}</div>
+                
+                <form id="contest_form">
+                    <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                    <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                    <input type="hidden" name="cm-name" id="cm-name" />
+                    <div class="row ">
+                        <div class="col-md-6 margin_30">
+                            <label for="first_name">First Name *</label>  
+                            <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required"  />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="last_name">Last Name *</label>  
+                            <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" />
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-6 margin_30">
+                            <label for="email">Email *</label> 
+                            <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="The input value is incorrect email address" data-validation="custom" />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="phone_number">Phone Number</label>  
+                            <input class="form-control" id="phone_number" name="contest[phone]" type="text"  />
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-4 margin_30">
+                            <label for="postal_code">Zip Code</label> 
+                            <input class="form-control" id="postal_code" name="contest[postal_code]" type="text"  />
+                        </div>
+                        <div class="col-md-2 margin_30">
+                            <label for="age">Age</label> 
+                            <input class="form-control" id="age" name="contest[age]" type="text"  />
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="gender">Gender</label>  
+                            <select class="form-control" id="gender" name="contest[gender]">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 margin_30">
+                            <label>
+                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" /> 
+                                I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
+                            </label>
+                            <p>For more details about personal privacy, please read our <a href="/pages/costamesa-privacy-policy" target="_blank">Privacy Policy.</a></p>
+                            <button class="main_btn animated_btn contest_btn">Submit</button>
+                            <br /><br />
+                            <p class="" id="succes_msg" style="display:none">Thank you! Your entry have been received.</p>
+                        </div>
+                    </div>
+                </form>
+            </script>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function(e){
+        init(e);
+        loadMallDataCached(renderPage);
+    })
+    
+    function renderPage(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        contest_details = getContestBySlug(slug);
+        renderContest("#contest_details_container", '#contest_details_template', contest_details)
+        show_content();
+        $.validate();
+        $('#contest_form').submit(function(e){
+            e.preventDefault();
+            $('.contest_btn').prop('disabled', true);
+            submit_contest(slug);
+        })
+    }
+</script>
