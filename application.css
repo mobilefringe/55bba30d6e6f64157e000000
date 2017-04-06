@@ -1274,15 +1274,15 @@ a{
     margin-bottom: 20px;
 }
 #contest_form .form-control {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 #contest_form label {
     margin-top: 10px;
 }
 .help-block{
-    margin-bottom: -20px;
-    margin-top: 0;
+    margin-top: -20px;
+    margin-bottom: 0;
 }
 @media(max-width:1024px){
     .popup_home{
