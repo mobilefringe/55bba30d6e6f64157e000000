@@ -1274,11 +1274,12 @@ a{
     margin-bottom: 20px;
 }
 #contest_form input {
-    
+    margin-top: 5px;
+    margin-bottom: 25px;
 }
 .help-block{
     margin-bottom: -20px;
-    margin-top:0;
+    margin-top: 0;
 }
 @media(max-width:1024px){
     .popup_home{
