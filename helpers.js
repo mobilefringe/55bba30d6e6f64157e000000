@@ -283,7 +283,6 @@ function submit_contest(slug) {
     contest_data.first_name = $('#first_name').val();
     contest_data.last_name = $('#last_name').val();
     contest_data.address = $('#address').val();
-    contest_data.city = $('#city').val();
     contest_data.province_state = $('#province').val();
     contest_data.postal_code = $('#postal_code').val();
     contest_data.phone = $('#phone').val();
