@@ -1270,6 +1270,9 @@ a{
     margin-bottom: 20px;
     max-width: 100%;
 }
+.contest_desc {
+    margin-bottom: 20px;
+}
 
 @media(max-width:1024px){
     .popup_home{
