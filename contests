@@ -54,7 +54,30 @@
     </div>
     <div class="clearfix"></div>
 </div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            contest_details = getContestBySlug(slug);
+            // renderContest("#contest_details_container", '#contest_details_template', contest_details)
 
+            init_side();
+            show_content();
+            
+            $.validate();
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+            });
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
 
 <script>
     $(document).ready(function(e){
@@ -68,7 +91,7 @@
         contest_details = getContestBySlug(slug);
         // renderContest("#contest_details_container", '#contest_details_template', contest_details)
         show_content();
-        $.validate();
+        
         $('#contest_form').submit(function(e){
             e.preventDefault();
             $('.contest_btn').prop('disabled', true);
