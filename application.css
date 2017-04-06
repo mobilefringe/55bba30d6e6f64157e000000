@@ -1262,6 +1262,13 @@ a{
     width:175px;
 }
 
+.contest_page {
+    
+}
+.contest_image {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
 
 @media(max-width:1024px){
     .popup_home{
