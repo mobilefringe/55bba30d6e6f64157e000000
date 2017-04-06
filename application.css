@@ -1274,7 +1274,7 @@ a{
     margin-bottom: 20px;
 }
 #contest_form .form-control {
-    margin-top: 5px;
+    margin-top: 0;
     margin-bottom: 0;
 }
 #contest_form label {
