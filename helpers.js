@@ -286,7 +286,7 @@ function submit_contest(slug) {
     contest_data.city = $('#city').val();
     contest_data.province_state = $('#province').val();
     contest_data.postal_code = $('#postal_code').val();
-    contest_data.phone = $('#phone_number').val();
+    contest_data.phone = $('#phone').val();
     contest_data.email = $('#email').val();
     contest_data.newsletter = $('#newsletter_signup').prop("checked");
     
