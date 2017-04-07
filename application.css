@@ -1295,6 +1295,11 @@ a{
     color: #fff;
     text-transform: uppercase;
 }
+.contest_btn:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
 @media(max-width:1024px){
     .popup_home{
         width:90%;
