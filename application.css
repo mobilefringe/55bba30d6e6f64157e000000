@@ -1277,6 +1277,9 @@ a{
     margin-top: 5px;
     margin-bottom: 25px;
 }
+#contest_form label {
+    margin-bottom: 0;
+}
 .help-block{
     margin-top: -20px;
     margin-bottom: 0;
