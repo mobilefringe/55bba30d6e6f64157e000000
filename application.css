@@ -1579,4 +1579,10 @@ a{
     .newsletter_box p{
         font-size:14px;
     }
+    #contest_form #agree_terms {
+        margin-bottom 0;
+    }
+    #contest_form #agree_terms + .help-block {
+        margin-top: 0;
+    }
 }
