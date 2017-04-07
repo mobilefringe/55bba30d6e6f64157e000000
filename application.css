@@ -1280,6 +1280,9 @@ a{
 #contest_form label {
     margin-bottom: 0;
 }
+#contest_form .agree {
+    font-weight: normal;
+}
 .help-block{
     margin-top: -20px;
     margin-bottom: 0;
