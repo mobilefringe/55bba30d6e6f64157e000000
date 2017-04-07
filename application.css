@@ -1290,9 +1290,10 @@ a{
 }
 .contest_btn {
     padding: 7px 15px;
-    background: ;
+    background: #93a6a0;
     border: none;
     color: #fff;
+    text-transform: uppercase;
 }
 @media(max-width:1024px){
     .popup_home{
