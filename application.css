@@ -1579,6 +1579,12 @@ a{
     .newsletter_box p{
         font-size:14px;
     }
+    .row {
+        margin: 0;
+    }
+    .col-md-6, .col-md-12 {
+        padding: 0;
+    }
     #contest_form .contest_rules {
         margin-bottom: 20px;
     }
