@@ -1579,10 +1579,10 @@ a{
     .newsletter_box p{
         font-size:14px;
     }
-    .row {
+    #contest_form .row {
         margin: 0;
     }
-    .col-md-6, .col-md-12 {
+    #contest_form .col-md-6, .col-md-12 {
         padding: 0;
     }
     #contest_form .contest_rules {
