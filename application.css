@@ -1283,6 +1283,7 @@ a{
 .help-block{
     margin-top: -22px;
     margin-bottom: 0;
+    font-size: 12px;
 }
 @media(max-width:1024px){
     .popup_home{
