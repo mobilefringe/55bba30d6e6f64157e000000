@@ -1579,6 +1579,9 @@ a{
     .newsletter_box p{
         font-size:14px;
     }
+    .agree:first-of-type {
+        margin-bottom: 20px;
+    }
     #contest_form #agree_terms {
         margin-bottom: 0;
     }
