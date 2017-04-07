@@ -1579,7 +1579,7 @@ a{
     .newsletter_box p{
         font-size:14px;
     }
-    .contest_rules {
+    #contest_form .contest_rules {
         margin-bottom: 20px;
     }
     #contest_form #agree_terms {
