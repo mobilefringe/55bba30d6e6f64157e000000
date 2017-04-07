@@ -1288,6 +1288,12 @@ a{
     margin-bottom: 0;
     font-size: 14px;
 }
+.contest_btn {
+    padding: 7px 15px;
+    background: ;
+    border: none;
+    color: #fff;
+}
 @media(max-width:1024px){
     .popup_home{
         width:90%;
