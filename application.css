@@ -1275,13 +1275,13 @@ a{
 }
 #contest_form .form-control {
     margin-top: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 #contest_form label {
     margin-top: 10px;
 }
 .help-block{
-    margin-top: -20px;
+    margin-top: -22px;
     margin-bottom: 0;
 }
 @media(max-width:1024px){
