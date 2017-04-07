@@ -1273,7 +1273,7 @@ a{
 .contest_desc {
     margin-bottom: 20px;
 }
-#contest_form .form-control {
+#contest_form .form-control, #contest_form #agree_terms {
     margin-top: 5px;
     margin-bottom: 25px;
 }
