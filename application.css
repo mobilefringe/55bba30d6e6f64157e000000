@@ -1549,6 +1549,12 @@ a{
     .mobile_stores{
         padding:10px 0;
     }
+    #contest_form .row {
+        margin: 0;
+    }
+    #contest_form .col-md-6, .col-md-12 {
+        padding: 0;
+    }
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
@@ -1578,12 +1584,6 @@ a{
     }
     .newsletter_box p{
         font-size:14px;
-    }
-    #contest_form .row {
-        margin: 0;
-    }
-    #contest_form .col-md-6, .col-md-12 {
-        padding: 0;
     }
     #contest_form .contest_rules {
         margin-bottom: 20px;
