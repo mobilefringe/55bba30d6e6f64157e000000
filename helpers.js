@@ -268,11 +268,6 @@ function load_more(num){
     $('#num_loaded').val(i);
 }
 
-
-
-
-
-
 function in_my_time_zone(hour, format){
     return hour.tz(getPropertyTimeZone()).format(format)
 }
@@ -309,5 +304,3 @@ function submit_contest(slug) {
         }
     });
 }
-
-
