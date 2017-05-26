@@ -1,11 +1,11 @@
-<div class="popup_home hidden_now" id="popup_container">
-    <script id="popup_template" type="x-tmpl-mustache/text">
-        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">
-            <img id="popup_img" src="{{image_url_abs}}" />
-        </a>
-        <i class="fa fa-remove close_popup"></i>
-    </script>
-</div>
+<!--<div class="popup_home hidden_now" id="popup_container">-->
+<!--    <script id="popup_template" type="x-tmpl-mustache/text">-->
+<!--        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">-->
+<!--            <img id="popup_img" src="{{image_url_abs}}" />-->
+<!--        </a>-->
+<!--        <i class="fa fa-remove close_popup"></i>-->
+<!--    </script>-->
+<!--</div>-->
 
 <div class="flexslider">
     <ul class="slides" id="home_banner">
@@ -147,17 +147,17 @@
             $('.flexslider').flexslider({
                 animation: "slide",
             });
-            var popup = getPopups()[0];
-            if(popup != undefined && $.cookie("popup_viewed") != "true"){
-                renderPopUp("#popup_container", "#popup_template", popup)
-                $.cookie("popup_viewed", "true");
-                $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-                $('.popup_home').show()
-            }
-            $('.close_popup, .custom_backdrop').click(function(){
-                $(".modal-backdrop").remove();
-    	        $(".popup_home").remove();
-            })
+            // var popup = getPopups()[0];
+            // if(popup != undefined && $.cookie("popup_viewed") != "true"){
+            //     renderPopUp("#popup_container", "#popup_template", popup)
+            //     $.cookie("popup_viewed", "true");
+            //     $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            //     $('.popup_home').show()
+            // }
+            // $('.close_popup, .custom_backdrop').click(function(){
+            //     $(".modal-backdrop").remove();
+    	       // $(".popup_home").remove();
+            // })
         }
         loadMallDataCached(renderAll); 
     })
