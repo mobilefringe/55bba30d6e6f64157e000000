@@ -44,7 +44,8 @@
         <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.js"></script>
         
         <script>
-            setEndPoint('//midtown2.mallmaverick.com/api/v3/midtown2/all.json');
+            // setEndPoint('//midtown2.mallmaverick.com/api/v3/midtown2/all.json');
+            setEndPoint('//twinpines.mallmaverick.com/api/v3/twinpines/all.json');
         </script>
         
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
