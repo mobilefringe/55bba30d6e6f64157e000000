@@ -410,7 +410,7 @@ a{
 }
 
 .main_logo{
-    width:170px;
+    /*width:170px;*/
     height:100px;
     margin-top:9px;
 }
@@ -1515,7 +1515,7 @@ a{
         text-align:center;
     }
     .main_logo{
-        width:170px;
+        /*width:170px;*/
     }
     .logo_2{
         width:170px;
@@ -1564,7 +1564,7 @@ a{
         display:none;
     }
     .main_logo{
-        width:140px;
+        /*width:140px;*/
     }
     .logo_2{
         width:140px;
