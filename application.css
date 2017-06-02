@@ -413,6 +413,7 @@ a{
     /*width:170px;*/
     height:100px;
     margin-top:9px;
+    -ms-interpolation-mode: bicubic;
 }
 
 .logo_2{
