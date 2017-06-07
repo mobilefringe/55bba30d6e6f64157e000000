@@ -415,7 +415,9 @@ a{
     margin-top:9px;
     -ms-interpolation-mode: bicubic;
 }
-
+.main_logo_svg {
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/svg+xml/1496865266000/MidtownLogo.svg)
+}
 .logo_2{
     width:231px;
     float:right;
