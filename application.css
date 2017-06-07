@@ -416,9 +416,10 @@ a{
     -ms-interpolation-mode: bicubic;
 }
 .main_logo_svg {
-    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/svg+xml/1496865266000/MidtownLogo.svg);
     width: 100px;
     height: 100px;
+    background-image: url(//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/svg+xml/1496865266000/MidtownLogo.svg);
+    
     background-size: 100px 82px;
 }
 .logo_2{
