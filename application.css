@@ -416,13 +416,15 @@ a{
     -ms-interpolation-mode: bicubic;
 }
 .main_logo_svg {
-    display: block;
-    text-indent: -9999px;
-    width: 100px;
+    margin-top: 10px;
+    display: inline-block;
+    /*text-indent: -9999px;*/
+    width: 133px;
     height: 100px;
     background-image: url(https://www.mallmaverick.com/system/site_images/photos/000/029/940/original/MidtownLogo.svg?1496867951);
     
-    background-size: 100px 82px;
+    background-size: 133px 100px;
+    background-repeat: no-repeat;
 }
 .logo_2{
     width:231px;
