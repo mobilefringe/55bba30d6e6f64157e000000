@@ -58,11 +58,11 @@
         <script src="/application.js"></script>
         
     </head>
-    <body>
+    <body>http://assets.codecloudapp.com/sites/57f56a726e6f6429bc280000/image/png/1496864033000/Midtownlogo-3.png
         <div class="site_container">
             <header>
                 <div class="top_logos">
-                    <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/png/1496863946000/Midtownlogo-133x100.png" class="main_logo" alt="logo"></a>
+                    <a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/png/1496864033000/Midtownlogo-3.png" class="main_logo" alt="logo"></a>
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/jpeg/1483461365000/image001.jpg" class="logo_2" alt="logo 2">
                 </div>
                 <div id="menu_mobile" class="show_phone">
