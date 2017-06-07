@@ -5,6 +5,7 @@
     font-weight:700;
 }
 
+img { -ms-interpolation-mode: bicubic; }
 
 body{
     background: #eeecec;
