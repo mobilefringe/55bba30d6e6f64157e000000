@@ -62,10 +62,7 @@
         <div class="site_container">
             <header>
                 <div class="top_logos">
-                    <!--<a href="/"><img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/png/1496864033000/Midtownlogo-3.png" class="main_logo" alt="logo"></a>-->
-                    
-                    <div class="main_logo_svg"></div>
-                    
+                    <a href="/"><div class="main_logo_svg"></div></a>
                     <img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/jpeg/1483461365000/image001.jpg" class="logo_2" alt="logo 2">
                 </div>
                 <div id="menu_mobile" class="show_phone">
