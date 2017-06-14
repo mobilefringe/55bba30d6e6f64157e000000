@@ -304,15 +304,3 @@ function submit_contest(slug) {
         }
     });
 }
-
-function getCloudinaryImageUrl(existing_url) {
-    if(!existing_url ||  existing_url.indexOf('missing.png') > -1 || existing_url.length === 0){
-        //http://css-tricks.com/snippets/html/base64-encode-of-1x1px-transparent-gif/
-        return "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
-    }
-    return "https://mallmaverick.cdn.speedyrails.net" + existing_url;
-}
-
-function getCloudinaryImageURL(existing_url) {
-    return getCloudinaryImageUrl(existing_url);
-}
