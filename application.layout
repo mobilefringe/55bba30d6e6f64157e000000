@@ -41,7 +41,7 @@
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
         
         <!--MallMaverick v1.0-->
-        <script src="//mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
+        <script src="//preview-mallmaverick.codecloudapp.com/mallmaverick_v3.1.js"></script>
         
         <script>
             setEndPoint('//midtown2.mallmaverick.com/api/v3/midtown2/all.json');
