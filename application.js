@@ -387,7 +387,7 @@ function renderPromosEvents(container, template, collection){
                     val.store_name = store_details.name;
                     
                 }
-                val.image_url = getCloudinaryImageUrl(val.promo_image_url_abs);
+                val.image_url = val.promo_image_url_abs;
             }
         }
         if (val.type=="events"){
