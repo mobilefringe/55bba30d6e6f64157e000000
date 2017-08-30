@@ -69,7 +69,9 @@ function renderStoreList(container, template, collection, type){
         }
         //var categories = getStoreCategories();
         var current_initial = val.name[0];
-        var category = getCategoryDetails(val.categories[0]);
+        if(val.categories != null){
+            var category = getCategoryDetails(val.categories[0]);
+        }
         if (category != undefined){
             val.categories_list = category.name
         }
