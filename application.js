@@ -76,21 +76,18 @@ function renderStoreList(container, template, collection, type){
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.initial = "";
             val.show = "display:none;";
-        }
-        else{
+        } else {
             val.initial = current_initial;
             store_initial = current_initial;
             if (val.initial == "A"){
                 val.show = "display:inline-block;margin-top:24px";
-            }
-            else{
+            } else {
                 val.show = "display:inline-block;";
             }
         }
         if (val.promotions != null){
             val.promotion_exist = "visibility:show";
-        }
-        else{
+        } else {
             val.promotion_exist = "visibility:hidden";
         }
         
