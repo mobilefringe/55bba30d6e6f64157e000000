@@ -370,11 +370,11 @@ function renderPromosEvents(container, template, collection){
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.store_detail_btn = store_details.slug ;
                     val.store_name = store_details.name;
-                    if(store_details.store_front_url.indexOf('missing.png') > -1){
-                        val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
-                    } else {
-                        val.image_url = getImageURL(store_details.store_front_url);
-                    }
+                    // if(store_details.store_front_url.indexOf('missing.png') > -1){
+                    //     val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                    // } else {
+                    //     val.image_url = getImageURL(store_details.store_front_url);
+                    // }
                     
                 } else {
                     val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
@@ -387,7 +387,7 @@ function renderPromosEvents(container, template, collection){
                     val.store_name = store_details.name;
                     
                 }
-                val.image_url = val.promo_image_url_abs;
+                val.image_url = getCloudinaryImageUrl(val.promo_image_url);
             }
         }
         if (val.type=="events"){
@@ -408,31 +408,27 @@ function renderPromosEvents(container, template, collection){
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.store_detail_btn = store_details.slug ;
                     val.store_name = store_details.name;
-                    
                 }
                 val.image_url = getImageURL(val.event_image_url);
                 val.store_name = "Midtown Plaza";
-                
             }
         }
+        
         if(val.description.length > 50){
             val.description_short = val.description.substring(0,50) + "...";
-        }
-        else{
+        } else {
             val.description_short = val.description;
         }
-        
-        
-        
+    
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
         }
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
