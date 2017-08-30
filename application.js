@@ -364,10 +364,10 @@ function renderPromosEvents(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future use
     $.each( collection , function( key, val ) {
         if (val.type=="promotions"){
-            if(val.promo_image_url != null){
+            if(val.promo_image_url_abs !=null){
                 val.image_url = val.promo_image_url_abs;
             }
-            if ((val.promo_image_url).indexOf('missing.png') > -1 || val.promo_image_url == null){
+            if ((val.promo_image_url).indexOf('missing.png') > -1){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.store_detail_btn = store_details.slug ;
