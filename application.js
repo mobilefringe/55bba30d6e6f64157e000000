@@ -378,7 +378,7 @@ function renderPromosEvents(container, template, collection){
                     
                 // } else {
                 //     val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
-                // }
+                }
                 
             } else {
                 if (val.promotionable_type == "Store") {
