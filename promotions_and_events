@@ -94,6 +94,7 @@
                 if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
                     published_promos_events.push(val);
                 } 
+                console.log(val)l
             });
             
             renderPromosEvents('#promo_container', '#promo_template', published_promos_events);
