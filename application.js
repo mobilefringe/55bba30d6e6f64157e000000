@@ -366,7 +366,7 @@ function renderPromosEvents(container, template, collection){
         if (val.type=="promotions"){
             val.image_url = val.promo_image_url_abs;
 
-            if ((val.promo_image_url).indexOf('missing.png') > -1){
+            if ((val.promo_image_url_abs).indexOf('missing.png') > -1){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.store_detail_btn = store_details.slug ;
