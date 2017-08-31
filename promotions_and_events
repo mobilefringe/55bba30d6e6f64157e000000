@@ -82,7 +82,6 @@
             });
             
             var promos = getPromotionsList();
-            console.log(promos)
             $.each(promos, function(i, v){
                 v.type="promotions";
             });
