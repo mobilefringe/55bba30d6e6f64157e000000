@@ -865,17 +865,17 @@ a{
 .read_more{
     font-family: 'EB Garamond';
     font-size:16px;
-    color:#1a6068;
+    color:black;
     text-decoration:underline;
 }
 
 .read_more:hover{
-    color:#1a6068;
+    color:black;
     text-decoration:underline;
 }
 
 .read_more:focus{
-    color:#d76679;
+    color:black;
     text-decoration:underline;
 }
 .back_btn{
