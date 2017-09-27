@@ -65,7 +65,6 @@ function renderStoreList(container, template, collection, type){
             } else {
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
-            
         }
         //var categories = getStoreCategories();
         var current_initial = val.name[0];
@@ -97,7 +96,6 @@ function renderStoreList(container, template, collection, type){
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
-
     });
     
     $(container).show();
@@ -277,8 +275,8 @@ function renderGeneral(container, template, collection, type){
                 if (val.promotionable_type == "Store") {
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
-                        val.store_image = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
+                        val.store_image = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                     } else {
                         val.alt_promo_image_url = (store_details.store_front_url_abs); 
                         val.store_image = store_details.store_front_url_abs;
@@ -286,7 +284,7 @@ function renderGeneral(container, template, collection, type){
                     
                     val.store_name = store_details.name;
                 } else {
-                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                 }
                 
             } else {
@@ -299,31 +297,27 @@ function renderGeneral(container, template, collection, type){
                 }
         
             }
-            
-            
+    
             var start = moment(val.start_date).tz(getPropertyTimeZone());
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMMM D")
-            }
-            else{
+            } else {
                 val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
             }
-            
         }
         if(type == "jobs"){
             val.alt_promo_image_url = (val.promo_image_url_abs);
             if (val.jobable_type == "Store") {
                 var store_details = getStoreDetailsByID(val.jobable_id);
                 if ((store_details.store_front_url_abs).indexOf('missing.png') > -1) {
-                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                    val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                 } else {
                     val.alt_promo_image_url = (store_details.store_front_url_abs);    
                 }
                 val.store_name = store_details.name;
                 val.store_slug = store_details.slug;
-            }
-            else{
+            } else {
                 val.store_name = "Midtown Plaza";
             }
             var start = moment(val.start_date).tz(getPropertyTimeZone());
@@ -344,8 +338,7 @@ function renderGeneral(container, template, collection, type){
             var end = moment(val.end_date).tz(getPropertyTimeZone());
             if (start.format("DMY") == end.format("DMY")){
                 val.dates = start.format("MMMM D")
-            }
-            else{
+            } else {
                 val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
             }
         }
@@ -372,7 +365,7 @@ function renderPromosEvents(container, template, collection){
                     
                     if(val.promo_image_url_abs == null || val.promo_image_url_abs.indexOf('missing.png') > -1){
                         if(store_details.store_front_url.indexOf('missing.png') > -1){
-                            val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                            val.image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                         } else {
                             val.image_url = getImageURL(store_details.store_front_url);
                         }
@@ -383,7 +376,6 @@ function renderPromosEvents(container, template, collection){
                     var store_details = getStoreDetailsByID(val.promotionable_id);
                     val.store_detail_btn = store_details.slug ;
                     val.store_name = store_details.name;
-                    
                 }
                 val.image_url = getCloudinaryImageUrl(val.promo_image_url);
             }
@@ -398,7 +390,7 @@ function renderPromosEvents(container, template, collection){
                     val.store_name = store_details.name;
                     
                 } else {
-                    val.image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                    val.image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                 }
                 
             } else {
@@ -452,7 +444,7 @@ function renderPromoDetails(container, template, collection){
                 val.alt_promo_image_url = val.promo_image_url_abs;
                 if(val.promo_image_url_abs == null || val.promo_image_url_abs.indexOf('missing.png') > -1){
                     if(store_details.store_front_url.indexOf('missing.png') > -1){
-                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                        val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
                     } else {
                         val.alt_promo_image_url = getImageURL(store_details.store_front_url);
                     }
@@ -509,7 +501,7 @@ function renderEventDetails(container, template, collection){
                 val.store_name = store_details.name;
                 
             } else {
-                val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                val.alt_promo_image_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
             }
             
         } else {
@@ -586,7 +578,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
         } else {
             val.post_image = val.image_url;
         }
@@ -642,7 +634,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.post_image = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+            val.post_image = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
         } else {
             val.post_image = val.image_url;
         }
