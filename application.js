@@ -113,7 +113,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -735,7 +735,7 @@ function renderBlogs(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
-        if(val.posts.length > 0){
+        if(val.posts != null){
             var rendered = Mustache.render(template_html,val);
         }
         item_rendered.push(rendered);
