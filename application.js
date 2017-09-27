@@ -61,7 +61,7 @@ function renderStoreList(container, template, collection, type){
     $.each( collection , function( key, val ) {
         if (type == "stores" || type == "category_stores"){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/eed38d089cd6373b1b6fe6579119ae92/46998083431386.Gxbjj42J5GPwa7QBEyyM_height640.png";
+                val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1506519164000/Midtown_logo-vert-blk.png";
             } else {
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
