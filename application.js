@@ -124,8 +124,7 @@ function renderStoreDetails(container, template, collection, slug){
         // renderStoreExtras($('#jobs_container'), $('#jobs_template'), "jobs", val.jobs);
         if (val.website != null && val.website.length > 0){
             val.show = "display:inline-block";
-        }
-        else{
+        } else {
             val.show = "display:none";
         }
         if(val.description.length > 0){
