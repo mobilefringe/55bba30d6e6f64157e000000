@@ -591,7 +591,7 @@ a{
 .hours_header{
     margin-top: 0;
     margin-bottom: 15px;
-    color:#233a32;
+    color:white;
     font-weight:bold;
     font-size:18px;
     display:inline-block;
@@ -602,7 +602,7 @@ a{
     font-family: 'EB Garamond';
     font-size:18px;
     text-decoration:underline;
-    color:#233a32;
+    color:white;
     display:inline-block;
     margin-left:10px;
     margin-bottom:15px;
