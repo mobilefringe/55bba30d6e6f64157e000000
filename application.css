@@ -512,7 +512,7 @@ a{
 }
 
 .newsletter_box{
-    background: black;
+    background: #a89553;
     height:172px;
     padding:20px;
     position: relative;
@@ -564,7 +564,7 @@ a{
 
 .btn_mp{
     color: white;
-    background-color: black;
+    background-color: #a89553;
     border: 1px solid;
     height: 30px;
     width: 96px;
