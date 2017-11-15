@@ -620,6 +620,7 @@ a{
 .call_mp_home{
     font-family: 'EB Garamond';
     font-size:20px;
+    color:white;
 }
 
 .call_mp_home a:hover,.check_hours a:hover{
