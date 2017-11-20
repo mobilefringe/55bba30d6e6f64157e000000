@@ -1,0 +1,169 @@
+<!--<div class="popup_home hidden_now" id="popup_container">-->
+<!--    <script id="popup_template" type="x-tmpl-mustache/text">-->
+<!--        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">-->
+<!--            <img id="popup_img" src="{{image_url_abs}}" />-->
+<!--        </a>-->
+<!--        <i class="fa fa-remove close_popup"></i>-->
+<!--    </script>-->
+<!--</div>-->
+
+<div class="flexslider">
+    <ul class="slides" id="home_banner">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <li>
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img alt="banner" src="{{image_url}}" />
+                </a>
+            </li>
+        </script>
+    </ul>
+</div>
+
+<div class="feature_row">
+    <div class="feature_column">
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe" style="color:#fff"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>
+            </form>
+        </div>
+    </div>
+    <div class="feature_column">
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1511216744000/New Gift Card.png" class="" alt="giftcards">
+            </a>
+        </div>
+    </div>
+    <div class="feature_column">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="feature_row">
+    <div class="feature_column">
+        <h3 class="feature_header">Promotions & Events</h3>
+        <div class="feature_insider" id="home_promo_container">
+            <script id="home_promo_template" type="x-tmpl-mustache/text">
+                <div class="feature_insider_left">
+                    <img alt="promos/events" class="feature_image" src="{{image_url}}" />
+                </div>
+                <div class="feature_insider_right" id="home_promo_container">
+                    <h3 class="feature_2_header">{{name}}</h3>
+                    <p class="feature_2_dates">{{dates}}</p>
+                    <p class="feature_2_description">{{description_short}}</p>
+                    <a class="read_more" href="/promotions_and_events">read more</a>
+        
+                </div>
+            </script>
+        </div>
+    </div>
+    <!--<div class="feature_column">-->
+    <!--    <h3 class="feature_header">Style</h3>-->
+    <!--    <div class="feature_insider" id="home_fashion_container">-->
+    <!--        <script id="home_fashion_template" type="x-tmpl-mustache/text">-->
+    <!--            <div class="feature_insider_left">-->
+    <!--                <img alt="shop the look" class="feature_image" src="{{image_url}}" />-->
+    <!--            </div>-->
+    <!--            <div class="feature_insider_right">-->
+    <!--                <h3 class="feature_2_header">SHOP THE LOOK</h3>-->
+    <!--                <p class="feature_2_blog">{{name}}</p>-->
+    <!--                <p class="feature_2_description">{{description_short}}</p>-->
+    <!--                <a class="read_more" href="/fashions/{{slug}}">read more</a>-->
+    <!--            </div>-->
+    <!--        </script>-->
+    <!--    </div>-->
+    <!--</div>-->
+    <div class="feature_column">
+        <h3 class="feature_header">Blog</h3>
+        <div class="feature_insider" id="home_blog_container">
+            <script id="home_blog_template" type="x-tmpl-mustache/text">
+                <div class="feature_insider_left show_phone">
+                    <img alt="blog" class="feature_image" src="{{post_image}}" />
+                </div>
+                <div class="feature_insider_right">
+                    <h3 class="feature_2_header">{{published_on}}</h3>
+                    <p class="feature_2_blog">{{title}}</p>
+                    <p class="feature_2_description">{{description_shorter}}</p>
+                    <a class="read_more" href="/posts/{{slug}}">read more</a>
+                </div>
+                <div class="feature_insider_left hide_phone">
+                    <img alt="blog" class="feature_image" src="{{post_image}}" />
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="feature_column">
+        <h3 class="feature_header">Instagram</h3>
+        <div id="instafeed"></div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            get_instagram("//midtown2.mallmaverick.com/api/v2/midtown2/social.json", 6, 'thumbnail', render_instagram)
+            
+            var banners = getBanners();
+            renderBanner('#banner_template','#home_banner',banners);
+            var events = getEventsList();
+            $.each(events, function(i, v){
+                v.type="events";
+            });
+            
+            var promos = getPromotionsList();
+            $.each(promos, function(i, v){
+                v.type="promotions";
+            });
+            var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date })[0];
+            var pp = [];
+            pp.push(promos_events);
+            renderPromosEvents('#home_promo_container', '#home_promo_template', pp)
+            
+            var latest_fashion = getFashions()[0];
+            renderFashion('#home_fashion_container', '#home_fashion_template', latest_fashion);
+
+            
+            init_side();
+            show_content();
+            $('.flexslider').flexslider({
+                animation: "slide",
+            });
+            // var popup = getPopups()[0];
+            // if(popup != undefined && $.cookie("popup_viewed") != "true"){
+            //     renderPopUp("#popup_container", "#popup_template", popup)
+            //     $.cookie("popup_viewed", "true");
+            //     $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            //     $('.popup_home').show()
+            // }
+            // $('.close_popup, .custom_backdrop').click(function(){
+            //     $(".modal-backdrop").remove();
+    	       // $(".popup_home").remove();
+            // })
+        }
+        loadMallDataCached(renderAll); 
+    })
+    
+    
+    function render_instagram(data){
+        $('#instafeed').html(data)
+    }
+</script>
