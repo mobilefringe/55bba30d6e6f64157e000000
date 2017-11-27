@@ -30,6 +30,20 @@
                 </tr>
             </script>
         </table>
+            <h2 class="hours_heading">Santa Photo Hours (Nov. 19 - Dec. 23)</h2>  
+            <table id="holiday_hours_container" class="hours_container">
+            <script id="holiday_hours_template" type="x-tmpl-mustache/text">
+                <tr>
+                    <td class="hours_left_holidays">
+                        <span>Monday - Friday</span>
+                        <span class="dashes"></span>
+                    </td>   
+                    <td class="hours_right_holidays">
+                        11am - 2pm & 3pm - 7pm
+                    </td>
+                </tr>
+            </script>
+        </table>
     </div>
     <div class="page_right">
         <div class="hours_box feature_box" id="home_hours_container">
