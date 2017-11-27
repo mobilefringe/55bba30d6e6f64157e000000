@@ -41,13 +41,17 @@
                     <td class="hours_right_holidays">
                         11am - 2pm <br>& 3pm - 7pm
                     </td>
+                    
+                </tr>
+                    <tr>
                     <td class="hours_left_holidays">
-                        <span>Monday - Friday</span>
+                        <span>Saturday</span>
                         <span class="dashes"></span>
                     </td>   
                     <td class="hours_right_holidays">
-                        11am - 2pm <br>& 3pm - 7pm
+                        10am - 2pm <br>& 3pm - 7pm 
                     </td>
+                    
                 </tr>
          
         </table>
