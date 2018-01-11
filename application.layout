@@ -206,11 +206,11 @@
                 <p class="no_margin">©<span id="current_year"></span> MIDTOWN | <a href="/pages/midtown2-privacy-policy">PRIVACY POLICY</a> | POWERED BY <a href="//www.mallmaverick.com" target="_blank">MALL MAVERICK</a></p>
             </footer>
         </div>
-        <script>
-            $("#track_link").click( function() {
-                trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');
-            });
-        </script>
+        <!--<script>-->
+        <!--    $("#track_link").click( function() {-->
+        <!--        trackOutboundLink('https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/');-->
+        <!--    });-->
+        <!--</script>-->
     </body>
 </html>
 
