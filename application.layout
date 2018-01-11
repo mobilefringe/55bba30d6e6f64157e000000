@@ -191,11 +191,11 @@
             </div>
             
             <!-- Rohingya Crisis BANNER -->
-            <div class="trim_screen">
-                <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">
-                    <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>
-                </a>
-            </div>
+            <!--<div class="trim_screen">-->
+            <!--    <a id="track_link" href="https://secure.humanitariancoalition.ca/index.php?lang=en&source_form=20vic/" target="_blank">-->
+            <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/59b936416e6f64562d010000/image/jpeg/1510252672000/Rohingya_en.jpg" alt=""/>-->
+            <!--    </a>-->
+            <!--</div>-->
             <footer class="footer">
                 <p class="social_footer">
                     <a href="https://www.facebook.com/MidtownPlazaSaskatoon"><img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Facebook_icon.jpg" class="" alt="fb"></a>
