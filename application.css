@@ -512,7 +512,7 @@ a{
 }
 
 .newsletter_box{
-    background: #000000;
+    background: #ad976e;
     height:172px;
     padding:20px;
     position: relative;
@@ -564,7 +564,7 @@ a{
 
 .btn_mp{
     color: white;
-    background-color: #000000;
+    background-color: #ad976e;
     border: 1px solid;
     height: 30px;
     width: 96px;
@@ -691,7 +691,7 @@ a{
 .feature_2_header{
     margin-top: 8px;
     font-size: 18px;
-    color: #750021;
+    color: #ad976e;
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
