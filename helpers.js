@@ -8,25 +8,25 @@ function init(e){
         $('#success_subscribe').fadeOut();
         $('#newsletter_form').trigger('reset');
     });
-    $('#newsletter_form').submit(function(e){
-        e.preventDefault();
-        if ($("#newsletter_agree").prop("checked") != true){
-            alert("Please agree to receive newsletters from Midtown.");
-            $("#newsletter_agree").focus();
-            return false;
-        }
-        $.getJSON(
-            this.action + "?callback=?",
-            $(this).serialize(),
-            function (data) {
-                if (data.Status === 400) {
-                    alert("Please try again later.");
-                } else { // 200
-                    $("#success_subscribe").fadeIn();
-                }
-            }
-        );
-    });
+    // $('#newsletter_form').submit(function(e){
+    //     e.preventDefault();
+    //     if ($("#newsletter_agree").prop("checked") != true){
+    //         alert("Please agree to receive newsletters from Midtown.");
+    //         $("#newsletter_agree").focus();
+    //         return false;
+    //     }
+    //     $.getJSON(
+    //         this.action + "?callback=?",
+    //         $(this).serialize(),
+    //         function (data) {
+    //             if (data.Status === 400) {
+    //                 alert("Please try again later.");
+    //             } else { // 200
+    //                 $("#success_subscribe").fadeIn();
+    //             }
+    //         }
+    //     );
+    // });
     var path = window.location.pathname
     var collapse_shopping = ["/stores", "/hours", "/parking"];
     var collapse_promos = ["/promotions_and_events"];
