@@ -1,0 +1,184 @@
+<script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
+<style>
+    .map_container{
+        height:490px;
+    }
+    .popup {
+        background: none repeat scroll 0 0 #000000;
+        border: 1px solid #808080;
+        border-radius: 6px;
+        box-shadow: -1px 1px 4px 1px #000;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: bold;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        text-align: center;
+        width: 200px;
+        margin-top: 30px;
+    }
+    .store_initial {
+        color: #fff;
+        background: black;
+        margin-bottom: 10px;
+        padding: 10px 12px;
+        font-weight: bold;
+        opacity: 0.8;
+        width:100%;
+    }
+    .store_name_map {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 5px 12px;
+        width: 250px;
+        display: block;
+    }
+    .position_relative .dropdown-menu{
+        width:300px;
+        padding-top:0;
+        margin-top:2px;
+    }
+</style>
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <h3 class="hours_heading promo_heading">Centre Map</h3>
+        <div class="position_relative">        
+            <div class="controls">
+            	<div class="dropdown custom_dropdown">                          
+                    <a class="btn-prime"  id="map_button">
+                        Select a Store <span style="margin-top:3px;" class="fa fa-caret-down pull-right"></span>
+                    </a>		    
+                </div>            
+            </div> 
+            <div class="dropdown-menu bottom" id="store_table" style="top:50px">          		
+                <div style="height:500px;overflow-y:scroll;overflow-x:hidden;">                                        
+                    <div class="map_table">            			                        
+                        <div  id="store_list_container">
+                            <script id="store_list_template" type="x-tmpl-mustache/text">
+                                <p class="store_initial" style="{{show}}">{{initial}}</p>
+                                <a href="#" class="store_name_map" store_id="store_{{id}}" onclick="return show_pin(this)">{{name}}</a>
+                            </script>
+                        </div>
+                    </div>          
+                </div>                
+            </div> 
+            <div class="map">
+                <div class="map_container" style="">            
+                    <img style="max-width:100%;max-height:100%" alt="map_image" id="map_image" src="//midtown2.mallmaverick.com/system/properties/maps/000/000/025/original/map_midtown_edited.jpg?1381443167" />   
+                    	
+        		</div>
+            </div>
+        </div>
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img style=" max-width: 100%; max-height: 100%; " src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/f80b2b0cc97fadff100319399f8b2e1e/midtown_gc_360_360.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    function show_pin(param){
+		store_id = $(param).attr('store_id');
+		if($("#"+store_id).is(":visible")){
+			$("."+store_id).hide();				
+			$("#"+store_id).hide();
+			$("#no_pin_"+store_id).show();
+			$("#show_pin_"+store_id).hide();
+			$("#m_no_pin_"+store_id).show();
+			$("#m_show_pin_"+store_id).hide();
+		}else{
+			$(".marker").hide();
+			$("#"+store_id).show();
+			$("#"+store_id).click();
+			$("#no_pin_"+store_id).hide();
+			$("#show_pin_"+store_id).show();
+			$("#m_no_pin_"+store_id).hide();
+			$("#m_show_pin_"+store_id).show();
+		}
+		$('#store_table').hide()
+		
+		return false;
+    }
+    $(function(){
+        $("#map_button").click(function(){
+            $("#store_table").toggle();
+        });
+        
+    });
+    function hide_table(){
+        $("#store_table").hide();
+        show_table = false;
+    }
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll(){
+            var stores = getStoresList();
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+            init_side();
+            show_content();    
+            $.each(stores, function(i, val){
+                x = val.x_coordinate - 19;
+                y = val.y_coordinate - 58;
+              $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none">' + val.name + '</div>')
+            });
+            $('.map_container').craftmap({
+                image:{
+                    width:780,
+                    height:780,
+                    name: 'imgMap'
+                },
+                map: {
+                    position: '0,0'
+                }
+            });
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
