@@ -34,7 +34,7 @@
             <!--    <div class="clearfix"></div>-->
             <!--    <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>-->
             <!--</form>-->
-            <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255C73F621E868BD996EBE6F5D8E1AAC70DA03F8D3AC343DF03ED1232C920EDD9EBD29B19A949E02465DE6F119F822628832">	
+            <form id="newsletter_form" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255C73F621E868BD996EBE6F5D8E1AAC70DA03F8D3AC343DF03ED1232C920EDD9EBD29B19A949E02465DE6F119F822628832">	
                     <input id="newsletter_email" name="cm-siythy-siythy" type="email" placeholder="Enter your email address" class="pull-left js-cm-email-input"
                     required />
                     <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
