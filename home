@@ -42,7 +42,7 @@
                     required />
                 </p>
                 <p>
-                    <button class="js-cm-submit-button" type="submit">Subscribe</button>
+                    <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
                 </p>
             </form>
             <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
