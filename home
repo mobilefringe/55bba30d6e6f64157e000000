@@ -38,6 +38,7 @@
                     <input id="fieldEmail" name="cm-siythy-siythy" type="email" placeholder="Enter your email address" class="pull-left js-cm-email-input"
                     required />
                     <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                    <div class="clearfix"></div>
             </form>
             <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         </div>
