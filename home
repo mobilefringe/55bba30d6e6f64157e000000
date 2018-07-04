@@ -35,22 +35,22 @@
             <!--    <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>-->
             <!--</form>-->
             <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255C73F621E868BD996EBE6F5D8E1AAC70DA03F8D3AC343DF03ED1232C920EDD9EBD29B19A949E02465DE6F119F822628832">	
-<p>
-    <label for="fieldName">Name</label>
-    <br />
-    <input id="fieldName" name="cm-name" type="text" />
-</p>
-<p>
-    <label for="fieldEmail">Email</label>
-    <br />
-    <input id="fieldEmail" name="cm-siythy-siythy" type="email" class="js-cm-email-input"
-    required />
-</p>
-<p>
-    <button class="js-cm-submit-button" type="submit">Subscribe</button>
-</p>
-</form>
-<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
+                <p>
+                    <label for="fieldName">Name</label>
+                    <br />
+                    <input id="fieldName" name="cm-name" type="text" />
+                </p>
+                <p>
+                    <label for="fieldEmail">Email</label>
+                    <br />
+                    <input id="fieldEmail" name="cm-siythy-siythy" type="email" class="js-cm-email-input"
+                    required />
+                </p>
+                <p>
+                    <button class="js-cm-submit-button" type="submit">Subscribe</button>
+                </p>
+            </form>
+            <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         </div>
     </div>
     <div class="feature_column">
