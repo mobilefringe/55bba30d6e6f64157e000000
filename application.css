@@ -696,6 +696,7 @@ a{
     margin-bottom:5px;
     text-transform:uppercase;
     font-family:museo;
+    word-break: break-all;
 }
 
 .store_list_heading {
