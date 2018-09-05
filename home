@@ -156,6 +156,7 @@
                 animation: "slide",
             });
             var popup = getPopups()[0];
+            console.log("cookie", $.cookie())
             if(popup != undefined && $.cookie("popup_viewed") != "true"){
                 renderPopUp("#popup_container", "#popup_template", popup)
                 $.cookie("popup_viewed", "true");
