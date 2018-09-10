@@ -6,18 +6,18 @@
         <i class="fa fa-remove close_popup"></i>
     </script>
 </div>
-
-<div class="flexslider">
-    <ul class="slides" id="home_banner">
-        <script id="banner_template" type="x-tmpl-mustache/text">
-            <li>
-                <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                    <img alt="banner" src="{{image_url}}" />
-                </a>
-            </li>
-        </script>
-    </ul>
-</div>
+<script src="https://live10.mkstream.live/livejs?responsive=1" type="text/javascript"></script>
+<!--<div class="flexslider">-->
+<!--    <ul class="slides" id="home_banner">-->
+<!--        <script id="banner_template" type="x-tmpl-mustache/text">-->
+<!--            <li>-->
+<!--                <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
+<!--                    <img alt="banner" src="{{image_url}}" />-->
+<!--                </a>-->
+<!--            </li>-->
+<!--        </script>-->
+<!--    </ul>-->
+<!--</div>-->
 
 <div class="feature_row">
     <div class="feature_column">
