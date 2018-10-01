@@ -178,9 +178,19 @@
                             </div>
                         </div>
                         <div class="menu_divider"></div>
-                        <div class="menu_link ">
-                            <a href="/promotions_and_events" id="promos_menu">Promotions & Events</a>
+                        <div class="menu_link">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Promotions & Events</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu2">
+                                        <li><a href="/promotions_and_events">Promotions & Events</a></li>
+                                        <li><a href="/pages/midtown2-champagne-shopping">Champagne Shopping</a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <!--<div class="menu_divider"></div>-->
+                        <!--<div class="menu_link ">-->
+                        <!--    <a href="/promotions_and_events" id="promos_menu">Promotions & Events</a>-->
+                        <!--</div>-->
                         <div class="menu_divider"></div>
                         <div class="menu_link">
                             <div class="dropdown">
