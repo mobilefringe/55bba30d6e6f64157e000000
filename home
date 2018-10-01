@@ -6,22 +6,22 @@
         <i class="fa fa-remove close_popup"></i>
     </script>
 </div>
-<div style="position: relative; padding-bottom: 56.25%; height: 0;">
+<!--<div style="position: relative; padding-bottom: 56.25%; height: 0;">-->
 
-<iframe style="position: absolute; top: 0; left: 0; width: 100%;" width="980" height="551" src="https://live10.mkstream.live" frameborder="0" allowfullscreen></iframe>
+<!--<iframe style="position: absolute; top: 0; left: 0; width: 100%;" width="980" height="551" src="https://live10.mkstream.live" frameborder="0" allowfullscreen></iframe>-->
 
-</div>
-<!--<div class="flexslider">-->
-<!--    <ul class="slides" id="home_banner">-->
-<!--        <script id="banner_template" type="x-tmpl-mustache/text">-->
-<!--            <li>-->
-<!--                <a href="{{url}}" {{css}} onclick="{{noLink}}">-->
-<!--                    <img alt="banner" src="{{image_url}}" />-->
-<!--                </a>-->
-<!--            </li>-->
-<!--        </script>-->
-<!--    </ul>-->
 <!--</div>-->
+<div class="flexslider">
+    <ul class="slides" id="home_banner">
+        <script id="banner_template" type="x-tmpl-mustache/text">
+            <li>
+                <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                    <img alt="banner" src="{{image_url}}" />
+                </a>
+            </li>
+        </script>
+    </ul>
+</div>
 
 <div class="feature_row">
     <div class="feature_column">
