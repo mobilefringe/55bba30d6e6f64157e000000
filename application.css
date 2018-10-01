@@ -127,7 +127,7 @@ body{
     display: block;
     padding: 5px;
     color: #fff;
-    background-color: #eeece5;
+    background-color: #e2e4e6;
     cursor: pointer;
 }
 
@@ -372,7 +372,7 @@ a{
 .flex-control-paging li a{
     height:16px;
     width:16px;
-    background: #eeece5;
+    background: #e2e4e6;
     box-shadow: none;
 }
 
@@ -519,7 +519,7 @@ a{
 }
 
 .giftcards_box{
-    background: #eeece5;
+    background: #e2e4e6;
     height:172px;
     padding:20px;
     text-align:center;
