@@ -42,6 +42,15 @@
                         11 am - 2 pm & 2pm - 7pm
                     </td>
                 </tr>
+                <tr>
+                    <td class="hours_left_holidays">
+                        <span>Sunday</span>
+                        <span class="dashes"></span>
+                    </td>   
+                    <td class="hours_right_holidays">
+                        11:30 am-2 pm & 2:30 pm-4:30 pm
+                    </td>
+                </tr>
      
         </table>
        
