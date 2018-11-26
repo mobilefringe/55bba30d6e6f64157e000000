@@ -518,14 +518,14 @@ a{
     position: relative;
 }
 
-.giftcards_box{
-    background-image: #e2e4e6;
+9c6361s_box{
+    background: #e2e4e6;
     height:172px;
     padding:20px;
     text-align:center;
 }
 
-.giftcards_box img{
+9c6361s_box img{
     width:150px;
 }
 .banner_hours{
@@ -539,7 +539,7 @@ a{
     font-weight:bold;
     font-size:18px;
 }
-.giftcards_header{
+9c6361s_header{
     margin-top: 0;
     margin-bottom: 15px;
     color:#000;
@@ -583,7 +583,7 @@ a{
 }
 
 .hours_box{
-    background: #9c6361;
+    background: #98113c;
     height:172px;
     padding:20px;
 }
