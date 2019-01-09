@@ -122,7 +122,7 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            get_instagram("//midtown2.mallmaverick.com/api/v2/midtown2/social.json", 6, 'thumbnail', render_instagram)
+            get_instagram("//midtown2.mallmaverick.com/api/v4/midtown2/social.json", 6, 'thumbnail', render_instagram)
             
             var banners = getBanners();
             renderBanner('#banner_template','#home_banner',banners);
