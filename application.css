@@ -512,7 +512,7 @@ a{
 }
 
 .newsletter_box{
-    background: #ad976e;
+    background: #592d2e;
     height:172px;
     padding:20px;
     position: relative;
@@ -567,7 +567,7 @@ a{
 
 .btn_mp{
     color: white;
-    background-color: #ad976e;
+    background-color: #592d2e;
     border: 1px solid;
     height: 30px;
     width: 96px;
@@ -586,7 +586,7 @@ a{
 }
 
 .hours_box{
-    background: #9c6361;
+    background: #c88f7a;
     height:172px;
     padding:20px;
 }
@@ -694,7 +694,7 @@ a{
 .feature_2_header{
     margin-top: 8px;
     font-size: 18px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
@@ -705,7 +705,7 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     margin-bottom: 36px;
     font-family:museo;
@@ -713,7 +713,7 @@ a{
 
 .store_list_heading2 {
     font-size: 16px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: 500;
     margin-bottom: 32px;
     margin-top: 0;
@@ -760,7 +760,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -775,7 +775,7 @@ a{
     margin-top: 15px;
     font-size:15px;
     margin-bottom:36px;
-    color: #ad976e;
+    color: #592d2e;
     text-decoration:underline;
     display:inline-block;
 }
@@ -788,7 +788,7 @@ a{
 }
 
 .promo_circle{
-    color: #ad976e;
+    color: #592d2e;
     font-size: 12px;
     width:25px;
 }
@@ -885,11 +885,11 @@ a{
     text-decoration:underline;
 }
 .back_btn{
-    color:#ad976e;
+    color:#592d2e;
 }
 
 .back_btn:hover{
-    color:#ad976e;
+    color:#592d2e;
     text-decoration:none;
 }
 
@@ -937,7 +937,7 @@ a{
 }
 
 .promo_name{
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     font-size: 18px;
     margin-bottom:0;
@@ -973,7 +973,7 @@ a{
 }
 
 .closing_date{
-    color:#ad976e;
+    color:#592d2e;
     font-weight: 500;
     font-size: 16px;
     margin: 5px 0;
@@ -982,7 +982,7 @@ a{
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -993,7 +993,7 @@ a{
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #ad976e;
+    color: #592d2e;
 }
 
 .job_div{
@@ -1054,7 +1054,7 @@ a{
 
 .promo_name_header{
     font-size: 18px;
-    color: #ad976e;
+    color: #592d2e;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1074,7 +1074,7 @@ a{
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #ad976e;
+    color: #592d2e;
     font-family:museo;
 }
 .blog_name_header{
@@ -1129,7 +1129,7 @@ a{
 }
 .fashion_heading{
     font-size: 16px;
-    color: #ad976e;
+    color: #592d2e;
     margin:10px 0;
 }
 
@@ -1166,7 +1166,7 @@ a{
     color:#000;
 }
 .blog_heading{
-    color: #ad976e;
+    color: #592d2e;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
@@ -1178,12 +1178,12 @@ a{
 .blog_read_more{
     font-family: 'EB Garamond';
     font-size:18px;
-    color:#ad976e;
+    color:#592d2e;
     text-decoration:underline;
 }
 
 .blog_read_more:hover{
-    color:#ad976e;
+    color:#592d2e;
     text-decoration:underline;
 }
 .blog_details_container{
@@ -1213,7 +1213,7 @@ a{
     font-family: museo;
 }
 .blog_details_dates{
-    color: #ad976e;
+    color: #592d2e;
     font-weight: bold;
     font-size: 18px;
     margin-top: 0;
@@ -1311,7 +1311,7 @@ a{
 }
 .contest_btn {
     padding: 7px 15px;
-    background: #ad976e;
+    background: #592d2e;
     border: none;
     color: #fff;
     text-transform: uppercase;
