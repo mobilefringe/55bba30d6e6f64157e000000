@@ -206,7 +206,6 @@
                 var contest = popup.contest;
                 if(contest.id){
                     //show form popup
-                    // popup_description
                     // $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
                     $(".popup_img").attr("src", "http://via.placeholder.com/660")
                     $("#popup_description").text(popup.description1);
