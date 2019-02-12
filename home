@@ -34,7 +34,7 @@
             <div class="margin_30"></div>
             <br>
             <label style=" font-size: 12px; font-weight: normal; ">
-                <input class="margin-5-top" id="agree_newsletter" type="checkbox"><span> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at<br /><a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com.</a><br>
+                <input class="margin-5-top" id="agree_newsletter" type="checkbox">I have read and understand the Contest Rules & Regulations as well as the Privacy Policy.<br>
             </label>
             <a href="/pages/ptc-privacy-policy" style="text-decoration:underline; color:#000" target="_blank">Privacy Policy.</a>
             <br />
