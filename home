@@ -13,6 +13,8 @@
     <div class="popup_container">
         <h5 id="popup_description">Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
         <form accept-charset="UTF-8" id="popup_contets_form" method="post">
+        <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                    <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
             <div class="row margin_10">
                 <div class="col-md-10">
                     <label for="name">Name *</label>  
