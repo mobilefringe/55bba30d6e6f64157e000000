@@ -223,7 +223,7 @@
                 } 
                 else {
                     //show image popup
-                    if(popup != undefined && $.cookie("popup_viewed") != "true"){
+                    if($.cookie("popup_viewed") != "true"){
                         $.cookie("popup_viewed", "true", { expires: 1 });
                         renderPopUp("#popup_container", "#popup_template", popup)
                         $.cookie("popup_viewed", "true");
