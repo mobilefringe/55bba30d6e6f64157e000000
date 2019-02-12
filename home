@@ -28,7 +28,7 @@
             <div class="row margin_10">    
                 <div class="col-md-10">
                     <label for="postal">Postal Code *</label> 
-                    <input id="fieldzdydu" name="cm-f-zdydu" type="text" required="" class="form-control"> 
+                    <input id="fieldzdydu" name="postal" type="text" required="" class="form-control"> 
                 </div>
             </div>
             <div class="margin_30"></div>
