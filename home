@@ -203,6 +203,7 @@
             
             if(getPopups().length > 0){
                 var popup = getPopups()[0];
+                var contest = popup.contest;
                 if(popup.use_form){
                     //show form popup
                     // popup_description
