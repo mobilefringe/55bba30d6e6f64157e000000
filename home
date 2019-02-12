@@ -12,7 +12,7 @@
     <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" class="popup_img" alt="newsletter pop up">
     <div class="popup_container">
         <h5>Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
-        <form accept-charset="UTF-8"  id="popup_form" method="post">
+        <form accept-charset="UTF-8" id="popup_form" method="post">
             <div class="row margin_10">
                 <div class="col-md-10">
                     <label for="fieldName">Name *</label>  
