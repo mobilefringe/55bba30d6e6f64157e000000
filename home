@@ -6,7 +6,7 @@
 <!--        <i class="fa fa-remove close_popup"></i>-->
 <!--    </script>-->
 <!--</div>-->
-<div class="popup_home hidden_now ">
+<div class="popup_home_form hidden_now ">
 
     <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
     <img src="" class="popup_img" alt="newsletter pop up">
