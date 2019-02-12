@@ -222,7 +222,7 @@
                     })
                     $('#popup_contets_form').submit(function(e){
                         e.preventDefault();
-                        $('.contest_btn').prop('disabled', true);
+                        $('#popup_submit').prop('disabled', true);
                         submit_contest(slug);
                         $('html, body').animate({scrollTop : 0},800);
                     });
