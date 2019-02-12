@@ -6,6 +6,43 @@
 <!--        <i class="fa fa-remove close_popup"></i>-->
 <!--    </script>-->
 <!--</div>-->
+<div class="popup_home hidden_now ">
+
+    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
+    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/jpeg/1476300057000/popup_bg.jpg" class="popup_img" alt="newsletter pop up">
+    <div class="popup_container">
+        <h5>Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
+        <form accept-charset="UTF-8" action="//mobilefringe.createsend.com/t/d/s/yuhhly/" onsubmit="return validateNewsletterForm()" id="newsletter_form" method="post">
+            <div class="row margin_10">
+                <div class="col-md-10">
+                    <label for="fieldName">Name *</label>  
+                    <input id="fieldName" name="cm-name" type="text" required="" class="form-control">
+                </div>
+            </div>
+            <div class="row margin_10">    
+                <div class="col-md-10">
+                    <label for="email">Email *</label> 
+                    <input id="email" name="cm-yuhhly-yuhhly" type="email" required="" class="form-control">
+                </div>
+            </div>
+            <div class="row margin_10">    
+                <div class="col-md-10">
+                    <label for="postal">Postal Code *</label> 
+                    <input id="fieldzdydu" name="cm-f-zdydu" type="text" required="" class="form-control"> 
+                </div>
+            </div>
+            <div class="margin_30"></div>
+            <br>
+            <label style=" font-size: 12px; font-weight: normal; ">
+                <input class="margin-5-top" id="agree_newsletter" type="checkbox"><span> I consent to receiving by e-mail, or other form of electronic contact, commercial electronic messages ("CEMs") from the Contest Sponsors (as defined in the Contest Rules). I understand that I can withdraw my consent to receiving CEMs from the Contest Sponsors at any time by e-mail at<br /><a href="mailto:casladministrator-ptc@20vic.com" target="_top" style="color:blue;">casladministrator-ptc@20vic.com.</a><br>
+            </label>
+            <a href="/pages/ptc-privacy-policy" style="text-decoration:underline; color:#000" target="_blank">Privacy Policy.</a>
+            <br />
+            <input class="btn btn-primary" name="commit" type="submit" value="SUBMIT" style=" background: #000; border: 0; border-radius: 0; margin-top: 20px; padding: 10px 30px; ">      
+        </form>
+    </div>
+    
+</div>
 <div class="flexslider">
     <ul class="slides" id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
