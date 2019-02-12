@@ -220,7 +220,7 @@
             	        $(".popup_home_form").remove();
             	        $('body').removeClass('no_scroll');
                     })
-                    $('#contest_form').submit(function(e){
+                    $('#popup_contets_form').submit(function(e){
                         e.preventDefault();
                         $('.contest_btn').prop('disabled', true);
                         submit_contest(slug);
