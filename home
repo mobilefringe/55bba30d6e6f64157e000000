@@ -221,6 +221,7 @@
             	        $(".popup_home_form").remove();
             	        $('body').removeClass('no_scroll');
                     })
+                    var contest_details = getContestByID(contest.id)
                     $('#popup_contets_form').submit(function(e){
                         e.preventDefault();
                         $('#popup_submit').prop('disabled', true);
