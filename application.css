@@ -215,7 +215,7 @@ body{
     cursor:pointer;
 }
 
-.popup_home{
+.popup_home_form{
     position: absolute;
     top: 50%;
     left: 50%;
