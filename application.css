@@ -207,6 +207,11 @@ body{
 .hide_phone{
     display:block;
 }
+.no_scroll{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
 .close_popup_form{
     position:absolute;
     z-index: 999;
