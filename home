@@ -33,7 +33,7 @@
             </div>
             <div class="row margin_10">    
                 <div class="col-md-10">
-                    <label for="phone">Phone *</label> 
+                    <label for="phone">Postal Code *</label> 
                     <input id="phone" name="phone" type="text" required="" class="form-control"> 
                 </div>
             </div>
