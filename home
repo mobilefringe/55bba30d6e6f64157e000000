@@ -225,7 +225,7 @@
                     $('#popup_contets_form').submit(function(e){
                         e.preventDefault();
                         $('#popup_submit').prop('disabled', true);
-                        submit_contest(slug);
+                        submit_contest(contest_details.slug);
                         // $('html, body').animate({scrollTop : 0},800);
                     });
                 } 
