@@ -241,18 +241,18 @@ body{
     left: 50%;
     height: 100%;
     padding: 20px;
-    h5{
-        font-size:16px;
-        font-weight: bold;
-        line-height: 22px;
-        letter-spacing: 0.5px;
-        margin-bottom:20px;
-    }
-    label{
-        margin-top: 5px;
-    }
+    
 }
-
+.popup_container h5{
+    font-size:16px;
+    font-weight: bold;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom:20px;
+}
+.popup_container label{
+    margin-top: 5px;
+}
 .popup_backdrop{
     background:#000 !important;
 }
