@@ -1,11 +1,11 @@
-<div class="popup_home hidden_now" id="popup_container">
-    <script id="popup_template" type="x-tmpl-mustache/text">
-        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">
-            <img id="popup_img" src="{{image_url_abs}}" />
-        </a>
-        <i class="fa fa-remove close_popup"></i>
-    </script>
-</div>
+<!--<div class="popup_home hidden_now" id="popup_container">-->
+<!--    <script id="popup_template" type="x-tmpl-mustache/text">-->
+<!--        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">-->
+<!--            <img id="popup_img" src="{{image_url_abs}}" />-->
+<!--        </a>-->
+<!--        <i class="fa fa-remove close_popup"></i>-->
+<!--    </script>-->
+<!--</div>-->
 <div class="flexslider">
     <ul class="slides" id="home_banner">
         <script id="banner_template" type="x-tmpl-mustache/text">
