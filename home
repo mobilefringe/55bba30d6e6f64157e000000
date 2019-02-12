@@ -15,7 +15,7 @@
         <form accept-charset="UTF-8" id="popup_contets_form" method="post">
             <div class="row margin_10">
                 <div class="col-md-10">
-                    <label for="first_name">Name *</label>  
+                    <label for="first_name">First Name *</label>  
                     <input id="first_name" name="first_name" type="text" required class="form-control">
                 </div>
             </div>
