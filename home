@@ -1,11 +1,11 @@
-<!--<div class="popup_home hidden_now" id="popup_container">-->
-<!--    <script id="popup_template" type="x-tmpl-mustache/text">-->
-<!--        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">-->
-<!--            <img id="popup_img" src="{{image_url_abs}}" />-->
-<!--        </a>-->
-<!--        <i class="fa fa-remove close_popup"></i>-->
-<!--    </script>-->
-<!--</div>-->
+<div class="popup_home hidden_now" id="popup_container">
+    <script id="popup_template" type="x-tmpl-mustache/text">
+        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">
+            <img id="popup_img" src="{{image_url_abs}}" />
+        </a>
+        <i class="fa fa-remove close_popup"></i>
+    </script>
+</div>
 <div class="popup_home_form hidden_now ">
 
     <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
