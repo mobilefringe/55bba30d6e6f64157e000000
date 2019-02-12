@@ -207,7 +207,7 @@ body{
 .hide_phone{
     display:block;
 }
-.close_popup{
+.close_popup_form{
     position:absolute;
     z-index: 999;
     right: -19px;
