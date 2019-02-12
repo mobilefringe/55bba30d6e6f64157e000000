@@ -248,6 +248,9 @@ body{
         letter-spacing: 0.5px;
         margin-bottom:20px;
     }
+    label{
+            margin-top: 5px;
+    }
 }
 
 .popup_backdrop{
