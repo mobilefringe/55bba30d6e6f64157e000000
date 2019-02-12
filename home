@@ -12,7 +12,7 @@
     <img src="" class="popup_img" alt="newsletter pop up">
     <div class="popup_container">
         <h5 id="popup_description">Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
-        <form accept-charset="UTF-8" id="popup_form" method="post">
+        <form accept-charset="UTF-8" id="popup_contets_form" method="post">
             <div class="row margin_10">
                 <div class="col-md-10">
                     <label for="name">Name *</label>  
@@ -220,6 +220,12 @@
             	        $(".popup_home_form").remove();
             	        $('body').removeClass('no_scroll');
                     })
+                    $('#contest_form').submit(function(e){
+                        e.preventDefault();
+                        $('.contest_btn').prop('disabled', true);
+                        submit_contest(slug);
+                        $('html, body').animate({scrollTop : 0},800);
+                    });
                 } 
                 else {
                     //show image popup
