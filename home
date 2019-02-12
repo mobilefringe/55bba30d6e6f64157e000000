@@ -212,12 +212,12 @@
                     // if($.cookie("popup_viewed") != "true"){
                         $.cookie("popup_viewed", "true", { expires: 1 });
                         $('<div class="modal-backdrop custom_backdrop popup_backdrop hidden_phone"></div>').appendTo(document.body);
-                        $('.popup_home').show();
+                        $('.popup_home_form').show();
                         $('body').addClass('no_scroll');
                     // }
                     $('.close_popup, .custom_backdrop').click(function(){
                         $(".modal-backdrop").remove();
-            	        $(".popup_home").remove();
+            	        $(".popup_home_form").remove();
             	        $('body').removeClass('no_scroll');
                     })
                 } 
