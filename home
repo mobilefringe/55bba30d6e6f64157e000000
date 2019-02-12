@@ -8,7 +8,7 @@
 </div>
 <div class="popup_home_form hidden_now ">
 
-    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup" alt="close">
+    <img src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/image/png/1476300145000/popup_close.png" class="close_popup_form" alt="close">
     <img src="" class="popup_img" alt="newsletter pop up">
     <div class="popup_container">
         <h5 id="popup_description">Want to stay up to date on the latest events, promotions and fashionable content from Pickering Town Centre? Simply fill out the form below and you're IN!</h5>
