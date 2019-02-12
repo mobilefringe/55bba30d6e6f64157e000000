@@ -209,7 +209,17 @@
                     
                 } 
                 else {
-                    
+                    // if(popup != undefined && $.cookie("popup_viewed") != "true"){
+            //     $.cookie("popup_viewed", "true", { expires: 1 });
+            //     renderPopUp("#popup_container", "#popup_template", popup)
+            //     $.cookie("popup_viewed", "true");
+            //     $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+            //     $('.popup_home').show()
+            // }
+            // $('.close_popup, .custom_backdrop').click(function(){
+            //     $(".modal-backdrop").remove();
+    	       // $(".popup_home").remove();
+            // })
                 }
                 // $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
                 $(".popup_img").attr("src", "http://via.placeholder.com/660")
