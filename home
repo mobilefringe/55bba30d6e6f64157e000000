@@ -205,7 +205,7 @@
                 var popup = getPopups()[0];
                 if(popup.use_form){
                     //show form popup
-                    
+                    // popup_description
                 } 
                 else {
                     //show image popup
