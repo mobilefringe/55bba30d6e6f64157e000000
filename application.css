@@ -254,7 +254,8 @@ body{
     margin-top: 5px;
 }
 .popup_container a{
-    /*margin-top: 5px;*/
+    color: #000;
+    font-weight:bold;
 }
 .popup_backdrop{
     background:#000 !important;
