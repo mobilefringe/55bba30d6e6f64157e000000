@@ -258,6 +258,7 @@ body{
 .popup_container label{
     margin-top: 3px;
     margin-bottom: 3px;
+    font-size: 12px;
 }
 .popup_container a{
     color: #000;
