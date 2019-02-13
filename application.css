@@ -236,8 +236,9 @@ body{
     height: 100%;
 }
 
-.popup_img{
+.popup_home_form .popup_img{
     position:absolute;
+    max-width: 550px;
 }
 
 .popup_container{
