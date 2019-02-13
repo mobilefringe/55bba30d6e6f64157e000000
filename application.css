@@ -256,7 +256,8 @@ body{
     margin-bottom:20px;
 }
 .popup_container label{
-    margin-top: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 .popup_container a{
     color: #000;
