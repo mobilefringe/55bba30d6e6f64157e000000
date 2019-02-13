@@ -757,7 +757,7 @@ a{
     margin-bottom:5px;
     text-transform:uppercase;
     font-family:museo;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 .store_list_heading {
