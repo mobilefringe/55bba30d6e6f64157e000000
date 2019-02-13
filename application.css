@@ -230,8 +230,8 @@ body{
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    max-width: 657px;
-    max-height: 658px;
+    max-width: 550px;
+    max-height: 550px;
     width: 100%;
     height: 100%;
 }
@@ -1638,7 +1638,7 @@ a{
         padding: 0;
     }
 }
-@media(max-width:769p){
+@media(max-width:769px){
     .popup_home_form {
         display: none !important;
     }
