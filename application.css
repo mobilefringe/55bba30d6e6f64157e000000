@@ -260,6 +260,9 @@ body{
     margin-bottom: 3px;
     font-size: 12px;
 }
+.popup_container .feature_2_header{
+    font-size: 14px;
+}
 .popup_container a{
     color: #000;
     font-weight: bold;
