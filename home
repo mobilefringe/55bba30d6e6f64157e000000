@@ -204,8 +204,8 @@
                 var contest = popup.contest;
                 if(contest.id){
                     //show form popup
-                    // $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
-                    $(".popup_img").attr("src", "http://via.placeholder.com/550")
+                    $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
+                    // $(".popup_img").attr("src", "http://via.placeholder.com/550")
                     $("#popup_description").text(popup.description1);
                     // if($.cookie("popup_viewed") != "true"){
                         $.cookie("popup_viewed", "true", { expires: 1 });
