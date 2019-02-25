@@ -54,7 +54,7 @@
         </noscript>
         <!-- End Facebook Pixel Code -->
         
-        <!-- Global site tag (gtag.js) - Google Analytics Pizel Code -->
+        <!-- Global site tag (gtag.js) - Google Analytics Pixel Code -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134601114-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -63,7 +63,8 @@
         
         gtag('config', 'UA-134601114-1');
         </script>
-
+        <!-- End  Google Analytics Pixel Code -->
+        
         <!-- css -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
