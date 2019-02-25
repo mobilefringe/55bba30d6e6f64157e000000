@@ -63,7 +63,7 @@
         
         gtag('config', 'UA-134601114-1');
         </script>
-        <!-- End  Google Analytics Pixel Code -->
+        <!-- End Google Analytics Pixel Code -->
         
         <!-- css -->
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
