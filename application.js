@@ -614,14 +614,15 @@ function renderFashion(container, template, collection){
     var template_html = $(template).html();
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
-        if (val && val.fashion_images){
+        if (val){
             val.image_url = "//mallmaverick.cdn.speedyrails.net" + val.fashion_images[0].photo_url;
-        }
+        
         if(val.description.length > 50){
             val.description_short = val.description.substring(0,50) + "...";
         }
         else{
             val.description_short = val.description;
+        }
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
