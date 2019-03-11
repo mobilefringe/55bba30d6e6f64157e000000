@@ -617,11 +617,11 @@ function renderFashion(container, template, collection){
         if (val){
             val.image_url = "//mallmaverick.cdn.speedyrails.net" + val.fashion_images[0].photo_url;
         
-        if(val.description.length > 50){
-            val.description_short = val.description.substring(0,50) + "...";
-        }
-        else{
-            val.description_short = val.description;
+            if(val.description.length > 50){
+                val.description_short = val.description.substring(0,50) + "...";
+            }
+            else{
+                val.description_short = val.description;
         }
         }
         var rendered = Mustache.render(template_html,val);
