@@ -138,7 +138,7 @@
         function renderAll (){
             var pathArray = window.location.pathname.split( '/' );
             var slug = pathArray[pathArray.length-1];
-            var contest_details = getContestBySlug(slug);
+            var contest_details = getContestBySlug('midtown2-test-contest--2');
             renderContest("#contest_details_container", '#contest_details_template', contest_details)
 
             init_side();
