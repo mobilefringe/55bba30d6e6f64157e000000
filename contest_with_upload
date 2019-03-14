@@ -162,7 +162,7 @@
                 $("#date").val(entry_date);
                 var formData = new FormData($(this)[0]);
                 $.ajax({
-                    url: '/contests/southcentre-our-city-our-stars/json_entry',
+                    url: '/contests/midtown2-test-contest--2/json_entry',
                     cache: false,
                     type: 'POST',
                     data : formData,
