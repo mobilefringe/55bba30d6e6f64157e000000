@@ -55,6 +55,12 @@
                             <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="8"/>
                         </div>
                     </div>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <label for="email">*Email</label> 
+                            <input id="photo_upload" class="filestyle" type="file" name="contest_photo" tabindex="9">
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <label class="agree contest_rules">
