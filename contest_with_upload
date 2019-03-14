@@ -161,6 +161,7 @@
                 var entry_date = new Date;
                 $("#date").val(entry_date);
                 var formData = new FormData($(this)[0]);
+                var host = propertyDetails.mm_host.replace("http:", "");
                 $.ajax({
                     url: '/contests/midtown2-test-contest--2/json_entry',
                     cache: false,
