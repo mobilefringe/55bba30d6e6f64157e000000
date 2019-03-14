@@ -57,7 +57,7 @@
                     </div>
                     <div class="row ">
                         <div class="col-md-12">
-                            <label for="email">*Email</label> 
+                            <label for="email">Upload File</label> 
                             <input id="photo_upload" class="filestyle" type="file" name="contest_photo" tabindex="9">
                         </div>
                     </div>
