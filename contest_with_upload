@@ -1,0 +1,159 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <div class="contest_page" id="contest_details_container">
+            <script id="contest_details_template" type="x-tmpl-mustache/text">
+                <p class="hidden_now feature_2_header" id="succes_msg">Thank you! Your entry has been received.</p>
+                <img src="{{alt_photo_url}}" class="contest_image" style="{{promo_image}}" />
+                <h2 class="feature_2_header">{{name}}</h2>
+                <div class="contest_desc">{{{rich_description}}}</div>
+                <hr>
+                <form id="contest_form">
+                    <input id="property_id" name="contest[property_id]" type="hidden" value="{{property_id}}"/>
+                    <input id="contest_id" name="contest[contest_id]" type="hidden"  value="{{id}}" />
+                    <input type="hidden" name="cm-name" id="cm-name" />
+                    <div class="row ">
+                        <div class="col-md-6 margin_30">
+                            <label for="first_name">*First Name</label>  
+                            <input class="form-control" id="first_name" name="contest[first_name]" type="text" required data-validation="required" tabindex="1"/>
+                        </div>
+                        <div class="col-md-6 margin_30">
+                            <label for="last_name">*Last Name</label>  
+                            <input class="form-control" id="last_name" name="contest[last_name]" type="text" required data-validation="required" tabindex="2"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label for="address">Address</label>
+                            <input class="form-control" id="address" name="contest[mailing_address]" type="text" tabindex="3"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="city">City</label>  
+                            <input class="form-control" id="city" name="contest[city]" type="text" tabindex="4"/>    
+                        </div>
+                        <div class="col-md-6">
+                            <label for="province">Province</label>  
+                            <input class="form-control" id="province" name="contest[province]" type="text" tabindex="5"/>    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="postal_code">*Postal Code</label>  
+                            <input class="form-control" id="postal_code" name="contest[postal_code]" type="text" required data-validation="required" tabindex="6"/>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="phone">*Telephone</label>  
+                            <input class="form-control" id="phone" name="contest[phone]" type="text" required data-validation="required" tabindex="7"/>    
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <label for="email">*Email</label> 
+                            <input class="form-control" id="email" name="contest[email]" type="email" required data-validation-regexp="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" data-validation-error-msg="Please enter a valid email address" data-validation="custom" tabindex="8"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label class="agree contest_rules">
+                                <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required" tabindex="9"/> 
+                                I have read and understand the Contest Rules & Regulations as well as the Privacy Policy.
+                            </label>
+                            <label class="agree">
+                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="10"/> 
+                                I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
+                            </label>
+                            <br/><br/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="/pages/midtown2-contest-rules" target="_blank" tabindex="11">Contest Rules & Regulations</a> | <a href="/pages/midtown2-privacy-policy" target="_blank" tabindex="12">Privacy Policy</a>
+                            <br/><br/>
+                            <button class="contest_btn" tabindex="13">Submit</button>
+                            <br/><br/>
+                            <br/><br/>
+                        </div>
+                    </div>
+                </form>
+            </script>
+        </div>    
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1511216744000/New Gift Card.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown .</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var contest_details = getContestBySlug(slug);
+            renderContest("#contest_details_container", '#contest_details_template', contest_details)
+
+            init_side();
+            show_content();
+            
+            $.validate();
+            
+            $('#contest_form').submit(function(e){
+                e.preventDefault();
+                $('.contest_btn').prop('disabled', true);
+                submit_contest(slug);
+                $('html, body').animate({scrollTop : 0},800);
+            });
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
