@@ -64,7 +64,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <label class="agree contest_rules">
-                                <input id="agree_terms" type="checkbox" name="contest[rules]" required data-validation="required" tabindex="9"/> 
+                                <input id="agree_terms" type="checkbox" name="json[rules]" required data-validation="required" tabindex="9"/> 
                                 I have read and understand the Contest Rules & Regulations as well as the Privacy Policy.
                             </label>
                             <label class="agree">
