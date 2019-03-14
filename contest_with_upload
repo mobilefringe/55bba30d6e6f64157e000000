@@ -68,7 +68,7 @@
                                 I have read and understand the Contest Rules & Regulations as well as the Privacy Policy.
                             </label>
                             <label class="agree">
-                                <input id="newsletter_signup" type="checkbox" name="contest[newsletter]" tabindex="10"/> 
+                                <input id="newsletter_signup" type="checkbox" name="json[newsletter]" tabindex="10"/> 
                                 I agree to receive newsletters from {{property_name}}. You can unsubscribe anytime.
                             </label>
                             <br/><br/>
