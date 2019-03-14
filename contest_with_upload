@@ -169,7 +169,8 @@
                     processData: false,
                     contentType: false,
                     success: function(json) {
-                        window.location = "/pages/midtown2-test-contest--2" 
+                        // window.location = "/pages/southcentre-stars-thank-you" 
+                        console.log("json", json)
                     }
                 });
             });
