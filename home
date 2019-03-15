@@ -1,6 +1,6 @@
 <div class="popup_home hidden_now" id="popup_container">
     <script id="popup_template" type="x-tmpl-mustache/text">
-        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}" aria-label="Midtown Plaza Logo">
+        <a href="{{photo_link}}" {{css}} onclick="{{no_link}}">
             <img id="popup_img" src="{{image_url_abs}}" />
         </a>
         <i class="fa fa-remove close_popup"></i>
