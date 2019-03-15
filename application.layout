@@ -106,7 +106,7 @@
         <div class="site_container">
             <header>
                 <div class="top_logos">
-                    <a href="/"><div class="main_logo_svg"></div></a>
+                    <a href="/" aria-label="Main Logo"><div class="main_logo_svg"></div></a>
                     <img src="//codecloud.cdn.speedyrails.net/sites/5c8bd0216e6f64497f6b0100/image/jpeg/1547159541000/SK's Premier Fashion Destination_Maroon.jpg" class="logo_2" alt="logo 2">
                 </div>
                 <div id="menu_mobile" class="show_phone">
