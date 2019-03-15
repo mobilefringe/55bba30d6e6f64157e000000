@@ -1087,9 +1087,10 @@ a{
 .promo_container{
     margin-left:-24px;
     margin-right:-24px;
-    a span {
-        color: #0179b6 !important;
-    }
+}
+
+.promo_container a span {
+    color: #0179b6;
 }
 
 
