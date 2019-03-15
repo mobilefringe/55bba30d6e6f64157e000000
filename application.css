@@ -654,8 +654,7 @@ a{
 }
 
 .hours_box{
-    /*background: #c88f7a;*/
-    background: #a35c42;
+    background: #c88f7a;
     height:172px;
     padding:20px;
 }
@@ -1088,6 +1087,7 @@ a{
     margin-left:-24px;
     margin-right:-24px;
 }
+
 
 .promo_one, .promo_two{
     padding: 0 24px;
