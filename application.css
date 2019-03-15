@@ -1090,7 +1090,7 @@ a{
 }
 
 .promo_container a {
-    color: #007ab8;    
+    color: #007ab8 !important;    
 }
 
 .promo_one, .promo_two{
