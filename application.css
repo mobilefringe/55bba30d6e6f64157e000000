@@ -1089,6 +1089,9 @@ a{
     margin-right:-24px;
 }
 
+.promo_container a {
+    color: #007ab8;    
+}
 
 .promo_one, .promo_two{
     padding: 0 24px;
