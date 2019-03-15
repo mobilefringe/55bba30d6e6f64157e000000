@@ -1,0 +1,135 @@
+<div class="green_bar"></div>
+<!--<nav role="navigation" class="navbar navbar-default show_phone">-->
+<!--    <div class="navbar-header text-center">-->
+<!--        <button type="button" data-target="#catSelectCollapse" data-toggle="collapse" class="navbar-toggle">-->
+<!--            Select Category-->
+<!--        </button>-->
+<!--    </div>-->
+    <!-- Collection of nav links and other content for toggling -->
+<!--    <div id="catSelectCollapse" class="collapse navbar-collapse">-->
+<!--        <ul class="nav navbar-nav text-center" id="category_select_container">-->
+<!--            <script id="category_select_template" type="x-tmpl-mustache/text">-->
+<!--                <li><a>{{name}}</a></li>-->
+<!--            </script>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--</nav>-->
+<div class="page_main_container">
+    <div class="page_left">
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="store_list_heading">STORE DIRECTORY</h2>
+            </div>
+            <div class="col-md-4">
+                <a href="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/application/pdf/undefined/Midtown_DIRECTORY_10x10_June2016.2 pg. 2.pdf" target="_blank" class="floor_plan">Floor plan</a>
+            </div>
+        </div>
+        <p class="store_list_promo"><i class="fa fa-circle promo_circle"></i>Store promotion</p>
+        <div class="row">
+            <div class="col-md-5 col-xs-6">
+                <i class="fa fa-circle promo_circle visibility_hidden"></i>
+                <p class="store_list_headers">STORE</p>
+            </div>
+            <div class="col-md-4 col-xs-6">
+                <p class="store_list_headers">PHONE NUMBER</p>
+            </div>
+            <div class="col-md-3 hide_phone">
+                <p class="store_list_headers">CATEGORY</p>
+            </div>
+        </div>
+        
+        <div id="store_list_container">
+            <script id="store_list_template" type="x-tmpl-mustache/text">
+                <i style="{{show}}" class="fa fa-circle promo_circle visibility_hidden"></i><span style="{{show}}" class="store_initial">{{initial}}</span>
+                <div class="row mobile_stores">
+                    <div class="col-md-5 display_table col-xs-9">
+                        <i style="{{promotion_exist}}" class="display_cell fa fa-circle promo_circle"></i>
+                        <p class="display_cell store_list_name"><a href="/stores/{{slug}}">{{name}}</a></p>
+                    </div>
+                    <div class="col-md-4 col-xs-3">
+                        <p class="store_list_details hide_phone">{{phone}}</p>
+                        <a class="show_phone" aria-label="Phone Number" style="text-align: right;margin-right: 30px;" href="tel:{{phone}}"><i class="fa fa-phone" style="font-size:23px"></i></a>
+                    </div>
+                    <div class="col-md-3 hide_phone">
+                        <p class="store_list_details">{{categories_list}}</p>
+                    </div>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="//codecloud.cdn.speedyrails.net/sites/5c8bd0216e6f64497f6b0100/image/png/1511216744000/New Gift Card.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e){
+        init(e);
+        function renderAll(){
+            var stores = getStoresList();
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+            
+            var categories = getStoreCategories();
+            var category_list = [];
+            $.each( categories, function( key, val ){
+                if (val.store_ids != null) {
+                    category_list.push(val);
+                } 
+            });
+            // var all_cat = {};
+            // all_cat.name = "All Categories";
+            // all_cat.id= 0;
+            // category_list.unshift(all_cat);
+            // renderGeneral('#category_select_container', '#category_select_template', category_list);
+            init_side();
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
