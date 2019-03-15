@@ -1,0 +1,107 @@
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <h2 class="hours_heading promo_heading">PROMOTIONS & EVENTS</h2>
+        <div id="promo_container">
+            <script id="promo_template" type="x-tmpl-mustache/text">
+                <div class="promo_container">
+                    <div class="promo_one">
+                        <h1 class="promo_date"><a href="/stores/{{store_detail_btn}}">{{store_name}}</a></h2>
+                        <h2 class="promo_name_header"><a href="/{{type}}/{{slug}}">{{name}}</a></h2>
+                        <p class="promo_date">{{dates}}</p>
+                        <p class="description">{{{rich_description}}}</p>
+                    </div>
+                    <div class="promo_two">
+                        <img src="{{image_url}}" alt="promo/event" class="img_auto" />
+                    </div>
+                    <div class="clearfix"></div>
+                    <hr class="promo_box_separator"></hr>
+                </div>
+            </script>
+        </div>
+    </div>
+    <div class="page_right">
+        <div class="hours_box feature_box" id="home_hours_container">
+            <script id="home_hours_template" type="x-tmpl-mustache/text">
+                <h3 class="hours_header">HOURS</h3>
+                <p class="check_hours"><a href="/hours">Check Holiday Hours</a></p>
+                <h3 class="newsletter_header caps">{{day}} {{month}} {{weekday}}</h3>
+                <h3 class="hours_home">{{h}}</h3>
+                <p class="call_mp_home"><a href="tel:3066538844">Call 306-653-8844</a></p>
+            </script>
+        </div>
+        <div class="giftcards_box feature_box">
+            <a href="/pages/midtown2-gift-cards">
+                <h3 class="giftcards_header">GIFT CARDS</h3>
+                <img src="//codecloud.cdn.speedyrails.net/sites/5c8bd0216e6f64497f6b0100/image/png/1511216744000/New Gift Card.png" class="" alt="giftcards">
+            </a>
+        </div>
+        
+        <div class="newsletter_box feature_box">
+            <div id="success_subscribe">
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
+            </div>
+            <h3 class="newsletter_header">NEWSLETTER</h3>
+            <p>Exclusive deals straight to your inbox!</p>
+            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <label id="newsletter_email_label" for="newsletter_email">Email</label>
+                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
+                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
+                <div class="clearfix"></div>
+                <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>
+            </form>
+        </div>
+        <div class="feature_box border_1">
+            <h3 class="feature_header">Blog</h3>
+            <div class="feature_insider" id="home_blog_container">
+                <script id="home_blog_template" type="x-tmpl-mustache/text">
+                    <div class="feature_insider_right">
+                        <h3 class="feature_2_header">{{published_on}}</h3>
+                        <p class="feature_2_dates">{{title}}</p>
+                        <p class="feature_2_description">{{description_shorter}}</p>
+                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                    </div>
+                    <div class="feature_insider_left pull-right">
+                        <img alt="blog" class="feature_image" src="{{post_image}}" />
+                    </div>
+                    <div class="clearfix"></div>
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var all_array = []
+            var events = getEventsList();
+            
+            $.each(events, function(i, v){
+                v.type="events";
+            });
+            
+            var promos = getPromotionsList();
+            $.each(promos, function(i, v){
+                v.type="promotions";
+            });
+            var promos_events = (promos.concat(events)).sortBy(function(o){ return o.start_date });
+            var published_promos_events = [];
+            $.each( promos_events , function( key, val ){
+                today = moment();
+                webDate = moment(val.show_on_web_date);
+                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                    published_promos_events.push(val);
+                } 
+            });
+            
+            renderPromosEvents('#promo_container', '#promo_template', published_promos_events);
+            init_side();
+            show_content();
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
