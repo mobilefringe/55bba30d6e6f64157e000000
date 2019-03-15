@@ -629,7 +629,7 @@ a{
     margin-right: 10px;
 }
 
-#newsletter_email_label, #blog_search_label {
+#newsletter_email_label {
     display: none;
 }
 
