@@ -60,7 +60,7 @@
                         <h3 class="feature_2_header">{{published_on}}</h3>
                         <p class="feature_2_dates">{{title}}</p>
                         <p class="feature_2_description">{{description_shorter}}</p>
-                        <a class="read_more" href="/posts/{{slug}}">read more</a>
+                        <a class="read_more" href="/posts/{{slug}}">View Blog</a>
                     </div>
                     <div class="feature_insider_left pull-right">
                         <img alt="blog" class="feature_image" src="{{post_image}}" />
