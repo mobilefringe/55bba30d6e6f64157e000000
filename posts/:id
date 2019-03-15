@@ -1,0 +1,105 @@
+<style>
+    .blog_header{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 22px;
+    }
+    #blog_links_container{
+        display:block !important;
+    }
+    
+    @media(max-width:1024px){
+        .row{
+            margin-right:0;
+            margin-left:0;
+        }
+        .col-md-12{
+            padding:0;
+            border:0;
+        }
+    }
+</style>
+<div class="green_bar blog_line"></div>
+<div class="blog_header ">
+    <a href="/posts"><b>MIDTOWN</b> BLOG</a>
+    <div class="blog_searcher_div" >
+        <label id="blog_search_label" for="blog_search">Email</label>
+        <input type="text" class="form-control" placeholder="Blog Search" id="blog_search" />
+        <i id="close_blog_search" class="fa fa-times-circle"></i>
+        <div id="blog_results">
+        </div>
+    </div>
+</div>
+<div class="blog_details_container mobile_padding">
+    <div class="blog_left">
+        <div id="post_container">
+            <script id="post_template" type="x-tmpl-mustache/text">
+                <p class="blog_details_dates">STYLE NEWS {{published_on}}</p>
+                <h2 class="blog_details_heading">{{title}}</h2>
+                <p class="text-center"><img class="center_width_100" alt="promo details" src="{{post_image}}" /></p>
+                <p class="blog_details_tags">{{tag_list}}</p>
+                <p class="details_store_name">
+                    {{author}}
+                    <span class="pull-right share_links">
+                        Share
+                        <a target="_blank" href="//www.facebook.com/sharer.php?u=https://midtownplaza.ca/posts/{{slug}}">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_facebook.png" class="details_share_icons" alt="share fb" />
+                        </a>
+                        <a target="_blank" href="//twitter.com/share?text={{title}}&url=https://midtownplaza.ca/posts/{{slug}}">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_twitter.png" class="details_share_icons" alt="share twitter" />
+                        </a>
+                        <a onclick="pinIt()" style="padding: 0;border: 0;background: none;cursor:pointer">
+                            <img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/4b8169f48b9e5a4673f8d97be395de80/share_pinterest.png" class="details_share_icons" alt="share pinterest" />
+                        </a>
+                    </span>
+                </p>
+                <p class="details_description" style="margin-top:65px">{{{html_body}}}</p>
+            </script>
+        </div>
+    </div>
+    <div class="blog_right">
+        <img src="//codecloud.cdn.speedyrails.net/sites/57f56a726e6f6429bc280000/image/jpeg/1460041082000/Midtown-blog-logo.jpg" alt="post" class="width_100" />
+        <br /><br /><br />
+        <p class="blog_details_dates">MORE STYLE NEWS</p>
+        <div id="side_blog_container">
+            <script id="side_blog_template" type="x-tmpl-mustache/text">
+                <div class="side_blog_box">
+                    <img src="{{post_image}}" alt="post" class="width_100" />
+                    <h2 class="side_blog_header"><a href="/posts/{{slug}}">{{title}}</a></h2>
+                    <br /><br />
+                </div>
+            </script>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-left blog_cats_side">
+                <p class="blog_details_dates">Categories</p>
+                <div id="blog_links_container">
+                    <script id="blog_links_template" type="x-tmpl-mustache/text">
+                        <p><a href="/posts_categories/{{slug}}" class=" font_18">{{name}}</a></p>
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="clearfix"></div>
+</div>
+<script>
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll (){
+            var pathArray = window.location.pathname.split( '/' );
+            var slug = pathArray[pathArray.length-1];
+            var post = getPublishedPostDetailsBySlug(slug);
+            var posts = getAllPublishedPosts();
+            var published_posts = sortByKey(posts, 'publish_date').reverse().slice(0, 4);
+            renderPosts("#side_blog_container", "#side_blog_template", published_posts);
+            renderPostDetails("#post_container", "#post_template", post);
+            var blogs = getBlogList()
+            renderBlogs("#blog_links_container", "#blog_links_template", blogs);
+            show_content();
+            blog_searcher();
+        }
+        loadMallDataCached(renderAll); 
+		
+    });
+</script>
