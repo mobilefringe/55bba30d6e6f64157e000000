@@ -58,6 +58,7 @@
             <h3 class="newsletter_header">NEWSLETTER</h3>
             <p>Exclusive deals straight to your inbox!</p>
             <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
+                <label id="newsletter_email_label" for="newsletter_email">Email</label>
                 <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
                 <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
                 <div class="clearfix"></div>
