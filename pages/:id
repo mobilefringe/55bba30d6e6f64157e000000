@@ -1,7 +1,7 @@
 <style>
     h2{
         font-size: 18px;
-        color: #592d2e;
+        color: #2f3642;
         font-weight: bold;
     }
     #mm_page_content h3{
@@ -11,7 +11,7 @@
         font-size:18px;
     }
     #mm_page_content h4{
-        color: #592d2e;
+        color: #2f3642;
         padding-top:20px;
         font-size:18px;
     }
