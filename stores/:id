@@ -15,8 +15,8 @@
                 //     </div>   
                 // </div>
                 <div class="map-container">
-                                <div id="mapsvg_store_detail"></div>
-                            </div>
+                    <div id="mapsvg_store_detail"></div>
+                </div>
                 <div class="store_details_container">
                     <div class="row middle_align">
                         <div class="left_promo_div">
