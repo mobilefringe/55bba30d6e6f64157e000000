@@ -308,3 +308,15 @@ function submit_contest(slug) {
         }
     });
 }
+
+function floorList() {
+    var floor_list = [];
+    var floor_1 = {};
+    floor_1.id = "first-floor";
+    floor_1.title = "Level One";
+    floor_1.map =  getPNGMapURL().split("?")[0];
+    floor_1.z_index = null;
+    floor_1.show = true;
+    floor_list.push(floor_1);
+    return floor_list;
+}
