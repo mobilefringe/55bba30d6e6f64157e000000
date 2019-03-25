@@ -156,21 +156,21 @@
             
             init_side();
             show_content();
-            var dimension = (store_details.x_coordinate - 460 )  + " " + (store_details.y_coordinate - 230);
-            $(function(){
-                $('.map_container').craftmap({
-                    image: {
-                        width: 2000,
-                        height: 2000,
-                        name: 'imgMap'
-                    },
-                    map: {
-                        position: dimension
-                    }
-                });
-                // $("#anchor_id").click();
-               	// $("#scroll_to_marker").click();
-            });
+            // var dimension = (store_details.x_coordinate - 460 )  + " " + (store_details.y_coordinate - 230);
+            // $(function(){
+            //     $('.map_container').craftmap({
+            //         image: {
+            //             width: 2000,
+            //             height: 2000,
+            //             name: 'imgMap'
+            //         },
+            //         map: {
+            //             position: dimension
+            //         }
+            //     });
+            //     // $("#anchor_id").click();
+            //   	// $("#scroll_to_marker").click();
+            // });
         }
         loadMallDataCached(renderAll); 
     })
