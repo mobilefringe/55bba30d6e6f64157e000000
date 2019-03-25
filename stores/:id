@@ -174,8 +174,8 @@
             //     // $("#anchor_id").click();
             //   	// $("#scroll_to_marker").click();
             // });
-            var svg_width = 1080;
-            var svg_height = 1224;
+            var svg_width = 2000;
+            var svg_height = 2000;
             //MAP    
             var stores = getStoresList();
             var mall_json = {};
