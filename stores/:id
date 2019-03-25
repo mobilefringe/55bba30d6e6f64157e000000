@@ -172,8 +172,8 @@
                         position: dimension
                     }
                 });
-                $("#anchor_id").click();
-               	$("#scroll_to_marker").click();
+                // $("#anchor_id").click();
+               	// $("#scroll_to_marker").click();
             });
         }
         loadMallDataCached(renderAll); 
