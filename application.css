@@ -1027,7 +1027,11 @@ g.mapplic-active > * {
 .mapplic-hovertip {
     opacity:1!important;
 }
-
+#store_container{
+    .mapplic-popup-link,.mapplic-tooltip-close{
+        display:none!important;
+    }
+}
 .marker {
     background: url("//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png") no-repeat;
     cursor: pointer;
