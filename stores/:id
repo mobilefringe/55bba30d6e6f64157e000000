@@ -219,10 +219,19 @@
                     if(val.id == store_details.id){
                         temp_val.pin = "black-pin";
                     }
-                    //get svg's width/height by checking the map
-                    
-                    temp_val.x = val.x_coordinate / svg_width;
-                    temp_val.y = val.y_coordinate / svg_height;
+                    //use png's width/height to get x and y coord
+                if(val.x_coordinate) {
+                    temp_val.x = val.x_coordinate / 2000;
+                }
+                else {
+                    temp_val.x = 0.5;
+                }
+                if(val.y_coordinate) {
+                    temp_val.y = val.y_coordinate / 2000;
+                }
+                else {
+                    temp_val.y = 0.5;
+                }
                     
                     // temp_val.zoom = "5";
                     floor_1.locations.push(temp_val);
