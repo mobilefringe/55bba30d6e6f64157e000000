@@ -217,7 +217,7 @@
                     temp_val.pin = "hidden";
                     
                     if(val.id == store_details.id){
-                        temp_val.pin = "black";
+                        temp_val.pin = "black-pin";
                     }
                     //get svg's width/height by checking the map
                     
