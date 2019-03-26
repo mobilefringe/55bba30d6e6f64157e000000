@@ -255,6 +255,7 @@
                     
                 // },700)
                 self.showLocation(store_details.id);
+                self.addPin(val);
                 // self.addPin(store_details.id);
             });
         }
