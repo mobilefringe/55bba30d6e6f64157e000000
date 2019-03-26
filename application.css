@@ -1027,7 +1027,7 @@ g.mapplic-active > * {
 .mapplic-hovertip {
     opacity:1!important;
 }
-#store_container .mapplic-popup-link,.mapplic-tooltip-close{
+#store_container .mapplic-popup-link, #store_container .mapplic-tooltip-close{
     display:none!important;
 }
 
