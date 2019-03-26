@@ -1035,8 +1035,8 @@ g.mapplic-active > * {
     background-size: 31px 38px;
     width: 31px;
     height: 38px;
-    margin-top: 0px;
-    margin-left: -15px;
+	margin-top: -55px;
+	margin-left: -10px;
 }
 .marker {
     background: url("//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png") no-repeat;
