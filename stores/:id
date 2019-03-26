@@ -223,7 +223,7 @@
                     if(val.x_coordinate) {
                         console.log("val.x_coordinate", val.x_coordinate)
                         temp_val.x = val.x_coordinate / 2000;
-                        console.log("temp_val.x_coordinate", temp_val.x_coordinate)
+                        console.log("temp_val.x", temp_val.x)
                     }
                     else {
                         temp_val.x = 0.5;
