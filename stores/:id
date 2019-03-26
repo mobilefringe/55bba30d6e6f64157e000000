@@ -219,7 +219,6 @@
                     if(val.x_coordinate) {
                         
                         temp_val.x = val.x_coordinate / 2000;
-                        console.log("temp_val.x", temp_val.x)
                     }
                     else {
                         temp_val.x = 0.5;
@@ -229,6 +228,13 @@
                     }
                     else {
                         temp_val.y = 0.5;
+                    }
+                    
+                    temp_val.pin = "hidden";
+                    
+                    if(val.id == store_details.id){
+                        temp_val.pin = "black-pin";
+                        console.log("val.x_coordinate", val.x_coordinate)
                     }
                     
                     // temp_val.zoom = "5";
