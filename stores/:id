@@ -215,7 +215,10 @@
                     temp_val.zoom = 2;
                     temp_val.link = "/stores/" + val.slug;
                     temp_val.pin = "hidden";
-
+                    
+                    if(val.id == store_details.id){
+                        temp_val.pin = "blavk";
+                    }
                     //get svg's width/height by checking the map
                     
                     temp_val.x = val.x_coordinate / svg_width;
