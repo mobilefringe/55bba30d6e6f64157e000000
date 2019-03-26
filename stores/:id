@@ -218,10 +218,11 @@
                     
                     if(val.id == store_details.id){
                         temp_val.pin = "black-pin";
+                        console.log("val.x_coordinate", val.x_coordinate)
                     }
                     //use png's width/height to get x and y coord
                     if(val.x_coordinate) {
-                        console.log("val.x_coordinate", val.x_coordinate)
+                        
                         temp_val.x = val.x_coordinate / 2000;
                         console.log("temp_val.x", temp_val.x)
                     }
