@@ -267,7 +267,7 @@
                     // mapLoaded(map);
                     
                 // },700)
-                var location = self.getLocationData(val);
+                var location = self.getLocationData(store_details.id);
                 console.log("location", location)
                 self.showLocation(store_details.id);
                 self.addPin(store_details.id);
