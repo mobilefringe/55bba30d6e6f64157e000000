@@ -212,7 +212,7 @@
                             temp_val.category = val.categories[0];
                         }
                     }
-                    temp_val.zoom = 2;
+                    temp_val.zoom = 0;
                     temp_val.link = "/stores/" + val.slug;
                     
                     //use png's width/height to get x and y coord
