@@ -180,8 +180,8 @@
             var stores = getStoresList();
             var mall_json = {};
             var landmarks = {};
-            mall_json.mapwidth = svg_width;
-            mall_json.mapheight = svg_height;
+            mall_json.mapwidth = "1000";
+            mall_json.mapheight = "1000";
             mall_json.categories = [];
             mall_json.levels = [];
 
