@@ -1032,9 +1032,9 @@ g.mapplic-active > * {
 }
 #store_container .mapplic-pin.black-pin {
 	background-image: url('//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png');
-    background-size: 40px 40px;
-    width: 40px;
-    height: 40px;
+    background-size: 31px 38px;
+    width: 31px;
+    height: 38px;
 	margin-top: -55px;
 	margin-left: -10px;
 }
