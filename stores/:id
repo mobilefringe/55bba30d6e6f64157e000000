@@ -214,12 +214,7 @@
                     }
                     temp_val.zoom = 2;
                     temp_val.link = "/stores/" + val.slug;
-                    temp_val.pin = "hidden";
                     
-                    if(val.id == store_details.id){
-                        temp_val.pin = "black-pin";
-                        console.log("val.x_coordinate", val.x_coordinate)
-                    }
                     //use png's width/height to get x and y coord
                     if(val.x_coordinate) {
                         
