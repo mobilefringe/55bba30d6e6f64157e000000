@@ -214,7 +214,7 @@
                     }
                     temp_val.zoom = 2;
                     temp_val.link = "/stores/" + val.slug;
-                    temp_val.pin = "black";
+                    temp_val.pin = "hidden";
 
                     //get svg's width/height by checking the map
                     
