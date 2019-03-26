@@ -231,7 +231,7 @@
                 source: mall_json,
                 height: 400,
                 landmark: true,
-                markers:false,
+                markers:true,
                 mapfill: true,
                 minimap: false,
                 sidebar: false,
