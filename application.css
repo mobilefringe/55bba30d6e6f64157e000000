@@ -1030,7 +1030,14 @@ g.mapplic-active > * {
 #store_container .mapplic-popup-link, #store_container .mapplic-tooltip-close{
     display:none!important;
 }
-
+#store_container .mapplic-pin.black-pin {
+    	background-image: url(' //codecloud.cdn.speedyrails.net/sites/587659fb6e6f641648010000/image/png/1484850466000/show_pin.png');
+        background-size: 40px 60px;
+        width: 40px;
+        height: 60px;
+    	margin-top: -55px;
+    	margin-left: -10px;
+    }
 .marker {
     background: url("//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png") no-repeat;
     cursor: pointer;
