@@ -217,7 +217,6 @@
                     
                     //use png's width/height to get x and y coord
                     if(val.x_coordinate) {
-                        
                         temp_val.x = val.x_coordinate / 2000;
                     }
                     else {
