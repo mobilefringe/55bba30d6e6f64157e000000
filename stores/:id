@@ -234,6 +234,7 @@
                     if(val.id == store_details.id){
                         temp_val.pin = "black-pin";
                         console.log("val.x_coordinate", val.x_coordinate)
+                        console.log("temp_val.x", temp_val.x)
                     }
                     
                     // temp_val.zoom = "5";
