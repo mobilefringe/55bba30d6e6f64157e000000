@@ -197,15 +197,7 @@
                 pan: true,
                 cursor: 'pointer',
                 responsive: true,
-                zoomLimit: [0, 5],,
-                markers: [
-                   { geoCoords: [38.893438,-77.03167],
-                     tooltip: 'Washington, DC',
-                   },
-                   { geCoords: [51.49763,-0.148315],
-                     tooltip: 'London',
-                   }
-                ],
+                zoomLimit: [0, 5],
                 // viewBox: store_details.svgmap_region
             });
             map.selectRegion(store_details.svgmap_region);
