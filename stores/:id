@@ -247,7 +247,7 @@
             
             map.on('mapready', function(e, self) {
 				console.log('Map is ready!');
-				dropPin()
+				dropPin(store_details.svg_region)
 				mapLoaded(map);
 			});
             
