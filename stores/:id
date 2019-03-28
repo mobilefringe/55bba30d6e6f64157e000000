@@ -174,118 +174,33 @@
             //     // $("#anchor_id").click();
             //   	// $("#scroll_to_marker").click();
             // });
-            var svg_width = 2000;
-            var svg_height = 2000;
-            //MAP    
-            var stores = getStoresList();
-            var mall_json = {};
-            var landmarks = {};
-            mall_json.mapwidth = "1000";
-            mall_json.mapheight = "1000";
-            mall_json.categories = [];
-            mall_json.levels = [];
-
-            // need to add the following for each floor we want to configure.
-            _.forEach(floorList(), function(value, key) {
-                var floor_1 = {};
-                floor_1.id = value.id;
-                floor_1.title = value.title;
-                floor_1.map = value.map;
-                floor_1.show = value.show;
-                floor_1.locations = [];
-                var stores_on_floors= [];
-                if( value.z_index == null) {
-                    stores_on_floors = stores;
-                } else {
-                    stores_on_floors = _.filter(stores, function(o) { if(o.z_coordinate == null) {return true;} else { return value.z_index === o.z_coordinate; }});
-                }
-                _.forEach(stores_on_floors, function(val, key) {
-                    //for testing limiting the store numbers to vm
-                    var temp_val = {};
-                    temp_val.id = val.id;
-                    temp_val.title = val.name;
-                    temp_val.about = val.description.substring(0, 200);
-                    if (val.categories != null) {
-                        if (val.categories.length > 1) {
-                            temp_val.category = val.categories[1];
-                        } else {
-                            temp_val.category = val.categories[0];
-                        }
-                    }
-                    temp_val.zoom = 0.5;
-                    temp_val.link = "/stores/" + val.slug;
-                    
-                    //use png's width/height to get x and y coord
-                    if(val.x_coordinate) {
-                        temp_val.x = val.x_coordinate / 2000;
-                    }
-                    else {
-                        temp_val.x = 0.5;
-                    }
-                    if(val.y_coordinate) {
-                        temp_val.y = val.y_coordinate / 2000;
-                    }
-                    else {
-                        temp_val.y = 0.5;
-                    }
-                    
-                    temp_val.pin = "hidden";
-                    
-                    if(val.id == store_details.id){
-                        temp_val.pin = "black-pin";
-                    }
-                    
-                    // temp_val.zoom = "5";
-                    floor_1.locations.push(temp_val);
-                });
-                mall_json.levels.push(floor_1);
-            });
-
-            map = $('#mapsvg_store_detail').mapplic({
-                source: mall_json,
-                height: 400,
-                landmark: true,
-                mapfill: true,
-                minimap: false,
-                sidebar: false,
-                hovertip: true,
-                developer: false,
-                fullscreen: false,
-                clearbutton: false,
-                deeplinking: false,
-                fillcolor: "none",
-                maxscale: 1,
-                skin: 'mapplic-dark',
-                action: "tooltip"
-            });
-
-            map.on('mapready', function(e, self) {
-                // setTimeout(function(){
-                    // mapLoaded(map);
-                    
-                // },700)
-                var location = self.getLocationData(store_details.id);
-                self.showLocation(store_details.id);
-                self.addPin(store_details.id);
-                // self.addPin(store_details.id);
-            });
-        }
-        function regions () {
-        var regions = {}
-        _.forEach( this.processedStores , function( val, key ) {
-            if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-                if(!val.store_front_url_abs ||  val.store_front_url_abs.indexOf('missing.png') > -1 || val.store_front_url_abs.length === 0){
-                    val.store_front_url_abs = '//codecloud.cdn.speedyrails.net/sites/55ddf3f86e6f640775000000/a22fcf023d728855c6f575ba100806d7/default.jpg';
-                }
+            /* MAP */
+            regions = {}
+            if(store_details.svgmap_region != null && typeof(store_details.svgmap_region)  != 'undefined'){
                 obj = {};
-                obj["tooltip"] = "<p class='tooltip_name'>"+val.name+"</p>";
-                obj["attr"] = {};
-                obj["attr"]["href"] = "/stores/"+val.slug;
-                regions[val.svgmap_region] = obj;
+                obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + store_details.name + " </label>",
+                obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + store_details.name + "</label>",
+                obj["attr"] = {fill: "#000"},
+                regions[store_details.svgmap_region] = obj
             }
-        });
-        return regions;
-    },
+            
+            var map = $('#mapsvg_main').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
+                disableAll: false,
+                regions: regions,
+                tooltipsMode: 'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan: true,
+                cursor: 'pointer',
+                responsive: true,
+                zoomLimit: [0, 5],
+                // viewBox: store_details.svgmap_region
+            });
+            map.selectRegion(store_details.svgmap_region);
+        }
         loadMallDataCached(renderAll); 
     })
 </script>
