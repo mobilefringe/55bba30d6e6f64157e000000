@@ -3,6 +3,7 @@
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
 <script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+
 <div class="green_bar"></div>
 <div class="page_main_container">
     <div class="page_left">
