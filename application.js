@@ -81,7 +81,7 @@ function renderStoreList(container, template, collection, type){
             val.initial = current_initial;
             store_initial = current_initial;
             if (val.initial == "A"){
-                val.show = "display:inline-block;margin-top:24px";
+                val.show = "display:inline-block;";
             } else {
                 val.show = "display:inline-block;";
             }
@@ -622,7 +622,7 @@ function renderFashion(container, template, collection){
             }
             else{
                 val.description_short = val.description;
-        }
+            }
         }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
