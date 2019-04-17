@@ -782,6 +782,9 @@ a{
     margin-bottom: 32px;
     margin-top: 0;
 }
+.promo_img{
+    width: 40px;
+}
 .hours_container{
     width:95%;
     margin-bottom:36px;
