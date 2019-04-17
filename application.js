@@ -81,7 +81,7 @@ function renderStoreList(container, template, collection, type){
             val.initial = current_initial;
             store_initial = current_initial;
             if (val.initial == "A"){
-                val.show = "display:inline-block;margin-left:5px;";
+                val.show = "display:inline-block;margin-left:10px;";
             } else {
                 val.show = "display:inline-block;";
             }
