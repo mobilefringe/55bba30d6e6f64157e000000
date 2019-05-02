@@ -970,7 +970,9 @@ a{
     padding:0 4px;
 }
 .menu_link{
-    float:left;
+    /*float:left;*/
+    display: inline-block;
+    margin: 0 15px;
 }
 
 
