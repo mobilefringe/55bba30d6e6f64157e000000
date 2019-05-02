@@ -215,7 +215,7 @@
                         <div class="menu_divider"></div>
                         <div class="menu_link">
                             <div class="dropdown">
-                                <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services</a>
+                                <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Community</a>
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
                                     <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
                                     <li><a href="https://form.jotform.com/90724398220255" target="_blank">Donation Requests</a></li>
