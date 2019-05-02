@@ -150,7 +150,7 @@
                                     <ul class="dropdown-menu center_menu">
                                         <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
                                         <li><a href="/pages/midtown2-accessibility">Security & Accessibility</a></li>
-                                        <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
+                                        <!--<li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>-->
                                     </ul>
                                 </li>
                                 <li class="dropdown">
@@ -208,7 +208,7 @@
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
                                     <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
                                     <li><a href="/pages/midtown2-accessibility">Security & Accessibilty</a></li>
-                                    <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
+                                    <!--<li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>-->
                                 </ul>
                             </div>
                         </div>
