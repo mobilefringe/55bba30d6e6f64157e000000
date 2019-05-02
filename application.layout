@@ -188,11 +188,11 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="menu_divider"></div>
+                        <!--<div class="menu_divider"></div>-->
                         <div class="menu_link ">
                             <a href="/promotions_and_events" id="promos_menu">Promotions & Events</a>
                         </div>
-                        <div class="menu_divider"></div>
+                        <!--<div class="menu_divider"></div>-->
                         <div class="menu_link">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Style</a>
@@ -201,7 +201,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="menu_divider"></div>
+                        <!--<div class="menu_divider"></div>-->
                         <div class="menu_link">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services</a>
@@ -212,7 +212,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="menu_divider"></div>
+                        <!--<div class="menu_divider"></div>-->
                         <div class="menu_link">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Community</a>
@@ -222,7 +222,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="menu_divider"></div>
+                        <!--<div class="menu_divider"></div>-->
                         <div class="menu_link text-right">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact</a>
