@@ -1481,6 +1481,9 @@ g.mapplic-active > * {
     .page_left{
         width:610px;
     }
+    .menu_link{
+        margin: 0 13px;
+    }
 }
 @media(max-width:800px){
     
