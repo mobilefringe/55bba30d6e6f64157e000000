@@ -155,6 +155,15 @@
                                 </li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        Community
+                                    </a>
+                                    <ul class="dropdown-menu center_menu">
+                                        <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
+                                        <li><a href="https://form.jotform.com/90724398220255" target="_blank">Security & Accessibility</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                                         Contact
                                     </a>
                                     <ul class="dropdown-menu center_menu">
