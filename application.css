@@ -1483,6 +1483,9 @@ g.mapplic-active > * {
     }
 }
 @media(max-width:800px){
+    .menu_link{
+        margin: 0 13px;
+    }
     .blog_blurb .row{
         margin-left:0;
         margin-right:0;
