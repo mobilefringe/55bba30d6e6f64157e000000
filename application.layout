@@ -177,7 +177,7 @@
                     </nav>
                 </div>
                 <div id="menu">
-                    <div class="row no_margin">
+                    <div class="row no_margin text-center">
                         <div class="menu_link text-left">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Shopping</a>
