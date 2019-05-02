@@ -213,6 +213,16 @@
                             </div>
                         </div>
                         <div class="menu_divider"></div>
+                        <div class="menu_link">
+                            <div class="dropdown">
+                                <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Guest Services</a>
+                                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
+                                    <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
+                                    <li><a href="https://form.jotform.com/90724398220255" target="_blank>Donation Requests</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="menu_divider"></div>
                         <div class="menu_link text-right">
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Contact</a>
