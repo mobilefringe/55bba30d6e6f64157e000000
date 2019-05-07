@@ -139,7 +139,7 @@
             drop_pin(store_id)
 		}
 		
-    		$('#store_table').hide()
+		$('#store_table').hide()
 		return false;
     }
     $(function(){
