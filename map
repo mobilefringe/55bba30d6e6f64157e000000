@@ -1,3 +1,8 @@
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+
 <script src="//kodekloud.s3.amazonaws.com/sites/5438407c6e6f64462d020000/92b82a88144a6207ab1a5e8e0f63d3d1/craftmap.js"></script>
 <style>
     .map_container{
