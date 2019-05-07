@@ -342,8 +342,6 @@ function init_map(reg){
         zoomLimit: [0,10],
         // viewBox:[420,420,1650,1650]
     });
-    
-    
 }
 
 function drop_pin(id){
