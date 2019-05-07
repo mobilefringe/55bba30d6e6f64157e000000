@@ -169,21 +169,21 @@
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
             init_side();
             show_content();    
-            $.each(stores, function(i, val){
-                x = val.x_coordinate - 19;
-                y = val.y_coordinate - 58;
-              $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none">' + val.name + '</div>')
-            });
-            $('.map_container').craftmap({
-                image:{
-                    width:780,
-                    height:780,
-                    name: 'imgMap'
-                },
-                map: {
-                    position: '0,0'
-                }
-            });
+            // $.each(stores, function(i, val){
+            //     x = val.x_coordinate - 19;
+            //     y = val.y_coordinate - 58;
+            //   $('#map_image').after('<div class="marker" id="store_' + val.id  + '" data-coords="' + x + ', ' + y + '" style="display:none">' + val.name + '</div>')
+            // });
+            // $('.map_container').craftmap({
+            //     image:{
+            //         width:780,
+            //         height:780,
+            //         name: 'imgMap'
+            //     },
+            //     map: {
+            //         position: '0,0'
+            //     }
+            // });
         }
         loadMallDataCached(renderAll); 
     })
