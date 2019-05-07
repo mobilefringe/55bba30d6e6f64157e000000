@@ -342,7 +342,7 @@ function init_map(reg){
         source: getSVGMapURL(),    // Path to SVG map
         colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
         disableAll: false,
-        regions: regions,
+        regions: reg,
         tooltipsMode: 'custom',
         loadingText: "loading...",
         zoom: true,
