@@ -336,7 +336,7 @@ function drop_pin(id){
     map.setViewBox(id);
     
 	map.selectRegion(id);
-	consol
+	console.log("id", id)
     $('#btnZoomIn').click()
 }
 
