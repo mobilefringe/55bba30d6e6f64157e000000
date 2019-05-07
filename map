@@ -1,3 +1,4 @@
+<!-- Map Dependency -->
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
 <script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
