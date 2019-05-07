@@ -179,7 +179,7 @@
                     obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
                     obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",
                     obj["attr"] = {fill: "#000"},
-                    regions[store_details.svgmap_region] = obj
+                    regions[val.svgmap_region] = obj
                 }
             });
             
