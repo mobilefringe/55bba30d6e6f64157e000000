@@ -321,7 +321,7 @@ function floorList() {
     return floor_list;
 }
 
-function drop_pin(id,map){
+function drop_pin(id){
     map.marksHide();
     var coords = map.get_coords(id);
     var height = parseInt(coords["height"]);
