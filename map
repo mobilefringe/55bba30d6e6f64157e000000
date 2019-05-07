@@ -170,9 +170,6 @@
             init_side();
             show_content();  
             regions = {}
-            if(store_details.svgmap_region != null && typeof(store_details.svgmap_region)  != 'undefined'){
-                
-            }
             $.each(stores, function(i, val){
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                     obj = {};
