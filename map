@@ -168,7 +168,32 @@
             var stores = getStoresList();
             renderStoreList('#store_list_container','#store_list_template', stores, "stores");
             init_side();
-            show_content();    
+            show_content();  
+            regions = {}
+            if(store_details.svgmap_region != null && typeof(store_details.svgmap_region)  != 'undefined'){
+                obj = {};
+                obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + store_details.name + " </label>",
+                obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + store_details.name + "</label>",
+                obj["attr"] = {fill: "#000"},
+                regions[store_details.svgmap_region] = obj
+            }
+            
+            var map = $('#mapsvg_main').mapSvg({
+                source: getSVGMapURL(),    // Path to SVG map
+                colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
+                disableAll: false,
+                regions: regions,
+                tooltipsMode: 'custom',
+                loadingText: "loading...",
+                zoom: true,
+                zoomButtons: {'show': true,'location': 'left' },
+                pan: true,
+                cursor: 'pointer',
+                responsive: true,
+                zoomLimit: [0, 5],
+                // viewBox: store_details.svgmap_region
+            });
+            
             // $.each(stores, function(i, val){
             //     x = val.x_coordinate - 19;
             //     y = val.y_coordinate - 58;
