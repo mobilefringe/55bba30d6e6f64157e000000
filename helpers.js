@@ -320,3 +320,19 @@ function floorList() {
     floor_list.push(floor_1);
     return floor_list;
 }
+
+function drop_pin(id){
+    map.marksHide();
+    var coords = map.get_coords(id);
+    var height = parseInt(coords["height"]);
+    var width = parseInt(coords["width"]);
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
+    map.setMarks([{ xy: [coords["x"] - 46 + x_offset, coords["y"] - 110 + y_offset],
+        attrs: {
+            src:  '//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1452532624000/pin_93.png'
+        }
+    }]);
+    map.setViewBox(id);
+    $('#btnZoomIn').click()
+}
