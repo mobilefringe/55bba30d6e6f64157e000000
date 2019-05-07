@@ -159,7 +159,13 @@
             $.each(stores, function(i, val){
                 if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                     obj = {};
-                    obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
+                    // obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
+                    if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
+                    else{
+                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
                     obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",
                     obj["attr"] = {fill: "#000"},
                     regions[val.svgmap_region] = obj
