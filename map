@@ -171,12 +171,16 @@
             show_content();  
             regions = {}
             if(store_details.svgmap_region != null && typeof(store_details.svgmap_region)  != 'undefined'){
+                
+            }
+            $.each(stores, function(i, val){
                 obj = {};
                 obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + store_details.name + " </label>",
                 obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + store_details.name + "</label>",
                 obj["attr"] = {fill: "#000"},
                 regions[store_details.svgmap_region] = obj
-            }
+            });
+            
             
             var map = $('#mapsvg_main').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
