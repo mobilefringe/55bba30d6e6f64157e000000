@@ -174,12 +174,12 @@
                 
             }
             $.each(stores, function(i, val){
-                if(){
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
                     obj = {};
-                obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + store_details.name + " </label>",
-                obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + store_details.name + "</label>",
-                obj["attr"] = {fill: "#000"},
-                regions[store_details.svgmap_region] = obj
+                    obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
+                    obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",
+                    obj["attr"] = {fill: "#000"},
+                    regions[store_details.svgmap_region] = obj
                 }
             });
             
