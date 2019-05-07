@@ -133,6 +133,7 @@
     let map = null;
     function show_pin(param){
 		store_id = $(param).attr('store_id');
+		map.selectRegion(store_id);
         drop_pin($(this).val())
 		$('#store_table').hide()
 		
