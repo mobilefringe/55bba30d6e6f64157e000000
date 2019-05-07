@@ -166,7 +166,7 @@
             });
             
             
-            var map = $('#mapsvg_main').mapSvg({
+            map = $('#mapsvg_main').mapSvg({
                 source: getSVGMapURL(),    // Path to SVG map
                 colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
                 disableAll: false,
