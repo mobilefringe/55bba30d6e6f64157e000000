@@ -325,20 +325,6 @@ var map = null;
 
 function init_map(reg){
     map = $('#mapsvg_main').mapSvg({
-        // source: getSVGMapURL(),    // Path to SVG map
-        // colors: {stroke: '#aaa', hover: '#EF4D86'},
-        // disableAll: true,
-        // height:800,
-        // width:1140,
-        // regions: reg,
-        // tooltipsMode:'custom',
-        // loadingText: "loading...",
-        // zoom: true,
-        // zoomButtons: {'show': true,'location': 'right' },
-        // pan:true,
-        // panLimit:true,
-        // cursor:'pointer',
-        // responsive:true,
         source: getSVGMapURL(),    // Path to SVG map
         colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
         disableAll: false,
