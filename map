@@ -148,7 +148,7 @@
 // 			$("#m_no_pin_"+store_id).hide();
 // 			$("#m_show_pin_"+store_id).show();
 // 		}
-        map.selectRegion(store_details.svgmap_region);
+        map.selectRegion(store_id);
 		$('#store_table').hide()
 		
 		return false;
