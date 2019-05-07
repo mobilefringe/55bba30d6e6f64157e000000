@@ -321,7 +321,7 @@ function floorList() {
     return floor_list;
 }
 
-var map=null;
+var map =null;
 function drop_pin(id){
     map.marksHide();
     var coords = map.get_coords(id);
