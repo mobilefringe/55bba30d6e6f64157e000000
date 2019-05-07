@@ -321,25 +321,7 @@ function floorList() {
     return floor_list;
 }
 
-var map =null;
-function drop_pin(id){
-    map.marksHide();
-    var coords = map.get_coords(id);
-    var height = parseInt(coords["height"]);
-    var width = parseInt(coords["width"]);
-    var x_offset = (parseInt(width) / 2);
-    var y_offset = (parseInt(height) /2);
-    map.setMarks([{ xy: [coords["x"] - 46 + x_offset, coords["y"] - 110 + y_offset],
-        attrs: {
-            src:  '//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1452532624000/pin_93.png'
-        }
-    }]);
-    map.setViewBox(id);
-    
-	map.selectRegion(id);
-	console.log("id", id)
-    $('#btnZoomIn').click()
-}
+var map = null;
 
 function init_map(reg){
     map = $('#mapsvg_main').mapSvg({
@@ -363,3 +345,23 @@ function init_map(reg){
     
     
 }
+
+function drop_pin(id){
+    map.marksHide();
+    var coords = map.get_coords(id);
+    var height = parseInt(coords["height"]);
+    var width = parseInt(coords["width"]);
+    var x_offset = (parseInt(width) / 2);
+    var y_offset = (parseInt(height) /2);
+    map.setMarks([{ xy: [coords["x"] - 46 + x_offset, coords["y"] - 110 + y_offset],
+        attrs: {
+            src:  '//codecloud.cdn.speedyrails.net/sites/57f66e416e6f6465fe050000/image/png/1452532624000/pin_93.png'
+        }
+    }]);
+    map.setViewBox(id);
+    
+	map.selectRegion(id);
+	console.log("id", id)
+    $('#btnZoomIn').click()
+}
+
