@@ -338,7 +338,6 @@ function drop_pin(id){
 }
 
 function init_map(reg){
-    console.log(reg)
     map = $('#mapsvg').mapSvg({
         source: getSVGMapURL(),    // Path to SVG map
         colors: {stroke: '#aaa', hover: '#EF4D86'},
