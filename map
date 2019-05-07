@@ -175,13 +175,7 @@
                 zoomLimit: [0, 5],
                 // viewBox: store_details.svgmap_region
             });
-            function show_pin(param){
-        		store_id = $(param).attr('store_id');
-                map.selectRegion(store_id);
-        		$('#store_table').hide()
-        		
-        		return false;
-            }
+            
             // $.each(stores, function(i, val){
             //     x = val.x_coordinate - 19;
             //     y = val.y_coordinate - 58;
