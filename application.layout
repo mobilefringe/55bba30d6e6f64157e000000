@@ -184,6 +184,7 @@
                                 <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Shopping</a>
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu1">
                                     <li><a href="/stores">Directory</a></li>
+                                    <li><a href="/map">Map</a></li>
                                     <li><a href="/hours">Hours</a></li>
                                     <li><a href="/parking">Parking</a></li>
                                 </ul>
