@@ -334,6 +334,8 @@ function drop_pin(id){
         }
     }]);
     map.setViewBox(id);
+    
+		map.selectRegion(store_id);
     $('#btnZoomIn').click()
 }
 
