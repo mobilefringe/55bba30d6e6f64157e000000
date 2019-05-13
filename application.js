@@ -86,6 +86,7 @@ function renderStoreList(container, template, collection, type){
                 val.show = "display:inline-block;";
             }
         }
+        console.log("promos", val.name, val.promotions)
         if (val.promotions != null){
             val.promotion_exist = "visibility:show";
         } else {
