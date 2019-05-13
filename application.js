@@ -87,10 +87,12 @@ function renderStoreList(container, template, collection, type){
             }
         }
         console.log("promos", val.name, val.promotions)
-        if (val.promotions != null){
-            val.promotion_exist = "visibility:show";
+        if ((val.promotions.length > 0 && val.promotions != null){
+        
+        // if (val.promotions != null){
+            val.promotion_exist = "visibility: show";
         } else {
-            val.promotion_exist = "visibility:hidden";
+            val.promotion_exist = "visibility: hidden";
         }
         
         val.block = current_initial + '-block';
