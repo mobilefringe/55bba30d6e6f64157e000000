@@ -540,7 +540,7 @@ a{
 .dropdown-menu>li>a{
     font-size:20px !important;
 }
-.dropdown-menu>li>a:hover {
+.dropdown-menu > li > a:hover {
     background-color: #e0e0e0;
 }
 .footer{
