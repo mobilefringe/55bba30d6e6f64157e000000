@@ -576,7 +576,7 @@ a{
 }
 
 .newsletter_box{
-    background: #2f3642;
+    background: #d82121;
     height:172px;
     padding:20px;
     position: relative;
@@ -633,7 +633,7 @@ a{
 
 .btn_mp{
     color: white;
-    background-color: #2f3642;
+    background-color: #d82121;
     border: 1px solid;
     height: 30px;
     width: 96px;
@@ -760,7 +760,7 @@ a{
 .feature_2_header{
     margin-top: 8px;
     font-size: 18px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
@@ -771,7 +771,7 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     margin-bottom: 36px;
     font-family:museo;
@@ -779,7 +779,7 @@ a{
 
 .store_list_heading2 {
     font-size: 16px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: 500;
     margin-bottom: 32px;
     margin-top: 0;
@@ -829,7 +829,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -844,7 +844,7 @@ a{
     margin-top: 15px;
     font-size:15px;
     margin-bottom:36px;
-    color: #2f3642;
+    color: #d82121;
     text-decoration:underline;
     display:inline-block;
 }
@@ -857,7 +857,7 @@ a{
 }
 
 .promo_circle{
-    color: #2f3642;
+    color: #d82121;
     font-size: 12px;
     width:25px;
 }
@@ -954,11 +954,11 @@ a{
     text-decoration:underline;
 }
 .back_btn{
-    color:#2f3642;
+    color:#d82121;
 }
 
 .back_btn:hover{
-    color:#2f3642;
+    color:#d82121;
     text-decoration:none;
 }
 
@@ -1071,7 +1071,7 @@ g.mapplic-active > * {
 }
 
 .promo_name{
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     font-size: 18px;
     margin-bottom:0;
@@ -1107,7 +1107,7 @@ g.mapplic-active > * {
 }
 
 .closing_date{
-    color:#2f3642;
+    color:#d82121;
     font-weight: 500;
     font-size: 16px;
     margin: 5px 0;
@@ -1116,7 +1116,7 @@ g.mapplic-active > * {
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -1127,7 +1127,7 @@ g.mapplic-active > * {
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #2f3642;
+    color: #d82121;
 }
 
 .job_div{
@@ -1188,7 +1188,7 @@ g.mapplic-active > * {
 
 .promo_name_header{
     font-size: 18px;
-    color: #2f3642;
+    color: #d82121;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1208,7 +1208,7 @@ g.mapplic-active > * {
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #2f3642;
+    color: #d82121;
     font-family:museo;
 }
 .blog_name_header{
@@ -1263,7 +1263,7 @@ g.mapplic-active > * {
 }
 .fashion_heading{
     font-size: 16px;
-    color: #2f3642;
+    color: #d82121;
     margin:10px 0;
 }
 
@@ -1300,7 +1300,7 @@ g.mapplic-active > * {
     color:#000;
 }
 .blog_heading{
-    color: #2f3642;
+    color: #d82121;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
@@ -1312,12 +1312,12 @@ g.mapplic-active > * {
 .blog_read_more{
     font-family: 'EB Garamond';
     font-size:18px;
-    color:#2f3642;
+    color:#d82121;
     text-decoration:underline;
 }
 
 .blog_read_more:hover{
-    color:#2f3642;
+    color:#d82121;
     text-decoration:underline;
 }
 .blog_details_container{
@@ -1347,7 +1347,7 @@ g.mapplic-active > * {
     font-family: museo;
 }
 .blog_details_dates{
-    color: #2f3642;
+    color: #d82121;
     font-weight: bold;
     font-size: 18px;
     margin-top: 0;
@@ -1445,7 +1445,7 @@ g.mapplic-active > * {
 }
 .contest_btn {
     padding: 7px 15px;
-    background: #2f3642;
+    background: #d82121;
     border: none;
     color: #fff;
     text-transform: uppercase;
