@@ -161,6 +161,7 @@
                                         Community
                                     </a>
                                     <ul class="dropdown-menu center_menu">
+                                        <li><a href="/pages/midtown2-accept-without-exception">Accept Without Exception</a></li>
                                         <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
                                         <li><a href="https://form.jotform.com/90724398220255" target="_blank">Donation Requests</a></li>
                                     </ul>
@@ -212,7 +213,6 @@
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
                                     <li><a href="/pages/midtown2-gift-cards">Gift Cards</a></li>
                                     <li><a href="/pages/midtown2-accessibility">Security & Accessibilty</a></li>
-                                    <!--<li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>-->
                                 </ul>
                             </div>
                         </div>
@@ -221,6 +221,7 @@
                             <div class="dropdown">
                                 <a href="#" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Community</a>
                                 <ul class="dropdown-menu dropdown-menu2" aria-labelledby="dropdownMenu3">
+                                    <li><a href="/pages/midtown2-accept-without-exception">Accept Without Exception</a></li>
                                     <li><a href="/pages/midtown2-act-green-initiatives">ACT Green Initiatives</a></li>
                                     <li><a href="https://form.jotform.com/90724398220255" target="_blank">Donation Requests</a></li>
                                 </ul>
