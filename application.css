@@ -508,10 +508,10 @@ a{
     color:#000;
 }
 
-#menu a:focus, #menu a:hover{
-    color:#ccc;
-    color:rgba(0,0,0,.5);
-}
+/*#menu a:focus, #menu a:hover{*/
+/*    color:#ccc;*/
+/*    color:rgba(0,0,0,.5);*/
+/*}*/
 
 .no_margin{
     margin:0 !important;
