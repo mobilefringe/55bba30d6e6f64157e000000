@@ -530,7 +530,7 @@ a{
     border: 0;
     box-shadow: none;
     padding-top: 20px;
-    width: 208px;
+    min-width: 208px;
     border-radius: 0;
     padding-bottom: 15px;
     margin-top: -1px;
