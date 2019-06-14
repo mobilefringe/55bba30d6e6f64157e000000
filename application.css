@@ -586,7 +586,9 @@ a{
     background-color:#e2e4e6;
     background-image: url('//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1560523150986/pridebackground.PNG');
     background-position: 50% 50%;
-    background-size: contain;
+    /*background-size: contain;*/
+    background-size: cover;
+    background-repeat: no-repeat;
     height:172px;
     padding:20px;
     text-align:center;
