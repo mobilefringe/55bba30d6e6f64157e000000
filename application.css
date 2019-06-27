@@ -1471,6 +1471,7 @@ g.mapplic-active > * {
     font-weight: 500;
 }
 #subForm #agree_terms {
+    margin-bottom: 0;
     width: unset;
 }
 #subForm .js-cm-submit-button {
