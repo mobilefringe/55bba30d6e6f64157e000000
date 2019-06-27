@@ -1474,7 +1474,13 @@ g.mapplic-active > * {
     background-color: transparent;
     font-size: 14px;
     text-transform: uppercase;
+    transition: all 0.3s ease;
 }
+#subForm .js-cm-submit-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
 @media(max-width:1024px){
     .popup_home{
         width:90%;
