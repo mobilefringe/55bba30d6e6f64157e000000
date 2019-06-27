@@ -1470,6 +1470,9 @@ g.mapplic-active > * {
 #subForm .agreement {
     font-weight: 500;
 }
+#subForm .agreement a {
+    text-decoration: underline;
+}
 #subForm #agree_terms {
     margin-bottom: 0;
     width: unset;
