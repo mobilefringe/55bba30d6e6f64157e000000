@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12 margin_28">
                     <label class="agreement" for="agree_terms">
                         <input type="checkbox" id="agree_terms" required />
                         I agree to receive newsletters from Midtown Plaza via electronic messaging; and I acknowledge that I have read and understand the Privacy Terms & Conditions.
