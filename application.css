@@ -1469,6 +1469,7 @@ g.mapplic-active > * {
 #subForm .js-cm-submit-button {
     border: 1px solid #000;
     background-color: transparent;
+    text-transform: uppercase;
 }
 @media(max-width:1024px){
     .popup_home{
