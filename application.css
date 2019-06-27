@@ -1467,8 +1467,12 @@ g.mapplic-active > * {
     border: 1px solid #000;
 }
 #subForm .js-cm-submit-button {
+    width: 96px;
+    height: 30px;
+    
     border: 1px solid #000;
     background-color: transparent;
+    font-size: 14px;
     text-transform: uppercase;
 }
 @media(max-width:1024px){
