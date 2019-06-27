@@ -109,6 +109,14 @@
             }); 
             init_side();
             show_content();
+            
+            $('#subForm').submit(function(e){
+                e.preventDefault();
+                var full_name = $("fieldwhtby").val() + $("fieldwhtbj").val();
+                $("#fieldName").val() = full_name;
+                // $('.submit_btn').prop('disabled', true);
+                // submit_contest(slug, e);
+            });
         }
         loadMallDataCached(renderAll); 
     });
