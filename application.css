@@ -1462,6 +1462,9 @@ g.mapplic-active > * {
 }
 
 /* *** NEWSLETTER PAGE  *** */
+#subForm label {
+    font-size: 14px;
+}
 #subForm input {
     margin-bottom: 30px;
     width: 100%;
