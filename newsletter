@@ -3,10 +3,10 @@
 <div class="page_main_container">
     <div class="page_left">
         <h2 class="hours_heading parking_header">E-Newsletter</h2>  
-        <div id="mm_page_content" class="newsletter_desc">
+        <div class="newsletter_desc">
+            <div id="mm_page_content"></div>
             <p>* Required Fields</p>
         </div>
-        
         <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7457C14D7F8D2496C490D43E39CE2A55385B919D88A7B09C644F778DE15C6021FAC7B431DCC3130E4C773F9315364239">
             <div class="row">
                 <div class="col-md-6">
