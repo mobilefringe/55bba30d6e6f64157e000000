@@ -15,7 +15,7 @@
                     <br />
                     <input id="fieldwhtbj" name="cm-f-whtbj" type="text" />
                 </div>
-            </div>x
+            </div>
             <input id="fieldName" name="cm-name" type="text" />
             <div class="row">
                 <div class="col-md-6">
