@@ -7,12 +7,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="fieldwhtby">First Name</label>
-                    <br />
                     <input id="fieldwhtby" name="cm-f-whtby" type="text" />
                 </div>
                 <div class="col-md-6">
                     <label for="fieldwhtbj">Last Name</label>
-                    <br />
                     <input id="fieldwhtbj" name="cm-f-whtbj" type="text" />
                 </div>
             </div>
@@ -20,12 +18,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="fieldEmail">Email</label>
-                    <br />
                     <input id="fieldEmail" name="cm-yhudtt-yhudtt" type="email" class="js-cm-email-input" required />
                 </div>
                 <div class="col-md-6">
                     <label for="fieldmhtti">Postal Code</label>
-                    <br />
                     <input id="fieldmhtti" name="cm-f-mhtti" type="text" />    
                 </div>
             </div>
@@ -61,7 +57,6 @@
                 <img src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/png/1511216744000/New Gift Card.png" alt="giftcards">
             </a>
         </div>
-        
         <div class="newsletter_box feature_box">
             <div id="success_subscribe">
                 <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
