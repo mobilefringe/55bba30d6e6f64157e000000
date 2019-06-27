@@ -1462,6 +1462,9 @@ g.mapplic-active > * {
 }
 
 /* *** NEWSLETTER PAGE  *** */
+#mm_page_content.newsletter_desc {
+    margin-bottom: 30px;
+}
 #subForm label {
     font-size: 14px;
 }
