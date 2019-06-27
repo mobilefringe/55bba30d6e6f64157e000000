@@ -1462,7 +1462,7 @@ g.mapplic-active > * {
 }
 
 /* *** NEWSLETTER PAGE  *** */
-#mm_page_content.newsletter_desc {
+.newsletter_desc {
     margin-bottom: 30px;
 }
 #subForm label {
