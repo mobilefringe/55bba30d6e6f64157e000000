@@ -1469,6 +1469,9 @@ g.mapplic-active > * {
 #subForm .agreement {
     font-weight: 500;
 }
+#subForm #agree_terms {
+    width: unset;
+}
 #subForm .js-cm-submit-button {
     width: 96px;
     height: 30px;
