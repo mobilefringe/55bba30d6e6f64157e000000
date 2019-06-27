@@ -2,39 +2,44 @@
 <div class="page_main_container">
     <div class="page_left">
         <h2 class="hours_heading parking_header">E-Newsletter</h2>    
-        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7457C14D7F8D2496C490D43E39CE2A55385B919D88A7B09C644F778DE15C6021FAC7B431DCC3130E4C773F9315364239">	
-<p>
-    <label for="fieldName">Name</label>
-    <br />
-    <input id="fieldName" name="cm-name" type="text" />
-</p>
-<p>
-    <label for="fieldwhtby">First Name</label>
-    <br />
-    <input id="fieldwhtby" name="cm-f-whtby" type="text" />
-</p>
-<p>
-    <label for="fieldwhtbj">Last Name</label>
-    <br />
-    <input id="fieldwhtbj" name="cm-f-whtbj" type="text" />
-</p>
-<p>
-    <label for="fieldEmail">Email</label>
-    <br />
-    <input id="fieldEmail" name="cm-yhudtt-yhudtt" type="email" class="js-cm-email-input"
-    required />
-</p>
-<p>
-    <label for="fieldmhtti">Postal Code</label>
-    <br />
-    <input id="fieldmhtti" name="cm-f-mhtti" type="text" />
-</p>
-<p>
-    <button class="js-cm-submit-button" type="submit">Subscribe</button>
-</p>
-</form>
-<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
-        
+        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A7457C14D7F8D2496C490D43E39CE2A55385B919D88A7B09C644F778DE15C6021FAC7B431DCC3130E4C773F9315364239">
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="fieldwhtby">First Name</label>
+                    <br />
+                    <input id="fieldwhtby" name="cm-f-whtby" type="text" />
+                </div>
+                <div class="col-md-6">
+                    <label for="fieldwhtbj">Last Name</label>
+                    <br />
+                    <input id="fieldwhtbj" name="cm-f-whtbj" type="text" />
+                </div>
+            </div>
+            <input id="fieldName" name="cm-name" type="text" />
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="fieldEmail">Email</label>
+                    <br />
+                    <input id="fieldEmail" name="cm-yhudtt-yhudtt" type="email" class="js-cm-email-input" required />
+                </div>
+                <div class="col-md-6">
+                    <label for="fieldmhtti">Postal Code</label>
+                    <br />
+                    <input id="fieldmhtti" name="cm-f-mhtti" type="text" />    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="js-cm-submit-button" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     </div>
     <div class="page_right">
         <div class="hours_box feature_box" id="home_hours_container">
