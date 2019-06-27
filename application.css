@@ -1464,6 +1464,7 @@ g.mapplic-active > * {
 /* *** NEWSLETTER PAGE  *** */
 #subForm input {
     width: 100%;
+    border: 1px solid #000;
 }
 @media(max-width:1024px){
     .popup_home{
