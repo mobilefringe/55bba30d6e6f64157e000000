@@ -1487,6 +1487,7 @@ g.mapplic-active > * {
 #subForm #agree_terms {
     margin-bottom: 0;
     width: unset;
+    height: unset;
 }
 #subForm .js-cm-submit-button {
     width: 96px;
