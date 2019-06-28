@@ -43,7 +43,7 @@
                 </div>
             </div>
         </form>
-        <!--<script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>-->
+        <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
     </div>
     <div class="page_right">
         <div class="hours_box feature_box" id="home_hours_container">
