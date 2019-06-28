@@ -1476,7 +1476,7 @@ g.mapplic-active > * {
     border: 1px solid #000;
 }
 #subForm #fieldName {
-    visibility: hidden;
+    display: none;
 }
 #subForm .agreement {
     font-weight: 500;
