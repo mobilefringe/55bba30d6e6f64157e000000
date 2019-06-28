@@ -1759,7 +1759,7 @@ g.mapplic-active > * {
     #contest_form .row {
         margin: 0;
     }
-    #contest_form .col-md-6, .col-md-12 {
+    #contest_form .col-md-6, #contest_form .col-md-12 {
         padding: 0;
     }
 }
