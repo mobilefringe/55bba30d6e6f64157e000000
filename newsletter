@@ -39,7 +39,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <button class="js-cm-submit-button" type="submit">Subscribe</button>
+                    <button id="submit_btn" class="js-cm-submit-button" type="submit">Subscribe</button>
                 </div>
             </div>
         </form>
@@ -114,10 +114,8 @@
                 var first_name = $("#fieldwhtby").val()
                 var last_name = $("#fieldwhtbj").val();
                 var full_name = first_name + " " + last_name;
-                console.log("full_name", full_name)
                 $("#fieldName").val(full_name);
-                console.log($("#fieldName").val())
-                // $('.submit_btn').prop('disabled', true);
+                $("#submit_btn").prop("disabled", true);
                 // submit_contest(slug, e);
             });
         }
