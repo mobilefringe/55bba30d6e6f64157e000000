@@ -112,7 +112,7 @@
             $('#subForm').submit(function(e){
                 e.preventDefault();
                 var full_name = $("fieldwhtby").val() + $("fieldwhtbj").val();
-                $("#fieldName").val() = full_name;
+                $("#fieldName").val(full_name);
                 console.log($("#fieldName").val())
                 // $('.submit_btn').prop('disabled', true);
                 // submit_contest(slug, e);
