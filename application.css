@@ -1470,7 +1470,9 @@ g.mapplic-active > * {
 }
 #subForm input {
     margin-bottom: 30px;
+    padding: 0 10px;
     width: 100%;
+    height: 30px;
     border: 1px solid #000;
 }
 #subForm .agreement {
