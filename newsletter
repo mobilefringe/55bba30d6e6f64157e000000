@@ -111,8 +111,8 @@
             
             $('#subForm').submit(function(e){
                 e.preventDefault();
-                var first_name = $("fieldwhtby").val()
-                var last_name = $("fieldwhtbj").val();
+                var first_name = $("#fieldwhtby").val()
+                var last_name = $("#fieldwhtbj").val();
                 var full_name = first_name + " " + last_name;
                 console.log("full_name", full_name)
                 $("#fieldName").val(full_name);
