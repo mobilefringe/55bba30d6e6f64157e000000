@@ -218,7 +218,10 @@
                 });
                 mall_json.levels.push(floor_1);
             });
-            
+            var height_map = 650;
+            if(window.innerWidth <=768){
+                height_map = 350;
+            }
             map = $('#mapplic').mapplic({
             	source: mall_json,
             	height: 650,
