@@ -320,6 +320,7 @@
                         if(location !== null && location.el){
                             location.x = new_x;
                             location.y =  new_y;
+                            console.log('location', location)
                             self.updateLocation(val);
                         }
                     }
