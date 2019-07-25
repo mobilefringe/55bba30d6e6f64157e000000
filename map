@@ -297,6 +297,7 @@
             //get floors to be visible 
             $(".mapplic-layer").show();
             //go through all the regions and recalculat the locations
+            console.log("svgList", svgList())
             _.forEach(svgList(), function(val, key) {
                 
                 if(val !== null) {
