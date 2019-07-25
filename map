@@ -359,7 +359,7 @@
             setTimeout(function() {
                 show_content();
             }, 500);
-        }
+        // }
             // init_side();
             // show_content();  
             // regions = {}
