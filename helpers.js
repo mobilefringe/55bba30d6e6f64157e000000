@@ -327,7 +327,7 @@ function init_map(reg){
     map = $('#mapsvg_main').mapSvg({
         source: getSVGMapURL(),    // Path to SVG map
         colors: {stroke: '#aaaaaa', selected: '#f57b2b', hover: "#f57b2b"},
-        disableAll: false,
+        disableAll: true,
         regions: reg,
         tooltipsMode: 'custom',
         loadingText: "loading...",
@@ -339,6 +339,19 @@ function init_map(reg){
         zoomLimit: [0,10],
         // viewBox:[420,420,1650,1650]
     });
+    // source: getSVGMapURL(),
+    // colors: {stroke: '#fff', selected: "#D8836C", hover: "#a6a6a6"},
+    // disableAll: true,
+    // regions: regions,
+    // height:1700,
+    // width:2300,
+    // tooltipsMode:'custom',
+    // zoom:true,
+    // zoomButtons: {'show': true, 'location': 'left'},
+    // pan:true,
+    // cursor:'pointer',
+    // responsive:true,
+    // zoomLimit: [0,5]
 }
 
 function drop_pin(id){
