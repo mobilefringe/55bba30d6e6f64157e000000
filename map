@@ -5,9 +5,9 @@
 <script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
 <style>
-    .map_container{
-        height:490px;
-    }
+    /*.map_container{*/
+    /*    height:490px;*/
+    /*}*/
     .popup {
         background: none repeat scroll 0 0 #000000;
         border: 1px solid #808080;
@@ -250,7 +250,7 @@
             
             map = $('#mapplic').mapplic({
             	source: mall_json,
-            	height: 690,
+            	height: 490,
             	landmark : true,
             	mapfill:true,
             	minimap: false,
