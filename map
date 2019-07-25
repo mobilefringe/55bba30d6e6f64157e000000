@@ -135,8 +135,8 @@
 </div>
 <style>
     .mapplic-map {
-    width: 100%!important;
-    height: 100%!important;
+        width: 100%!important;
+        height: 100%!important;
     }
     .mapplic-pin{
         /*background-color: transparent!important;    */
