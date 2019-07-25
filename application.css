@@ -1807,7 +1807,7 @@ g.mapplic-active > * {
     #contest_form #agree_terms + .help-block {
         margin-top: 0;
     }
-    .map{
+    .map, .map-container{
         padding: 0 25px;
     }
 }
