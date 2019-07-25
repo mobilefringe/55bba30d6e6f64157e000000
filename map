@@ -136,7 +136,7 @@
     function show_pin(param){
 		store_id = $(param).attr('store_id');
 		if(store_id){
-            drop_pin(store_id)
+            dropPin(store_id)
 		}
 		
 		$('#store_table').hide()
