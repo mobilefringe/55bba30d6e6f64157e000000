@@ -986,68 +986,68 @@ a{
 }
 
 /* *** MAPPLIC *** */
-/*.map-container {*/
-/*    border: 1px solid #d8d8d8;*/
-/*}*/
-/* INTERACTIVE ELEMENTS */
-/* clickable elements */
-/*.mapplic-clickable:not(g), */
-/*g.mapplic-clickable > * {*/
-/*    opacity: 1!important;*/
-/*}*/
-/* hovered elements */
-/*.mapplic-clickable:not(g):hover, */
-/*g.mapplic-clickable:hover > * {*/
-/*	opacity: 1;*/
-/*	fill: #c2cfdf;*/
-/*}*/
+.map-container {
+    border: 1px solid #d8d8d8;
+}
+ INTERACTIVE ELEMENTS 
+ clickable elements 
+.mapplic-clickable:not(g), 
+g.mapplic-clickable > * {
+    opacity: 1!important;
+}
+ hovered elements 
+.mapplic-clickable:not(g):hover, 
+g.mapplic-clickable:hover > * {
+	opacity: 1;
+	fill: #c2cfdf;
+}
     
-/* active elements */
-/*.mapplic-active,*/
-/*a.mapplic-active > path,*/
-/*g.mapplic-active > * {*/
-/*	fill: #c2cfdf;*/
-/*	opacity: 1.0 !important;*/
-/*}*/
-/*.mapplic-coordinates {*/
-/*    visibility: hidden;*/
-/*}*/
-/*.mapplic-container {*/
-/*    background: #fff;*/
-/*    height: 100%!important;*/
-/*}*/
-/*.mapplic-zoom-buttons{*/
-/*    bottom: initial!important;*/
-/*    top: 0!important;*/
-/*    left: initial!important;*/
-/*    right: 0!important;*/
-/*}*/
-/*.mapplic-popup-link {*/
-/*    background-color: $primary;*/
-/*    float: left!important;*/
-/*}*/
-/*.mapplic-tooltip-title {*/
-/*    color: #424242;*/
-/*    line-height: normal;*/
-/*}*/
-/*.mapplic-tooltip-content {*/
-/*    overflow: hidden;*/
-/*    overflow-y: hidden !important;*/
-/*}*/
-/*.mapplic-hovertip {*/
-/*    opacity:1!important;*/
-/*}*/
-/*#store_container .mapplic-popup-link, #store_container .mapplic-tooltip-close{*/
-/*    display:none!important;*/
-/*}*/
-/*#store_container .mapplic-pin.black-pin {*/
-/*	background-image: url('//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png');*/
-/*    background-size: 31px 38px;*/
-/*    width: 31px;*/
-/*    height: 38px;*/
-/*    margin-top: 0px;*/
-/*    margin-left: -15px;*/
-/*}*/
+ active elements 
+.mapplic-active,
+a.mapplic-active > path,
+g.mapplic-active > * {
+	fill: #c2cfdf;
+	opacity: 1.0 !important;
+}
+.mapplic-coordinates {
+    visibility: hidden;
+}
+.mapplic-container {
+    background: #fff;
+    height: 100%!important;
+}
+.mapplic-zoom-buttons{
+    bottom: initial!important;
+    top: 0!important;
+    left: initial!important;
+    right: 0!important;
+}
+.mapplic-popup-link {
+    background-color: $primary;
+    float: left!important;
+}
+.mapplic-tooltip-title {
+    color: #424242;
+    line-height: normal;
+}
+.mapplic-tooltip-content {
+    overflow: hidden;
+    overflow-y: hidden !important;
+}
+.mapplic-hovertip {
+    opacity:1!important;
+}
+#store_container .mapplic-popup-link, #store_container .mapplic-tooltip-close{
+    display:none!important;
+}
+#store_container .mapplic-pin.black-pin {
+	background-image: url('//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png');
+    background-size: 31px 38px;
+    width: 31px;
+    height: 38px;
+    margin-top: 0px;
+    margin-left: -15px;
+}
 .marker {
     background: url("//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/0d83e540b9f2c2dcd06ea629819eea1e/location_indicator_map.png") no-repeat;
     cursor: pointer;
