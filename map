@@ -380,7 +380,7 @@
             // });
             
             // init_map(regions)
-        }
+        })
         loadMallDataCached(renderAll); 
     })
 </script>
