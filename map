@@ -360,7 +360,7 @@
             self.showLocation(store_id);
 		}
 		
-        $('#stores_table').hide();
+        $('#store_table').hide();
     }
      $(function(){
         $("#map_button").click(function(){
