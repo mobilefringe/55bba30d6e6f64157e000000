@@ -179,7 +179,7 @@
                 if( value.z_index === 0) {
                     stores_on_floors = stores;
                 } else {
-                    stores_on_floors = _.filter(stores, function(o) { if(o.z_coordinate == null) {return true;} else { return value.z_index === o.z_coordinate; }});
+                    stores_on_floors = stores;
                 }
                 _.forEach(stores_on_floors, function(val, key) {
                     //for testing limiting the store numbers to vm
