@@ -85,7 +85,7 @@
                     	
         		<!--</div>-->
         		<div class="map">
-        		<div id="mapplic" class="mapplic"></div>
+        		    <div id="mapplic" class="mapplic"></div>
         		    
         		</div>
                 <!--<div id="mapsvg_main"></div>-->
