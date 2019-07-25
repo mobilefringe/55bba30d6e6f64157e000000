@@ -359,7 +359,16 @@
         self.showLocation(svgmap_region);
         $('#stores_table').hide();
     }
-    
+     $(function(){
+        $("#map_button").click(function(){
+            $("#store_table").toggle();
+        });
+        
+    });
+    function hide_table(){
+        $("#store_table").hide();
+        show_table = false;
+    }
 </script>
 <!--<script>-->
 <!--    function show_pin(param){-->
