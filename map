@@ -1,8 +1,8 @@
 <!-- Map Dependency -->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>-->
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
 <style>
     .map_container{
@@ -133,91 +133,16 @@
     <div class="clearfix"></div>
 </div>
 
-<style>
-    .mapplic-pin{
-        /*background-color: transparent!important;    */
-    }
-    /* INTERACTIVE ELEMENTS */
-    /* clickable elements */
-    .mapplic-clickable:not(g),
-    g.mapplic-clickable > * {
-    	opacity: 1!important;
-    	/*fill: #b7a6bd*/;
-    }
-    /* hovered elements */
-    .mapplic-clickable:not(g):hover,
-    g.mapplic-clickable:hover > * {
-    	opacity: 1;
-    	fill: #c2cfdf;
-    }
-    
-    /* active elements */
-    .mapplic-active,
-    a.mapplic-active > path,
-    g.mapplic-active > * {
-    	fill: #c2cfdf;
-    	opacity: 1.0 !important;
-    }
-    .mapplic-coordinates {
-        visibility: hidden;
-    }
-    .mapplic-container {
-        background: #fff;
-        height: 100%!important;
-    }
-    .mapplic-zoom-buttons{
-        bottom: initial!important;
-        top: 0!important;
-        left: initial!important;
-        right: 0!important;
-    }
-    .mapplic-popup-link {
-        float: left!important;
-    }
-    .mapplic-tooltip-content {
-        overflow: hidden;
-        overflow-y: hidden !important;
-    }
-    .mapplic-hovertip {
-        opacity:1!important;
-    }
-    #nopointer-unitnumbers {
-        display:none!important;
-    }
-</style>
-
-<link href="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/css/1522163605908/mapplic.css" rel="stylesheet">
-<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/javascript/1520366143656/mapplic_mmsdk.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 <script>
-    function show_pin(param){
-		store_id = $(param).attr('store_id');
-		if(store_id){
-            drop_pin(store_id)
-		}
-		
-		$('#store_table').hide()
-		return false;
-    }
-    $(function(){
-        $("#map_button").click(function(){
-            $("#store_table").toggle();
-        });
-        
-    });
-    function hide_table(){
-        $("#store_table").hide();
-        show_table = false;
-    }
-    $(document).ready(function(e) {
+    $(document).ready(function(e){
         init(e);
         function renderAll(){
-            var stores = getStoresList();
-            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
-            // renderStoreList('#store_list_container_map','#store_list_template_map', all_stores, "A", "Z");
+            var stores = getStoresList(); 
+            var all_stores = stores;
+            all_stores = all_stores.filter(function( val, index ) {
+                return !$.isNumeric(val.name[0]);
+            });
+            renderStoreList('#store_list_container_map','#store_list_template_map', all_stores, "A", "Z");
             var mall_json = {};
             var landmarks = {};
             mall_json.mapwidth = "1000";
@@ -360,27 +285,61 @@
                 show_content();
             }, 500);
         }
-            // init_side();
-            // show_content();  
-            // regions = {}
-            // $.each(stores, function(i, val){
-            //     if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
-            //         obj = {};
-            //         // obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
-            //         if(val.store_front_url_abs.indexOf('missing.png') > -1){
-            //             obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-            //         }
-            //         else{
-            //             obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
-            //         }
-            //         obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",
-            //         obj["attr"] = {fill: "#000"},
-            //         regions[val.svgmap_region] = obj
-            //     }
-            // });
-            
-            // init_map(regions)
-        }
         loadMallDataCached(renderAll); 
-    })
+        // https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg?1521739249
+    });
+    function dropPin(svgmap_region) {
+        self = map.data('mapplic');
+        self.showLocation(svgmap_region);
+        $('.stores_table').hide();
+    }
 </script>
+<!--<script>-->
+<!--    function show_pin(param){-->
+<!--		store_id = $(param).attr('store_id');-->
+<!--		if(store_id){-->
+<!--            drop_pin(store_id)-->
+<!--		}-->
+		
+<!--		$('#store_table').hide()-->
+<!--		return false;-->
+<!--    }-->
+<!--    $(function(){-->
+<!--        $("#map_button").click(function(){-->
+<!--            $("#store_table").toggle();-->
+<!--        });-->
+        
+<!--    });-->
+<!--    function hide_table(){-->
+<!--        $("#store_table").hide();-->
+<!--        show_table = false;-->
+<!--    }-->
+<!--    $(document).ready(function(e) {-->
+<!--        init(e);-->
+<!--        function renderAll(){-->
+<!--            var stores = getStoresList();-->
+<!--            renderStoreList('#store_list_container','#store_list_template', stores, "stores");-->
+<!--            init_side();-->
+<!--            show_content();  -->
+<!--            regions = {}-->
+<!--            $.each(stores, function(i, val){-->
+<!--                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){-->
+<!--                    obj = {};-->
+                    // obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
+<!--                    if(val.store_front_url_abs.indexOf('missing.png') > -1){-->
+<!--                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"-->
+<!--                    }-->
+<!--                    else{-->
+<!--                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"-->
+<!--                    }-->
+<!--                    obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",-->
+<!--                    obj["attr"] = {fill: "#000"},-->
+<!--                    regions[val.svgmap_region] = obj-->
+<!--                }-->
+<!--            });-->
+            
+<!--            init_map(regions)-->
+<!--        }-->
+<!--        loadMallDataCached(renderAll); -->
+<!--    })-->
+<!--</script>-->
