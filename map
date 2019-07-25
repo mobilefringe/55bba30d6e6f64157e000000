@@ -344,7 +344,6 @@
                 dropPin(svgmap_region);
             });
             setTimeout(function() {
-                console.log("lol")
                  init_side();
                 show_content();
             }, 500);
