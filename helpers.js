@@ -309,16 +309,28 @@ function submit_contest(slug) {
     });
 }
 
+
 function floorList() {
     var floor_list = [];
     var floor_1 = {};
     floor_1.id = "first-floor";
     floor_1.title = "Level One";
-    floor_1.map =  getPNGMapURL().split("?")[0];
-    floor_1.z_index = null;
+    floor_1.map =  "https://www.mallmaverick.com/system/site_images/photos/000/045/103/original/Quinte_Mall_-_Map_-_Oct-29-2018.svg?1540915891".split("?")[0];
+    // getSVGMapURL().split("?")[0];
+    floor_1.z_index = 1;
     floor_1.show = true;
     floor_list.push(floor_1);
     return floor_list;
+}
+    
+function svgList() {
+    return _.map(getStoresList(), 'svgmap_region');
+}
+        
+function dropPin(svgmap_region) {
+    self = map.data('mapplic');
+    self.showLocation(svgmap_region);
+    $('.stores_table').hide();
 }
 
 var map = null;
