@@ -336,6 +336,8 @@ function init_map(reg){
         pan: true,
         cursor: 'pointer',
         responsive: true,
+        height:2500,
+        width:2500,
         zoomLimit: [0,10],
         // viewBox:[420,420,1650,1650]
     });
