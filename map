@@ -308,7 +308,7 @@
                     if (element){
                         console.log(val, element);
                         elBBox = element.getBoundingClientRect();
-                        // console.log(elBBox);
+                        console.log(elBBox);
                         
                         var viewport_center_x = 0;
                         var viewport_center_y = 0;
