@@ -134,6 +134,10 @@
     <div class="clearfix"></div>
 </div>
 <style>
+.mapplic-map {
+        width: 100%!important;
+    height: 100%!important;
+}
     .mapplic-pin{
         /*background-color: transparent!important;    */
     }
