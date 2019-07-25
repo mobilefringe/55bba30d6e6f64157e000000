@@ -161,7 +161,7 @@
             show_content();  
             regions = {}
             $.each(stores, function(i, val){
-                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                if(val.svgmap_region){
                     obj = {};
                     // obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
                     if(val.store_front_url_abs.indexOf('missing.png') > -1){
