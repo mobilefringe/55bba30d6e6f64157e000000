@@ -1502,9 +1502,9 @@ g.mapplic-active > * {
     background-color: #000;
     color: #fff;
 }
-#mapsvg_main path{
-    fill: transparent!important;
-}
+/*#mapsvg_main path{*/
+/*    fill: transparent!important;*/
+/*}*/
 @media(max-width:1024px){
     .popup_home{
         width:90%;
