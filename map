@@ -1,8 +1,7 @@
 <!-- Map Dependency -->
-<!--<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascript s/mapsvg/jquery.js"></script>-->
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/5ae8c1fe6e6f6473fd160000/text/javascript/1520366143656/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
 
 <style>
     .map_container{
