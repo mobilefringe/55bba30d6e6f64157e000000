@@ -4,10 +4,10 @@
 <!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>-->
 <!--<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>-->
 
-<!--<link href="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/css/1522163605908/mapplic.css" rel="stylesheet">-->
+<link href="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/text/css/1560882078000/mapplic.css" rel="stylesheet">
 <!--<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">-->
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/5ac273ae6e6f640f0c1b0000/text/javascript/1520365246170/mapplic_mmsdk.js"></script>
+<script src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/text/javascript/1560882376000/mapplic.js"></script>
 <script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
 
