@@ -1,20 +1,13 @@
 <!-- Map Dependency -->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>-->
-<!--<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>-->
-
-<link href="//codecloud.cdn.speedyrails.net/sites/5b8018fd6e6f643f872a0000/text/css/1522163605908/mapplic.css" rel="stylesheet">
-<link href="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/css/1485967426000/map.css" rel="stylesheet">
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/5ac273ae6e6f640f0c1b0000/text/javascript/1520365246170/mapplic_mmsdk.js"></script>
-<script src="//codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/raphael.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/javascripts/mapsvg/jquery.mousewheel.js"></script>
+<script src="//mallmaverick.cdn.speedyrails.net/system/site_images/photos/000/005/107/original/mallmaverick_svgmap.js?1412885524"></script>
 
 <style>
-    /*.map_container{*/
-    /*    height:490px;*/
-    /*}*/
+    .map_container{
+        height:490px;
+    }
     .popup {
         background: none repeat scroll 0 0 #000000;
         border: 1px solid #808080;
@@ -51,9 +44,9 @@
         padding-top:0;
         margin-top:2px;
     }
-    /*.map_tooltip img{*/
-    /*    max-width:200px;*/
-    /*}*/
+    .map_tooltip img{
+        max-width:200px;
+    }
 </style>
 <div class="green_bar"></div>
 <div class="page_main_container">
@@ -73,21 +66,18 @@
                         <div  id="store_list_container">
                             <script id="store_list_template" type="x-tmpl-mustache/text">
                                 <p class="store_initial" style="{{show}}">{{initial}}</p>
-                                <a href="#" class="store_name_map" store_id="{{svgmap_region}}" onclick="return dropPin(this)">{{name}}</a>
+                                <a href="#" class="store_name_map" store_id="{{svgmap_region}}" onclick="return show_pin(this)">{{name}}</a>
                             </script>
                         </div>
                     </div>          
                 </div>                
             </div> 
-            <div class=" position_relative">
+            <div class="map">
           <!--      <div class="map_container" style="">            -->
           <!--          <img style="max-width:100%;max-height:100%" alt="map_image" id="map_image" src="//midtown2.mallmaverick.com/system/properties/maps/000/000/025/original/map_midtown_edited.jpg?1381443167" />   -->
                     	
         		<!--</div>-->
-        		<div class="map">
-        		    <div id="mapplic" class="mapplic"></div>
-        		</div>
-                <!--<div id="mapsvg_main"></div>-->
+                <div id="mapsvg_main"></div>
             </div>
         </div>
     </div>
@@ -142,229 +132,17 @@
     </div>
     <div class="clearfix"></div>
 </div>
-<style>
-    /*.mapplic-map {*/
-    /*    width: 100%!important;*/
-    /*    height: 100%!important;*/
-    /*}*/
-    .mapplic-pin{
-        /*background-color: transparent!important;    */
-    }
-    /* INTERACTIVE ELEMENTS */
-    /* clickable elements */
-    .mapplic-clickable:not(g),
-    g.mapplic-clickable > * {
-    	opacity: 1!important;
-    	/*fill: #b7a6bd*/;
-    }
-    /* hovered elements */
-    .mapplic-clickable:not(g):hover,
-    g.mapplic-clickable:hover > * {
-    	opacity: 1;
-    	fill: #c2cfdf;
-    }
-    
-    /* active elements */
-    .mapplic-active,
-    a.mapplic-active > path,
-    g.mapplic-active > * {
-    	fill: #c2cfdf;
-    	opacity: 1.0 !important;
-    }
-    .mapplic-coordinates {
-        visibility: hidden;
-    }
-    .mapplic-container {
-        background: #fff;
-        height: 100%!important;
-    }
-    .mapplic-zoom-buttons{
-        bottom: initial!important;
-        top: 0!important;
-        left: initial!important;
-        right: 0!important;
-    }
-    .mapplic-popup-link {
-        float: left!important;
-    }
-    .mapplic-tooltip-content {
-        overflow: hidden;
-        overflow-y: hidden !important;
-    }
-    .mapplic-hovertip {
-        opacity:1!important;
-    }
-    #nopointer-unitnumbers {
-        display:none!important;
-    }
-</style>
-
 <script>
-    $(document).ready(function(e){
-        init(e);
-        function renderAll(){
-            var stores = getStoresList();
-            
-            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
-            var mall_json = {};
-            var landmarks = {};
-            mall_json.mapwidth = "1000";
-            mall_json.mapheight = "1000";
-            mall_json.categories = [];
-            mall_json.levels = [];
-            
-            // need to add the following for each floor we want to configure.
-            _.forEach(floorList(), function(value, key) { 
-                var floor_1 = {};
-                floor_1.id = value.id;
-                floor_1.title = value.title;
-                floor_1.map = value.map;
-                
-                floor_1.show = value.show;
-                floor_1.locations = [];
-                var stores_on_floors =  stores; // ['z_coordinate', value.z_index]);
-                _.forEach(stores_on_floors, function(val, key) {
-                    //for testing limiting the store numbers to vm
-                    var temp_val = {};
-                    temp_val.id = val.svgmap_region;
-                    temp_val.title = val.name;
-                    temp_val.about = val.description.substring(0,200);
-                    if(val.categories != null) {
-                        if(val.categories.length>1){
-                        temp_val.category = val.categories[1];
-                        }
-                        else {
-                            temp_val.category = val.categories[0];
-                        }
-                    }
-                    temp_val.link = "/stores/" + val.slug;
-                    temp_val.pin = "hidden";
-                   
-                    
-                    //get svg's wifth/height by checking the map
-                    var svg_width = 2500;
-                    var svg_height = 2500;
-
-                    temp_val.x = val.x_coordinate / svg_width;
-                    temp_val.y = val.y_coordinate / svg_height;
-                    floor_1.locations.push(temp_val);
-                });
-                mall_json.levels.push(floor_1);
-            });
-            
-            map = $('#mapplic').mapplic({
-            	source: mall_json,
-            	height: 490,
-            	landmark : true,
-            	mapfill:true,
-            	minimap: false,
-            	sidebar: false,
-            	hovertip: true,
-            	developer: false,
-            	fullscreen : false,
-            	clearbutton: false,
-            	deeplinking: false,
-            	fillcolor : "none",
-            	maxscale: 5,
-            	skin: 'mapplic-dark',
-            	tooltiplabel : 'Info'
-            });
-            
-            map.on('mapready', function(e, self) {
-				console.log('Map is ready!');
-				mapLoaded(map);
-			});
-            
-        }
-        function floorList () {
-            var floor_list = [];
-            
-            var floor_1 = {};
-            floor_1.id = "first-floor";
-            floor_1.title = "Level One";
-            floor_1.map =  getSVGMapURL().split("?")[0];
-            floor_1.z_index = null;
-            floor_1.show = true;
-            floor_list.push(floor_1);
-            return floor_list;
-        }
-        function svgList () {
-            return _.map(getStoresList(), 'svgmap_region');
-        }
-        function mapLoaded (map){
-            self = map.data('mapplic');
-            var svg = document.getElementById('landmarks-1');
-            console.log("svg", svg);
-            
-            //get floors to be visible 
-            $(".mapplic-layer").show();
-            //go through all the regions and recalculat the locations
-            console.log("svgList", svgList())
-            _.forEach(svgList(), function(val, key) {
-                
-                if(val !== null) {
-                    
-                    var element = document.getElementById(val);
-                    if (element){
-                        // console.log(val, element);
-                        elBBox = element.getBoundingClientRect();
-                        // console.log(elBBox);
-                        
-                        var viewport_center_x = 0;
-                        var viewport_center_y = 0;
-                        viewport_center_x = (_.toNumber(elBBox.left) + _.toNumber(elBBox.right) )/2;
-                        viewport_center_y = (_.toNumber(elBBox.top) + _.toNumber(elBBox.bottom) )/2;
-                        pt = svg.createSVGPoint();
-                        pt.x = viewport_center_x;
-                        pt.y = viewport_center_y;
-                        var svgP = pt.matrixTransform(svg.getScreenCTM().inverse());
-                        var new_x = svgP.x/ 2500;
-                        var new_y = svgP.y/ 2500;
-                        var location = self.getLocationData(val);
-                        if(location !== null && location.el){
-                            location.x = new_x;
-                            location.y =  new_y;
-                            // console.log('location', location)
-                            self.updateLocation(val);
-                        }
-                    }
-                }
-            });
-            //find which levels need to be hidden
-            hidden_level = _.filter(self.data.levels , function (o){ 
-                // console.log (o); 
-                return o.show !== true;
-            });
-            //doing it in a loop for future cases where there are more than two floors
-            _.forEach(hidden_level, function(val, key) {
-                $(".mapplic-layer[data-floor='"+val.id+"']").hide();
-            });
-            
-            $('.map_pin_a').click(function(e){
-                e.preventDefault();
-                var svgmap_region = $(this).attr('data-svg');
-                dropPin(svgmap_region);
-            });
-            setTimeout(function() {
-                 init_side();
-                show_content();
-            }, 500);
-        }
-        loadMallDataCached(renderAll); 
-        // https://www.mallmaverick.com/system/site_images/photos/000/037/939/original/St.Vital_-_Map_-_Mar-21-2018.svg?1521739249
-    });
-    function dropPin(param) {
-        // self = map.data('mapplic');
-        // self.showLocation(svgmap_region);
+    function show_pin(param){
 		store_id = $(param).attr('store_id');
 		if(store_id){
-            // drop_pin(store_id)
-            self.showLocation(store_id);
+            drop_pin(store_id)
 		}
 		
-        $('#store_table').hide();
+		$('#store_table').hide()
+		return false;
     }
-     $(function(){
+    $(function(){
         $("#map_button").click(function(){
             $("#store_table").toggle();
         });
@@ -374,53 +152,32 @@
         $("#store_table").hide();
         show_table = false;
     }
-</script>
-<!--<script>-->
-<!--    function show_pin(param){-->
-<!--		store_id = $(param).attr('store_id');-->
-<!--		if(store_id){-->
-<!--            drop_pin(store_id)-->
-<!--		}-->
-		
-<!--		$('#store_table').hide()-->
-<!--		return false;-->
-<!--    }-->
-<!--    $(function(){-->
-<!--        $("#map_button").click(function(){-->
-<!--            $("#store_table").toggle();-->
-<!--        });-->
-        
-<!--    });-->
-<!--    function hide_table(){-->
-<!--        $("#store_table").hide();-->
-<!--        show_table = false;-->
-<!--    }-->
-<!--    $(document).ready(function(e) {-->
-<!--        init(e);-->
-<!--        function renderAll(){-->
-            <!--var stores = getStoresList();-->
-            <!--renderStoreList('#store_list_container','#store_list_template', stores, "stores");-->
-<!--            init_side();-->
-<!--            show_content();  -->
-<!--            regions = {}-->
-<!--            $.each(stores, function(i, val){-->
-<!--                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){-->
-<!--                    obj = {};-->
-                     <!--obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",-->
-<!--                    if(val.store_front_url_abs.indexOf('missing.png') > -1){-->
-<!--                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"-->
-<!--                    }-->
-<!--                    else{-->
-<!--                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"-->
-<!--                    }-->
-<!--                    obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",-->
-<!--                    obj["attr"] = {fill: "#000"},-->
-<!--                    regions[val.svgmap_region] = obj-->
-<!--                }-->
-<!--            });-->
+    $(document).ready(function(e) {
+        init(e);
+        function renderAll(){
+            var stores = getStoresList();
+            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+            init_side();
+            show_content();  
+            regions = {}
+            $.each(stores, function(i, val){
+                if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+                    obj = {};
+                    // obj["tooltip"] = "<label class='store_name_map store_name_map_detail'> " + val.name + " </label>",
+                    if(val.store_front_url_abs.indexOf('missing.png') > -1){
+                        obj["tooltip"] = "<div class='tooltip_div'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
+                    else{
+                        obj["tooltip"] = "<div class='tooltip_div'><img src='" + val.store_front_url_abs + "'><p class='tooltip_name text-center'>"+val.name+"</p></div>"
+                    }
+                    obj["popover"] = "<label class='store_name_map store_name_map_detail'>" + val.name + "</label>",
+                    obj["attr"] = {fill: "#000"},
+                    regions[val.svgmap_region] = obj
+                }
+            });
             
-<!--            init_map(regions)-->
-<!--        }-->
-<!--        loadMallDataCached(renderAll); -->
-<!--    })-->
-<!--</script>-->
+            init_map(regions)
+        }
+        loadMallDataCached(renderAll); 
+    })
+</script>
