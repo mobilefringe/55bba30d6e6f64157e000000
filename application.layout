@@ -76,14 +76,13 @@ src="https://www.facebook.com/tr?id=2207759592575298&ev=PageView&noscript=1"
         
         <!-- js -->
         <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        <script src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/text/javascript/1567530906729/jquery.cookie.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/56095beb6e6f6477cf020000/application/x-javascript/1443470772000/underscore-min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/flexslider/2.5.0/jquery.flexslider.js"></script>
-        <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507772000/moment.min.js"></script>
+        <script src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/text/javascript/1567530912097/moment.min.js"></script>
         <script src="//codecloud.cdn.speedyrails.net/sites/579231876e6f6467cf000000/application/x-javascript/1468507661000/moment-timezone-with-data.min.js"></script>
         
         <!--MallMaverick v1.0-->
