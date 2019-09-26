@@ -33,7 +33,7 @@
                 <div class="col-md-12 margin_28">
                     <label class="agreement" for="agree_terms">
                         <input type="checkbox" id="agree_terms" required />
-                        I agree to receive newsletters from Midtown Plaza via electronic messaging; and I acknowledge that I have read and understand the <a href="/pages/midtown2-privacy-policy" taget="_blank">Privacy Terms & Conditions</a>.
+                        I agree to receive newsletters from Midtown via electronic messaging; and I acknowledge that I have read and understand the <a href="/pages/midtown2-privacy-policy" taget="_blank">Privacy Terms & Conditions</a>.
                     </label>
                 </div>
             </div>
