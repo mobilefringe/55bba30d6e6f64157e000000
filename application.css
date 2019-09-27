@@ -774,7 +774,7 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #b7b7b7;
+    color: #996437;
     font-weight: bold;
     margin-bottom: 36px;
     font-family:museo;
@@ -782,7 +782,7 @@ a{
 
 .store_list_heading2 {
     font-size: 16px;
-    color: #b7b7b7;
+    color: #402b1f;
     font-weight: 500;
     margin-bottom: 32px;
     margin-top: 0;
@@ -832,7 +832,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #b7b7b7;
+    color: #996437;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -1119,7 +1119,7 @@ g.mapplic-active > * {
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #b7b7b7;
+    color: #996437;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -1130,7 +1130,7 @@ g.mapplic-active > * {
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #b7b7b7;
+    color: #996437;
 }
 
 .job_div{
@@ -1191,7 +1191,7 @@ g.mapplic-active > * {
 
 .promo_name_header{
     font-size: 18px;
-    color: #b7b7b7;
+    color: #996437;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1211,7 +1211,7 @@ g.mapplic-active > * {
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #b7b7b7;
+    color: #996437;
     font-family:museo;
 }
 .blog_name_header{
@@ -1266,7 +1266,7 @@ g.mapplic-active > * {
 }
 .fashion_heading{
     font-size: 16px;
-    color: #b7b7b7;
+    color: #996437;
     margin:10px 0;
 }
 
@@ -1303,7 +1303,7 @@ g.mapplic-active > * {
     color:#000;
 }
 .blog_heading{
-    color: #b7b7b7;
+    color: #996437;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
@@ -1315,7 +1315,7 @@ g.mapplic-active > * {
 .blog_read_more{
     font-family: 'EB Garamond';
     font-size:18px;
-    color:#b7b7b7;
+    color: #402B1F;
     text-decoration:underline;
 }
 
