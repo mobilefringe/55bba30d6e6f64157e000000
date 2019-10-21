@@ -79,32 +79,16 @@
     $(document).ready(function(e) {
         init(e);
         function renderAll (){
-            var blogs = getBlogList()
+            var blogs = getBlogList();
             var posts = getAllPublishedPosts();
-            
-            
             var published_posts = posts.sortBy(function(o){ return new Date(o.publish_date) }).reverse();
             renderPosts("#blog_container", "#blog_template", published_posts);
             renderBlogs("#blog_links_container", "#blog_links_template", blogs);
             renderBlogs("#blog_links_container_2", "#blog_links_template_2", blogs);
             show_content();
             blog_searcher();
-            
-            // var popup = getPopups()[0];
-            // console.log(popup);
-            // if(popup != undefined && $.cookie("popup_viewed") != "true"){
-            //     renderPopUp("#popup_container", "#popup_template", popup)
-            //     $.cookie("popup_viewed", "true");
-            //     $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
-            //     $('.popup_home').show()
-            // }
-            // $('.close_popup, .custom_backdrop').click(function(){
-            //     $(".modal-backdrop").remove();
-    	       // $(".popup_home").remove();
-            // });
-            
         }
+        
         loadMallDataCached(renderAll); 
-		
     });
 </script>
