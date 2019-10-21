@@ -231,6 +231,7 @@
                 self.showLocation(store_details.svgmap_region);
             });
         }
+        
         function mapLoaded(map) {
             var pathArray = window.location.pathname.split('/');
             var slug = pathArray[pathArray.length - 1];
