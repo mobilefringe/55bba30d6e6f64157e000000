@@ -763,7 +763,7 @@ a{
 .feature_2_header{
     margin-top: 8px;
     font-size: 18px;
-    color: #996437;
+    color: #0F1E33;
     font-weight: bold;
     margin-bottom:5px;
     text-transform:uppercase;
@@ -774,7 +774,7 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #996437;
+    color: #0F1E33;
     font-weight: bold;
     margin-bottom: 36px;
     font-family:museo;
@@ -832,7 +832,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #996437;
+    color: #0F1E33;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -847,7 +847,7 @@ a{
     margin-top: 15px;
     font-size:15px;
     margin-bottom:36px;
-    color: #996437 ;
+    color: #0F1E33 ;
     text-decoration:underline;
     display:inline-block;
 }
@@ -1110,7 +1110,7 @@ g.mapplic-active > * {
 }
 
 .closing_date{
-    color: #996437 ;
+    color: #0F1E33 ;
     font-weight: 500;
     font-size: 16px;
     margin: 5px 0;
@@ -1119,7 +1119,7 @@ g.mapplic-active > * {
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #996437;
+    color: #0F1E33;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -1130,7 +1130,7 @@ g.mapplic-active > * {
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #996437;
+    color: #0F1E33;
 }
 
 .job_div{
@@ -1191,7 +1191,7 @@ g.mapplic-active > * {
 
 .promo_name_header{
     font-size: 18px;
-    color: #996437;
+    color: #0F1E33;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1211,7 +1211,7 @@ g.mapplic-active > * {
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #996437;
+    color: #0F1E33;
     font-family:museo;
 }
 .blog_name_header{
@@ -1266,7 +1266,7 @@ g.mapplic-active > * {
 }
 .fashion_heading{
     font-size: 16px;
-    color: #996437;
+    color: #0F1E33;
     margin:10px 0;
 }
 
@@ -1303,7 +1303,7 @@ g.mapplic-active > * {
     color:#000;
 }
 .blog_heading{
-    color: #996437;
+    color: #0F1E33;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
