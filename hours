@@ -36,6 +36,7 @@
                 <tr>
                     <td class="hours_left">
                         <span>Monday - Saturday</span>
+                         <span class="dashes"></span>
                         <span>Tuesday</span>
                         <span>Wednesday</span>
                         <span>Thursday</span>
