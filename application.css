@@ -672,11 +672,10 @@ a{
 
 .check_hours{
     font-family: 'EB Garamond';
-    font-size:15px;
+    font-size:18px;
     text-decoration:underline;
     color:white;
-    display:inline-block;
-    margin-left:10px;
+    display:inline-block;;
     margin-bottom:15px;
     line-height:18px;
 }
