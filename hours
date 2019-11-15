@@ -30,7 +30,20 @@
                 </tr>
             </script>
         </table>
-       
+        <h2 class="hours_heading">Santa Hours</h2>    
+        <table id="holiday_hours_container" class="hours_container">
+            <script id="holiday_hours_template">
+                <tr>
+                    <td class="hours_left_holidays">
+                        <span>Monday</span>
+                        <span class="dashes"></span>
+                    </td>   
+                    <td class="hours_right_holidays">
+                        11:00am – 2:00pm & 3:00pm – 7:00pm
+                    </td>
+                </tr>
+            </script>
+        </table>
 
     </div>
     <div class="page_right">
