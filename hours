@@ -35,7 +35,13 @@
           
                 <tr>
                     <td class="hours_left">
-                        <span>Monday</span>
+                        <span>Monday - Saturday</span>
+                        <span>Tuesday</span>
+                        <span>Wednesday</span>
+                        <span>Thursday</span>
+                        <span>Friday</span>
+                        <span>Saturday</span>
+                        <span>Sunday</span>
                      
                     </td>   
                     <td class="hours_right">
