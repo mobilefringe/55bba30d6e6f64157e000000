@@ -30,7 +30,7 @@
                 </tr>
             </script>
         </table>
-        <div id="mm_page_content"></div>
+        <div id="hours_page_content"></div>
         <!--<h2 class="hours_heading">Santa Photo Hours</h2>    -->
         <!--<table id="holiday_hours_container" class="hours_container">-->
           
@@ -128,7 +128,7 @@
             prefix = get_prefix();
             var pages_json = "//midtown2.mallmaverick.com/pages/midtown2-santa-hours.json"
             $.getJSON(pages_json).done(function(data) {
-                $('#mm_page_content').html(data.body);
+                $('#hours_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
