@@ -861,6 +861,10 @@ a{
 }
 
 #hours_page_content .hours_container tbody tr td span:last-of-type {
+    padding-right: 5px;    
+}
+
+#hours_page_content .hours_container tbody tr td span:last-of-type {
     width: 100%;
     display: inline-block;
     border-bottom: 2px dotted #ccc;
