@@ -871,6 +871,14 @@ a{
 }    
 
 @media (max-width: 800px) {
+    #hours_page_content .hours_container tbody tr td:first-of-type {
+        width: 40%;
+        white-space: normal;
+    }
+    #hours_page_content .hours_container tbody tr td:last-of-type {
+        width: 60%;
+        text-align: right;
+    }
     #hours_page_content .hours_container tbody tr td span:last-of-type {
         display: none;
     } 
