@@ -852,6 +852,13 @@ a{
     white-space: nowrap;
     
 }
+
+#hours_page_content .hours_container tbody tr td span:last-of-type {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 2px dotted #ccc;
+}    
+    
 .parking_header {
     margin-top:15px;
     margin-bottom:44px;
