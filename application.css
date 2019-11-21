@@ -853,6 +853,13 @@ a{
     
 }
 
+#hours_page_content .hours_container tbody tr td:last-of-type {
+    padding-left: 5px;
+    width: 22%;
+    overflow: hidden;
+    text-align: right;
+}
+
 #hours_page_content .hours_container tbody tr td span:last-of-type {
     width: 100%;
     display: inline-block;
