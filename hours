@@ -30,38 +30,39 @@
                 </tr>
             </script>
         </table>
-        <h2 class="hours_heading">Santa Photo Hours</h2>    
-        <table id="holiday_hours_container" class="hours_container">
+        <div id="mm_page_content"></div>
+        <!--<h2 class="hours_heading">Santa Photo Hours</h2>    -->
+        <!--<table id="holiday_hours_container" class="hours_container">-->
           
-                <tr>
-                    <td class="hours_left">
-                        <span>Monday - Saturday</span>
-                         <span class="dashes"></span>
-                    </td>   
-                    <td class="hours_right">
-                        11:00am – 2:00pm 3:00pm – 7:00pm
-                    </td>
+        <!--        <tr>-->
+        <!--            <td class="hours_left">-->
+        <!--                <span>Monday - Saturday</span>-->
+        <!--                 <span class="dashes"></span>-->
+        <!--            </td>   -->
+        <!--            <td class="hours_right">-->
+        <!--                11:00am – 2:00pm 3:00pm – 7:00pm-->
+        <!--            </td>-->
                    
-                </tr>
-                <tr>
-                 <td class="hours_left">
-                        <span>Sunday</span>
-                         <span class="dashes"></span>
-                    </td>   
-                    <td class="hours_right">
-                        11:30am – 2:00pm 2:30pm – 4:00pm
-                    </td>
-                </tr>
-                <tr>
-                 <td class="hours_left">
-                        <span>December 24</span>
-                         <span class="dashes"></span>
-                    </td>   
-                    <td class="hours_right">
-                        11:00am – 2:00pm
-                    </td>
-                </tr>
-        </table>
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--         <td class="hours_left">-->
+        <!--                <span>Sunday</span>-->
+        <!--                 <span class="dashes"></span>-->
+        <!--            </td>   -->
+        <!--            <td class="hours_right">-->
+        <!--                11:30am – 2:00pm 2:30pm – 4:00pm-->
+        <!--            </td>-->
+        <!--        </tr>-->
+        <!--        <tr>-->
+        <!--         <td class="hours_left">-->
+        <!--                <span>December 24</span>-->
+        <!--                 <span class="dashes"></span>-->
+        <!--            </td>   -->
+        <!--            <td class="hours_right">-->
+        <!--                11:00am – 2:00pm-->
+        <!--            </td>-->
+        <!--        </tr>-->
+        <!--</table>-->
 
     </div>
     <div class="page_right">
