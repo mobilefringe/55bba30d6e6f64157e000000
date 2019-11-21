@@ -846,6 +846,12 @@ a{
     text-transform: uppercase;
 }
 
+#hours_page_content .hours_container tbody tr td:first-of-type {
+    width: 75%;
+    overflow: hidden;
+    white-space: nowrap;
+    
+}
 .parking_header {
     margin-top:15px;
     margin-bottom:44px;
