@@ -843,6 +843,7 @@ a{
     font-size: 18px;
     font-weight: bold;
     color: #0F1E33;
+    text-transform: uppercase;
 }
 
 .parking_header {
