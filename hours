@@ -31,39 +31,6 @@
             </script>
         </table>
         <div id="hours_page_content"></div>
-        <!--<h2 class="hours_heading">Santa Photo Hours</h2>    -->
-        <!--<table id="holiday_hours_container" class="hours_container">-->
-          
-        <!--        <tr>-->
-        <!--            <td class="hours_left">-->
-        <!--                <span>Monday - Saturday</span>-->
-        <!--                 <span class="dashes"></span>-->
-        <!--            </td>   -->
-        <!--            <td class="hours_right">-->
-        <!--                11:00am – 2:00pm 3:00pm – 7:00pm-->
-        <!--            </td>-->
-                   
-        <!--        </tr>-->
-        <!--        <tr>-->
-        <!--         <td class="hours_left">-->
-        <!--                <span>Sunday</span>-->
-        <!--                 <span class="dashes"></span>-->
-        <!--            </td>   -->
-        <!--            <td class="hours_right">-->
-        <!--                11:30am – 2:00pm 2:30pm – 4:00pm-->
-        <!--            </td>-->
-        <!--        </tr>-->
-        <!--        <tr>-->
-        <!--         <td class="hours_left">-->
-        <!--                <span>December 24</span>-->
-        <!--                 <span class="dashes"></span>-->
-        <!--            </td>   -->
-        <!--            <td class="hours_right">-->
-        <!--                11:00am – 2:00pm-->
-        <!--            </td>-->
-        <!--        </tr>-->
-        <!--</table>-->
-
     </div>
     <div class="page_right">
         <div class="hours_box feature_box" id="home_hours_container">
@@ -128,6 +95,7 @@
             prefix = get_prefix();
             var pages_json = "//midtown2.mallmaverick.com/pages/midtown2-santa-hours.json"
             $.getJSON(pages_json).done(function(data) {
+                console.log("data", data)
                 $('#hours_page_content').html(data.body);
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
