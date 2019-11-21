@@ -30,7 +30,7 @@
                 </tr>
             </script>
         </table>
-        <div id="hours_page_content"></div>
+        <div id="hours_page_content" class="hidden_now"></div>
     </div>
     <div class="page_right">
         <div class="hours_box feature_box" id="home_hours_container">
