@@ -869,7 +869,12 @@ a{
     display: inline-block;
     border-bottom: 2px dotted #ccc;
 }    
-    
+
+@media (max-width: 800px) {
+    #hours_page_content .hours_container tbody tr td span:last-of-type {
+        display: none;
+    } 
+}    
 .parking_header {
     margin-top:15px;
     margin-bottom:44px;
