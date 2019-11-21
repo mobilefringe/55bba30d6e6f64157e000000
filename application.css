@@ -860,7 +860,7 @@ a{
     text-align: right;
 }
 
-#hours_page_content .hours_container tbody tr td span:last-of-type {
+#hours_page_content .hours_container tbody tr td span:first-of-type {
     padding-right: 5px;    
 }
 
