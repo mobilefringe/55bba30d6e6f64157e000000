@@ -96,7 +96,10 @@
             var pages_json = "//midtown2.mallmaverick.com/pages/midtown2-santa-hours.json"
             $.getJSON(pages_json).done(function(data) {
                 console.log("data", data)
-                $('#hours_page_content').html(data.body);
+                if (data.body.length > 0) {
+                    $('#hours_page_content').html(data.body);
+                    $('#hours_page_content').show();
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
