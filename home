@@ -205,14 +205,10 @@
                 if(contest.id){
                     //show form popup
                     $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
-         
                     $("#popup_description").text(popup.description1);
-                    // if($.cookie("popup_viewed") != "true"){
-                        // $.cookie("popup_viewed", "true", { expires: 10 });
                         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
                         $('.popup_home_form').show();
                         $('body').addClass('no_scroll');
-                    // }
                     $('.close_popup_form, .custom_backdrop').click(function(){
                         $(".modal-backdrop").remove();
             	        $(".popup_home_form").remove();
@@ -227,18 +223,53 @@
                 } 
                 else {
                     //show image popup
-                    // if($.cookie("popup_viewed") != "true"){
-                        // $.cookie("popup_viewed", "true", { expires: 1 });
                         renderPopUp("#popup_container", "#popup_template", popup)
-                        // $.cookie("popup_viewed", "true");
                         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
                         $('.popup_home').show()
-                    // }
                     $('.close_popup, .custom_backdrop').click(function(){
                         $(".modal-backdrop").remove();
             	        $(".popup_home").remove();
                     })
                 }
+                
+                
+//code for expired cookie pop-up
+                // if(contest.id){
+                //     //show form popup
+                //     $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
+                //     $("#popup_description").text(popup.description1);
+                //     if($.cookie("popup_viewed") != "true"){
+                //         $.cookie("popup_viewed", "true", { expires: 1 });
+                //         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
+                //         $('.popup_home_form').show();
+                //         $('body').addClass('no_scroll');
+                //     }
+                //     $('.close_popup_form, .custom_backdrop').click(function(){
+                //         $(".modal-backdrop").remove();
+            	   //     $(".popup_home_form").remove();
+            	   //     $('body').removeClass('no_scroll');
+                //     })
+                //     var contest_details = getContestByID(contest.id)
+                //     $('#popup_contets_form').submit(function(e){
+                //         e.preventDefault();
+                //         $('#popup_submit').prop('disabled', true);
+                //         submit_contest(contest_details.slug);
+                //     });
+                // } 
+                // else {
+                //     //show image popup
+                //     if($.cookie("popup_viewed") != "true"){
+                //         $.cookie("popup_viewed", "true", { expires: 1 });
+                //         renderPopUp("#popup_container", "#popup_template", popup)
+                //         $.cookie("popup_viewed", "true");
+                //         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
+                //         $('.popup_home').show()
+                //     }
+                //     $('.close_popup, .custom_backdrop').click(function(){
+                //         $(".modal-backdrop").remove();
+            	   //     $(".popup_home").remove();
+                //     })
+                // }
                 
             }
         }
