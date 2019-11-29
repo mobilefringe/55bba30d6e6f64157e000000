@@ -290,7 +290,7 @@ body{
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     
-    width: 600px;
+    width: 700px;
 }
 
 .close_popup{
@@ -1553,7 +1553,7 @@ g.mapplic-active > * {
 /*}*/
 @media(max-width:1024px){
     .popup_home{
-        width:90%;
+        width:80%;
     }
     
     .menu_divider{
