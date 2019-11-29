@@ -230,7 +230,7 @@
                     // if($.cookie("popup_viewed") != "true"){
                         // $.cookie("popup_viewed", "true", { expires: 1 });
                         renderPopUp("#popup_container", "#popup_template", popup)
-                        $.cookie("popup_viewed", "true");
+                        // $.cookie("popup_viewed", "true");
                         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
                         $('.popup_home').show()
                     // }
