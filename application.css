@@ -1551,7 +1551,7 @@ g.mapplic-active > * {
 /*}*/
 @media(max-width:1024px){
     .popup_home{
-        width:50%;
+        width:33%;
     }
     
     .menu_divider{
