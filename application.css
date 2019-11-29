@@ -289,8 +289,6 @@ body{
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
-    width: 700px;
 }
 
 .close_popup{
