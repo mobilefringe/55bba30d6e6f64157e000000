@@ -208,7 +208,7 @@
                     // $(".popup_img").attr("src", "http://via.placeholder.com/550")
                     $("#popup_description").text(popup.description1);
                     if($.cookie("popup_viewed") != "true"){
-                        $.cookie("popup_viewed", "true", { expires: 10 });
+                        // $.cookie("popup_viewed", "true", { expires: 10 });
                         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
                         $('.popup_home_form').show();
                         $('body').addClass('no_scroll');
@@ -228,7 +228,7 @@
                 else {
                     //show image popup
                     if($.cookie("popup_viewed") != "true"){
-                        $.cookie("popup_viewed", "true", { expires: 1 });
+                        // $.cookie("popup_viewed", "true", { expires: 1 });
                         renderPopUp("#popup_container", "#popup_template", popup)
                         $.cookie("popup_viewed", "true");
                         $('<div class="modal-backdrop custom_backdrop"></div>').appendTo(document.body);
