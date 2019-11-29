@@ -205,14 +205,14 @@
                 if(contest.id){
                     //show form popup
                     $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
-                    // $(".popup_img").attr("src", "http://via.placeholder.com/550")
+         
                     $("#popup_description").text(popup.description1);
-                    if($.cookie("popup_viewed") != "true"){
+                    // if($.cookie("popup_viewed") != "true"){
                         // $.cookie("popup_viewed", "true", { expires: 10 });
                         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
                         $('.popup_home_form').show();
                         $('body').addClass('no_scroll');
-                    }
+                    // }
                     $('.close_popup_form, .custom_backdrop').click(function(){
                         $(".modal-backdrop").remove();
             	        $(".popup_home_form").remove();
