@@ -245,10 +245,10 @@ src="https://www.facebook.com/tr?id=2207759592575298&ev=PageView&noscript=1"
                 {{yield}}
             </div>
             <div class="trim_screen">
-    <a id="track_link" href="https://www.wires.org.au/" target="_blank">
-        <img class="center-block bc_banner" src="THE_IMG_SRC" alt=""/>
-    </a>
-</div>
+                <a id="track_link" href="https://www.wires.org.au/" target="_blank">
+                    <img class="center-block bc_banner" src="THE_IMG_SRC" alt=""/>
+                </a>
+            </div>
 
             <footer class="footer">
                 <p class="social_footer">
