@@ -255,9 +255,9 @@ src="https://www.facebook.com/tr?id=2207759592575298&ev=PageView&noscript=1"
             </footer>
         </div>
         <script>
-            $("#track_link").click( function() {
-                trackOutboundLink('http://bit.ly/cyclone-idai-cushman-wakefield');
-            });
-        </script>
+    $("#track_link").click( function() {
+        trackOutboundLink('https://www.wires.org.au/');
+    });
+</script>
     </body>
 </html>
