@@ -244,6 +244,12 @@ src="https://www.facebook.com/tr?id=2207759592575298&ev=PageView&noscript=1"
             <div class="yield">
                 {{yield}}
             </div>
+            <div class="trim_screen">
+    <a id="track_link" href="https://www.wires.org.au/" target="_blank">
+        <img class="center-block bc_banner" src="THE_IMG_SRC" alt=""/>
+    </a>
+</div>
+
             <footer class="footer">
                 <p class="social_footer">
                     <a href="https://www.facebook.com/Shop.Midtown/?ref=bookmarks" target="_blank"><img src="//codecloud.cdn.speedyrails.net/sites/55bba30d6e6f64157e000000/d443eba4be885de806814312cff07c42/Facebook_icon.jpg" class="" alt="fb"></a>
