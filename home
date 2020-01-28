@@ -205,6 +205,14 @@
             $('.flexslider').flexslider({
                 animation: "slide",
             });
+            
+            // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
+            if $("#routing-button").click(function(){
+                
+            }) 
+            
+            
+            
             // var popup = getPopups()[0];
             // console.log("cookie", $.cookie())
             
