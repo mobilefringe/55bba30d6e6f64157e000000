@@ -82,15 +82,15 @@
                         I agree to receive newsletters from Midtown.
                     </label>
             </form>
-            <div id="newsletter_form" class="js-cm-form">	
-                    <input id="newsletter_email" name="cm-siythy-siythy" type="email" placeholder="Enter your email address" class="pull-left js-cm-email-input" required />
-                    <button id="routing-button" class="btn_mp pull-left">SUBSCRIBE</button>
-                    <div class="clearfix"></div>
-                    <label class="check_text">
-                        <input type="checkbox" required id="newsletter_agree" />
-                        I agree to receive newsletters from Midtown.
-                    </label>
-            </div>
+            <!--<div id="newsletter_form" class="js-cm-form">	-->
+            <!--        <input id="newsletter_email" name="cm-siythy-siythy" type="email" placeholder="Enter your email address" class="pull-left js-cm-email-input" required />-->
+            <!--        <button id="routing-button" class="btn_mp pull-left">SUBSCRIBE</button>-->
+            <!--        <div class="clearfix"></div>-->
+            <!--        <label class="check_text">-->
+            <!--            <input type="checkbox" required id="newsletter_agree" />-->
+            <!--            I agree to receive newsletters from Midtown.-->
+            <!--        </label>-->
+            <!--</div>-->
             <script type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js"></script>
         </div>
     </div>
@@ -207,9 +207,9 @@
             });
             
             // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-            if $("#routing-button").click(function(){
-                console.log(window.location, window.location.pathname)
-            }) 
+            // if $("#routing-button").click(function(){
+            //     console.log(window.location, window.location.pathname)
+            // }) 
             
             
             
