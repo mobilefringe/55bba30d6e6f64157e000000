@@ -206,13 +206,6 @@
                 animation: "slide",
             });
             
-            // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-            // if $("#routing-button").click(function(){
-            //     console.log(window.location, window.location.pathname)
-            // }) 
-            
-            
-            
             // var popup = getPopups()[0];
             // console.log("cookie", $.cookie())
             
@@ -297,4 +290,11 @@
     function render_instagram(data){
         $('#instafeed').html(data)
     }
+    
+    function pushNewsletterRoute(){
+        // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
+        if $("#routing-button").click(function(){
+            console.log(window.location, window.location.pathname)
+        }) 
+    }            
 </script>
