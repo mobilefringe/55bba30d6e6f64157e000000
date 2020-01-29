@@ -140,11 +140,9 @@
             
             let emailEntered = document.location.search.replace(/^.*?\=/,'');
             let emailValue = $("#fieldEmail")[0].value
-            // let emailValue = $("#fieldEmail").val()
-            console.log('eml', emailValue)
             
             if (document.location.search.includes('?email=')) {
-                emailValue = emailEntered.toString()
+                emailValue = 'emailEntered.toString()'
                 console.log($("#fieldEmail"))
             } else {
                 emailValue = ""
