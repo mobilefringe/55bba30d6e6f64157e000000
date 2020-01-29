@@ -326,8 +326,6 @@
         
         loadMallDataCached(renderAll); 
         
-        pushNewsletterRoute()
-        
         function pushNewsletterRoute(){
             let emailEntered = ($('#newsletter_email')[0].value)
             window.document.location = '/newsletter' + '?email=' + emailEntered;
