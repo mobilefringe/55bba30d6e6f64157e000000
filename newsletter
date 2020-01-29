@@ -126,6 +126,7 @@
         console.log($("#fieldEmail")[0].value)
         
         let emailEntered = document.location.search.replace(/^.*?\=/,'');
+        console.log(emailEntered)
         
         // if (document.location.search.includes('?email=') ) {
         //     $("#fieldEmail")[0].value = emailEntered
