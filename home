@@ -297,7 +297,7 @@
         // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
         let btn = document.querySelector("#routing-button");
         
-        console.log(document.querySelector("#newsletter_email"), $('#newsletter_email').value)
+        console.log(document.querySelector("#newsletter_email"), $('#newsletter_email'))
         
         // btn.addEventListener('click', function(){
         //     window.document.location = '/newsletter' + '?email=' + emailEntered;
