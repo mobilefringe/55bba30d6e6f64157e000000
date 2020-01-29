@@ -128,7 +128,7 @@
         let emailValue = $("#fieldEmail")[0].value
         
         if (document.location.search.includes('?email=')) {
-            emailValue = emailEntered
+            emailValue = emailEntered.toString()
         }
 
     });
