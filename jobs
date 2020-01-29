@@ -42,17 +42,15 @@
         
         <div class="newsletter_box feature_box">
             <div id="success_subscribe">
-                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe"></i>
+                <i class="fa fa-close pull-right cursor_pointer" id="close_subscribe" style="color:#fff"></i>
                 <p class="middle_align text-center">Thank you for subscribing to our newsletter!</p>
             </div>
             <h3 class="newsletter_header">NEWSLETTER</h3>
             <p>Exclusive deals straight to your inbox!</p>
-            <form action="//mobilefringe.createsend.com/t/d/s/yhudtt/" id="newsletter_form">
-                <input name="cm-yhudtt-yhudtt" type="text" placeholder="Enter your email address" id="newsletter_email" class="pull-left" required/>
-                <input type="submit" value="SUBSCRIBE" class="btn_mp pull-left" />
-                <div class="clearfix"></div>
-                <label class="check_text"><input type="checkbox" required id="newsletter_agree" />I agree to receive newsletters from Midtown.</label>
-            </form>
+            <div id="newsletter_form" class="js-cm-form">	
+                    <input id="newsletter_email" type="email" placeholder="Enter your email address" class="pull-left" required />
+                    <button id="routing-button" class="btn_mp pull-left">SUBSCRIBE</button>
+            </div>
         </div>
         <div class="feature_box border_1">
             <h3 class="feature_header">Blog</h3>
