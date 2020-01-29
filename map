@@ -107,7 +107,7 @@
             <p>Exclusive deals straight to your inbox!</p>
             <div id="newsletter_form" class="js-cm-form">	
                     <input id="newsletter_email" type="email" placeholder="Enter your email address" class="pull-left" required />
-                    <button id="routing-button" onclick="pushNewsletterRoute()" class="btn_mp pull-left">SUBSCRIBE</button>
+                    <button id="routing-button" class="btn_mp pull-left">SUBSCRIBE</button>
             </div>
         </div>
         <div class="feature_box border_1">
@@ -323,13 +323,11 @@
                 $(".mapplic-layer[data-floor='"+val.id+"']").hide();
             });
         }
-        
-        loadMallDataCached(renderAll); 
-        
-        function pushNewsletterRoute(){
+        $( "#routing-button" ).on( "click", function() {
             let emailEntered = ($('#newsletter_email')[0].value)
             window.document.location = '/newsletter' + '?email=' + emailEntered;
-        }
-          
+        });
+        
+        loadMallDataCached(renderAll); 
     })
 </script>
