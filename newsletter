@@ -142,7 +142,7 @@
             let emailValue = $("#fieldEmail")[0].value
             
             if (document.location.search.includes('?email=')) {
-                $("#fieldEmail")[0].value = "test"
+                $("#fieldEmail")[0].value = emailEntered
 
             } else {
                 emailValue = ""
