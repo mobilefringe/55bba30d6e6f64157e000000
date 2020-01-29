@@ -22,7 +22,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <label for="fieldEmail">Email *</label>
-                    <input id="fieldEmail" name="cm-siythy-siythy" value="" type="email" class="js-cm-email-input" required />
+                    <input id="fieldEmail" name="cm-siythy-siythy" value="getVal()" type="email" class="js-cm-email-input" required />
                 </div>
                 <div class="col-md-6">
                     <label for="fieldtruhiry">Postal Code</label>
@@ -122,14 +122,29 @@
         loadMallDataCached(renderAll); 
         
         // if ()
-        console.log(document.location.search, 'true?', document.location.search.includes('?email='))
+        // console.log(document.location.search, 'true?', document.location.search.includes('?email='))
         
-        let emailEntered = document.location.search.replace(/^.*?\=/,'');
-        let emailValue = $("#fieldEmail")[0].value
+        // let emailEntered = document.location.search.replace(/^.*?\=/,'');
+        // let emailValue = $("#fieldEmail")[0].value
         
-        if (document.location.search.includes('?email=')) {
-            emailValue = emailEntered.toString()
-            console.log($("#fieldEmail"))
+        // if (document.location.search.includes('?email=')) {
+        //     emailValue = emailEntered.toString()
+        //     console.log($("#fieldEmail"))
+        // }
+        
+        function getVal() {
+            // if ()
+            console.log(document.location.search, 'true?', document.location.search.includes('?email='))
+            
+            let emailEntered = document.location.search.replace(/^.*?\=/,'');
+            let emailValue = $("#fieldEmail")[0].value
+            
+            if (document.location.search.includes('?email=')) {
+                emailValue = emailEntered.toString()
+                console.log($("#fieldEmail"))
+            } else {
+                emailValue = ""
+            }
         }
 
     });
