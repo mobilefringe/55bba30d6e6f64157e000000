@@ -289,7 +289,7 @@
         }
         loadMallDataCached(renderAll); 
         
-        if ($('#routing-button').submit(pushNewsletterRoute()))
+        // if ($('#routing-button').submit(pushNewsletterRoute()))
     })
     
     
