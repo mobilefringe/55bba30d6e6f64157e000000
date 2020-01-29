@@ -299,8 +299,6 @@
         
         let emailEntered = ($('#newsletter_email')[0].value)
         
-        // btn.addEventListener('click', function(){
-            window.document.location = '/newsletter' + '?email=' + emailEntered;
-        // })
+        window.document.location = '/newsletter' + '?email=' + emailEntered;
     }            
 </script>
