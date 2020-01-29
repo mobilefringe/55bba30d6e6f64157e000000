@@ -123,14 +123,13 @@
         
         // if ()
         console.log(document.location.search, 'true?', document.location.search.includes('?email='))
-        console.log($("#fieldEmail")[0].value)
         
         let emailEntered = document.location.search.replace(/^.*?\=/,'');
-        console.log(emailEntered)
+        let emailValue = $("#fieldEmail")[0].value
         
-        // if (document.location.search.includes('?email=') ) {
-        //     $("#fieldEmail")[0].value = emailEntered
-        // })
+        if (document.location.search.includes('?email=') ) {
+            emailValue = emailEntered
+        })
 
     });
 </script>
