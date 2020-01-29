@@ -327,9 +327,13 @@
         loadMallDataCached(renderAll); 
         
         function pushNewsletterRoute(){
-            let emailEntered = ($('#newsletter_email')[0].value)
-            window.document.location = '/newsletter' + '?email=' + emailEntered;
-            console.log('click')
+            let btn = document.querySelector("#routing-button");
+            if (btn.click()) {
+                let emailEntered = ($('#newsletter_email')[0].value)
+                window.document.location = '/newsletter' + '?email=' + emailEntered;
+                console.log('hey')
+            }
+            
         }
           
     })
