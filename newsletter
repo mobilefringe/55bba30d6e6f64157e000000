@@ -122,7 +122,8 @@
         loadMallDataCached(renderAll); 
         
         // if ()
-        // console.log(document.location.search)
+        console.log(document.location.search)
+        console.log($("#fieldEmail"))
         // if (document.location.search.includes('?email=') {
         //     $("#fieldEmail").value = document.location.search.replace(/^.*?\=/,'');
         // })
