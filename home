@@ -294,11 +294,8 @@
     }
     
     function pushNewsletterRoute(){
-        // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
         let btn = document.querySelector("#routing-button");
-        
         let emailEntered = ($('#newsletter_email')[0].value)
-        
         window.document.location = '/newsletter' + '?email=' + emailEntered;
     }            
 </script>
