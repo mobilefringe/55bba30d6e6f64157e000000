@@ -123,31 +123,13 @@
         
         getVal()
         
-        // if ()
-        // console.log(document.location.search, 'true?', document.location.search.includes('?email='))
-        
-        // let emailEntered = document.location.search.replace(/^.*?\=/,'');
-        // let emailValue = $("#fieldEmail")[0].value
-        
-        // if (document.location.search.includes('?email=')) {
-        //     emailValue = emailEntered.toString()
-        //     console.log($("#fieldEmail"))
-        // }
-        
         function getVal() {
-            // if ()
-            console.log(document.location.search, 'true?', document.location.search.includes('?email='))
-            
             let emailEntered = document.location.search.replace(/^.*?\=/,'');
-            let emailValue = $("#fieldEmail")[0].value
-            
             if (document.location.search.includes('?email=')) {
                 $("#fieldEmail")[0].value = emailEntered
-
             } else {
-                emailValue = ""
+                $("#fieldEmail")[0].value = ""
             }
         }
-
     });
 </script>
