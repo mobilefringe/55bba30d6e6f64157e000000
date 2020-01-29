@@ -120,5 +120,10 @@
             });
         }
         loadMallDataCached(renderAll); 
+        
+        // if ()
+        console.log(document.location.search)
+        // in newsletter
+        // let email.Entered = document.location.search.replace(/^.*?\=/,'');
     });
 </script>
