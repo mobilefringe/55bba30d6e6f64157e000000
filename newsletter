@@ -123,10 +123,10 @@
         
         // if ()
         console.log(document.location.search)
-        console.log($("#fieldEmail"))
-        // if (document.location.search.includes('?email=') {
-        //     $("#fieldEmail").value = document.location.search.replace(/^.*?\=/,'');
-        // })
+        console.log($("#fieldEmail")[0].value)
+        if (document.location.search.includes('?email=') {
+            $("#fieldEmail")[0].value = document.location.search.replace(/^.*?\=/,'');
+        })
         // in newsletter
         // let email.Entered = document.location.search.replace(/^.*?\=/,'');
     });
