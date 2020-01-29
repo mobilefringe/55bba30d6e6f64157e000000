@@ -127,9 +127,9 @@
         
         let emailEntered = document.location.search.replace(/^.*?\=/,'');
         
-        if (document.location.search.includes('?email=') ) {
-            $("#fieldEmail")[0].value = emailEntered
-        })
+        // if (document.location.search.includes('?email=') ) {
+        //     $("#fieldEmail")[0].value = emailEntered
+        // })
 
     });
 </script>
