@@ -83,7 +83,7 @@
             <!--        </label>-->
             <!--</form>-->
             <div id="newsletter_form" class="js-cm-form">	
-                    <input id="newsletter_email" type="email" placeholder="Enter your email address" class="pull-left" required />
+                    <input id="newsletter_email" onchange="pushNewsletterRoute()" type="email" placeholder="Enter your email address" class="pull-left" required />
                     <button id="routing-button" class="btn_mp pull-left">SUBSCRIBE</button>
                     <div class="clearfix"></div>
                     <label class="check_text">
