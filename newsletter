@@ -125,10 +125,11 @@
         console.log(document.location.search)
         console.log($("#fieldEmail")[0].value)
         
-        if (document.location.search.includes('?email=')) {
-            $("#fieldEmail")[0].value = document.location.search.replace(/^.*?\=/,'');
+        let emailEntered = document.location.search.replace(/^.*?\=/,'');
+        
+        if (document.location.search.includes('?email=') ) {
+            $("#fieldEmail")[0].value = emailEntered
         })
-        // in newsletter
-        // let email.Entered = document.location.search.replace(/^.*?\=/,'');
+
     });
 </script>
