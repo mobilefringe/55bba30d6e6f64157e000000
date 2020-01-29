@@ -323,12 +323,14 @@
                 $(".mapplic-layer[data-floor='"+val.id+"']").hide();
             });
         }
+        
+        loadMallDataCached(renderAll); 
+        
         function pushNewsletterRoute(){
             let btn = document.querySelector("#routing-button");
             let emailEntered = ($('#newsletter_email')[0].value)
             window.document.location = '/newsletter' + '?email=' + emailEntered;
         }
-        loadMallDataCached(renderAll); 
           
     })
 </script>
