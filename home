@@ -302,10 +302,5 @@
         btn.addEventListener('click', function(){
             window.document.location = '/newsletter' + '?email=' + emailEntered;
         })
-        
-        
-        // in newsletter
-        // let email.Entered = document.location.search.replace(/^.*?\=/,'');
-        
     }            
 </script>
