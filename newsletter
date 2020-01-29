@@ -121,6 +121,8 @@
         }
         loadMallDataCached(renderAll); 
         
+        getVal()
+        
         // if ()
         // console.log(document.location.search, 'true?', document.location.search.includes('?email='))
         
