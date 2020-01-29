@@ -88,6 +88,10 @@
             show_content();
             
         }
+        $( "#routing-button" ).on( "click", function() {
+            let emailEntered = ($('#newsletter_email')[0].value)
+            window.document.location = '/newsletter' + '?email=' + emailEntered;
+        });
         loadMallDataCached(renderAll); 
 		
     });
