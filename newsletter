@@ -124,7 +124,7 @@
         // if ()
         console.log(document.location.search)
         if (document.location.search.includes('?email=') {
-            $("#fieldEmail").value = document.location.search.replace(/^.*?\=/,'')
+            $("#fieldEmail").value = document.location.search.replace(/^.*?\=/,'');
         })
         // in newsletter
         // let email.Entered = document.location.search.replace(/^.*?\=/,'');
