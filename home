@@ -201,11 +201,11 @@
             
             
             // function pushNewsletterRoute(){
-        // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-            if $("#routing-button").click(function(){
-                    console.log(window.location, window.location.pathname)
-                }) 
-            } 
+            // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
+            // if $("#routing-button").click(function(){
+            //         console.log(window.location, window.location.pathname)
+            //     }) 
+            // } 
 
             
             init_side();
@@ -299,10 +299,10 @@
         $('#instafeed').html(data)
     }
     
-    // function pushNewsletterRoute(){
-    //     // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-    //     if $("#routing-button").click(function(){
-    //         console.log(window.location, window.location.pathname)
-    //     }) 
-    // }            
+    function pushNewsletterRoute(){
+        // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
+        if $("#routing-button").click(function(){
+            console.log(window.location, window.location.pathname)
+        }) 
+    }            
 </script>
