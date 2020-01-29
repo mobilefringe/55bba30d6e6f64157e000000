@@ -143,7 +143,7 @@
             
             if (document.location.search.includes('?email=')) {
                 emailValue = 'emailEntered.toString()'
-                console.log($("#fieldEmail"))
+
             } else {
                 emailValue = ""
             }
