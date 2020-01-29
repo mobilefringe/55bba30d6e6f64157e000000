@@ -129,7 +129,7 @@
         
         if (document.location.search.includes('?email=')) {
             emailValue = emailEntered.toString()
-            console.log($("#fieldEmail")[0])
+            console.log($("#fieldEmail"))
         }
 
     });
