@@ -200,12 +200,6 @@
             renderFashion('#home_fashion_container', '#home_fashion_template', latest_fashion);
             
             
-            // function pushNewsletterRoute(){
-            // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-            // if $("#routing-button").click(function(){
-            //         console.log(window.location, window.location.pathname)
-            //     }) 
-            // } 
 
             
             init_side();
@@ -299,10 +293,18 @@
         $('#instafeed').html(data)
     }
     
-    // function pushNewsletterRoute(){
-    //     // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
-    //     if $("#routing-button").click(function(){
-    //         console.log(window.location, window.location.pathname)
-    //     }) 
-    // }            
+    function pushNewsletterRoute(){
+        // if button id="routing-button" is clicked, go to /newsletter route and prepopulate field
+        let btn = document.querySelector("#routing-button");
+        console.log(document.querySelector("#newsletter_email"))
+        
+        btn.addEventListener('click', function(){
+            window.document.location = '/newsletter' + '?email=' + emailEntered;
+        })
+        
+        
+        // in newsletter
+        // let email.Entered = document.location.search.replace(/^.*?\=/,'');
+        
+    }            
 </script>
