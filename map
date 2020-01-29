@@ -327,7 +327,6 @@
         loadMallDataCached(renderAll); 
         
         function pushNewsletterRoute(){
-            let btn = document.querySelector("#routing-button");
             let emailEntered = ($('#newsletter_email')[0].value)
             window.document.location = '/newsletter' + '?email=' + emailEntered;
         }
