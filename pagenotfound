@@ -1,14 +1,14 @@
-<div class="pages_banner">
-    <div class="main_container">
-        <h2>Ooops!</h2>
-    </div>
-</div>
-<div class="main_container margin_30">
-    <div class="details_desc">
+<div class="green_bar"></div>
+<div class="page_main_container">
+    <div class="page_left">
+        <h2 class="hours_heading parking_header">Ooops!</h2>    
         <p>We're sorry, the page you were looking for no longer exists.</p>
         <br>
         <p>Please <a href="/">return to the home page</a> now.</p>
+
     </div>
+    <div class="page_right"></div>
+
 </div>
 
 <script>
