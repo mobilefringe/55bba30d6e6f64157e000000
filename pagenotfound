@@ -4,6 +4,7 @@
         <h2 class="hours_heading parking_header">Ooops!</h2>    
         <p>We're sorry, the page you were looking for no longer exists.</p>
         <p>Please <a href="/">return to the home page</a> now.</p>
+        <br/>
     </div>
     <div class="page_right"></div>
 </div>
