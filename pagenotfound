@@ -10,12 +10,12 @@
 </div>
 
 <script>
-    $(document).ready(function(e){
+   $(document).ready(function(e){
         init(e);
-        loadMallDataCached(renderPage);
-    })
-    
-    function renderPage(){
-        show_content();
-    }
+        function renderAll(){
+            show_content();
+        }
+
+        loadMallDataCached(renderAll);
+   });
 </script>
