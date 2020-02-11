@@ -109,7 +109,7 @@
             
             $('#subForm').submit(function(e){
                 e.preventDefault();
-                var first_name = $("#fieldyugmul").val()
+                var first_name = $("#fieldyugmu").val()
                 var last_name = $("#fieldyugcl").val();
                 var full_name = first_name + " " + last_name;
                 $("#fieldName").val(full_name);
