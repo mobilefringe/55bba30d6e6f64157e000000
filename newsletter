@@ -7,26 +7,26 @@
             <div id="mm_page_content"></div>
             <p>* Required Fields</p>
         </div>
-        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="A61C50BEC994754B1D79C5819EC1255C73F621E868BD996EBE6F5D8E1AAC70DA03F8D3AC343DF03ED1232C920EDD9EBD29B19A949E02465DE6F119F822628832">
+        <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="92D4C54F0FEC16E5ADC2B1904DE9ED1A17E3A69D8BD3500C3FAE188D97DBC8FCAF7323A9BC576827E805B45C89913DB1E4AB8A7136BF5946E7E8C55E21B5CB45">
             <div class="row">
                 <div class="col-md-6">
-                    <label for="fieldtruhirl">First Name</label>
-                    <input id="fieldtruhirl" name="cm-f-truhirl" type="text" required />
+                    <label for="fieldyugmu">First Name</label>
+                    <input id="fieldyugmu" name="cm-f-yugmu" type="text" required />
                 </div>
                 <div class="col-md-6">
-                    <label for="fieldtruhirr">Last Name</label>
-                    <input id="fieldtruhirr" name="cm-f-truhirr" type="text" required />
+                    <label for="fieldyugcl">Last Name</label>
+                    <input id="fieldyugcl" name="cm-f-yugcl" type="text" required />
                 </div>
             </div>
             <input id="fieldName" name="cm-name" type="text" />
             <div class="row">
                 <div class="col-md-6">
                     <label for="fieldEmail">Email *</label>
-                    <input id="fieldEmail" name="cm-siythy-siythy" type="email" class="js-cm-email-input" required />
+                    <input id="fieldEmail" name="cm-yuluidk-yuluidk" type="email" class="js-cm-email-input" required />
                 </div>
                 <div class="col-md-6">
-                    <label for="fieldtruhiry">Postal Code</label>
-                    <input id="fieldtruhiry" name="cm-f-truhiry" type="text" required />
+                    <label for="fieldyugcr">Postal Code</label>
+                    <input id="fieldyugcr" name="cm-f-yugcr" type="text" required />
                 </div>
             </div>
             <div class="row">
@@ -109,8 +109,8 @@
             
             $('#subForm').submit(function(e){
                 e.preventDefault();
-                var first_name = $("#fieldtruhirl").val()
-                var last_name = $("#fieldtruhirr").val();
+                var first_name = $("#fieldyugmul").val()
+                var last_name = $("#fieldyugcl").val();
                 var full_name = first_name + " " + last_name;
                 $("#fieldName").val(full_name);
                 $("#submit_btn").prop("disabled", true);
