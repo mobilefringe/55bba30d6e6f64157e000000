@@ -244,11 +244,11 @@ src="https://www.facebook.com/tr?id=2207759592575298&ev=PageView&noscript=1"
             <div class="yield">
                 {{yield}}
             </div>
-            <div class="trim_screen">
-                <a id="track_link" href="https://www.wires.org.au/" target="_blank">
-                    <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/jpeg/1578946102000/1040x500.jpg" alt=""/>
-                </a>
-            </div>
+            <!--<div class="trim_screen">-->
+            <!--    <a id="track_link" href="https://www.wires.org.au/" target="_blank">-->
+            <!--        <img class="center-block bc_banner" src="//codecloud.cdn.speedyrails.net/sites/599dcb2e6e6f6420d91e0300/image/jpeg/1578946102000/1040x500.jpg" alt=""/>-->
+            <!--    </a>-->
+            <!--</div>-->
 
             <footer class="footer">
                 <p class="social_footer">
