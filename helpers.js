@@ -63,6 +63,7 @@ function init(e){
 
 function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
+        console.log('indiv stores')
         var cat_id = $(this).attr('data-id');
         $('#show_all_stores').removeClass('active_store_nav');
         $('#cat_dd').addClass('active_store_nav');
@@ -85,6 +86,7 @@ function show_cat_stores(){
     });
     
     $('.show_all_stores').click(function(e){
+        console.log('all stores')
         $('#show_all_stores').addClass('active_store_nav');
         $('#cat_dd').removeClass('active_store_nav');
         $('#main_store_list, #store_list_container2').removeClass("full_width");
