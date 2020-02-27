@@ -65,6 +65,7 @@ function show_cat_stores(){
     $('.show_cat_stores').click(function(e){
         console.log('indiv stores')
         var cat_id = $(this).attr('data-id');
+        console.log(cat_id)
         $('#show_all_stores').removeClass('active_store_nav');
         $('#cat_dd').addClass('active_store_nav');
         $('.active_cat').removeClass('active_cat');
@@ -78,7 +79,9 @@ function show_cat_stores(){
         
         $.each(rows, function(i, val){
             var cat_array = val.getAttribute('data-cat').split(',');
+            
             console.log(val.getAttribute('data-cat'))
+            
             if ($.inArray(cat_id, cat_array) >= 0){
                 $(val).show();
             }
