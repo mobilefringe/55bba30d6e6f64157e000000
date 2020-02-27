@@ -77,7 +77,7 @@ function show_cat_stores(){
         $('.store_initial').hide();
         $('#cat_name span').text($(this).text());
         $('#cat_name').css('display', 'block');
-        $('#main_store_list, #store_list_container2').addClass("full_width");
+        $('#main_store_list').addClass("full_width");
         
         $.each(rows, function(i, val){
             var cat_array = val.getAttribute('data-cat').split(',');
@@ -96,7 +96,7 @@ function show_cat_stores(){
         console.log('all stores')
         $('#show_all_stores').addClass('active_store_nav');
         $('#cat_dd').removeClass('active_store_nav');
-        $('#main_store_list, #store_list_container2').removeClass("full_width");
+        $('#main_store_list').removeClass("full_width");
         $('.active_cat').removeClass('active_cat');
         $(this).addClass('active_cat');
     
