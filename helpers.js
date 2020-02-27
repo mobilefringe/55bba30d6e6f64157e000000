@@ -88,6 +88,9 @@ function show_cat_stores(){
             if ($.inArray(cat_id, cat_array) >= 0){
                 $(val).show();
             }
+            
+            
+            
         });
         $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
