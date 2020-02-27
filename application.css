@@ -533,6 +533,7 @@ a{
     min-width: 208px;
     border-radius: 0;
     padding-bottom: 15px;
+    margin-left:250px;
     margin-top: -1px;
     box-shadow: 0px 1px 5px rgba(115, 115, 115, 0.5);
 }
