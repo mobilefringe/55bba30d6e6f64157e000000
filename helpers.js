@@ -80,6 +80,7 @@ function show_cat_stores(){
         $('#main_store_list').addClass("full_width");
         
         $.each(rows, function(i, val){
+            console.log(val)
             var cat_array = val.getAttribute('data-cat').split(',');
             
    
