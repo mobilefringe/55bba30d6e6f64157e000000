@@ -108,6 +108,7 @@ function show_cat_stores(){
         rows.show();
         
         $('#store_list_container').show();
+        $('.content_container').hide();
 
         $.each($('.store_initial'), function(i, val){
             if ($(val).text().trim().length > 0){
