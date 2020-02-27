@@ -82,7 +82,7 @@ function show_cat_stores(){
         $.each(rows, function(i, val){
             var cat_array = val.getAttribute('data-cat').split(',');
             
-            console.log($(this).attr('data-cat'))
+   
             
             if ($.inArray(cat_id, cat_array) >= 0){
                 $(val).show();
