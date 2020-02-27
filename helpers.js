@@ -72,6 +72,7 @@ function show_cat_stores(){
         rows.hide();
         
         $('#store_list_container').hide();
+        $('.content_container').show();
         
         $('.store_initial').hide();
         $('#cat_name span').text($(this).text());
