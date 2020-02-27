@@ -74,6 +74,9 @@ function show_cat_stores(){
         $(this).addClass('active_cat');
         var rows = $('.cats_row');
         rows.hide();
+        
+        $('#store_list_container').hide();
+        
         $('.store_initial').hide();
         $('#cat_name span').text($(this).text());
         $('#cat_name').css('display', 'block');
