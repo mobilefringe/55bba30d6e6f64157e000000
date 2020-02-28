@@ -291,7 +291,7 @@
         background: #ccc;
     }
     .flex-control-paging li a.flex-active {
-        background: #red;
+        background: #000;
     }
     .flex-control-nav {
         bottom: -20px;
