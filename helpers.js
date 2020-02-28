@@ -85,7 +85,7 @@ function show_cat_stores(){
                 $(val).show();
             }
         });
-        $('html, body').animate({scrollTop : 0},800);
+        // $('html, body').animate({scrollTop : 0},800);
         e.preventDefault();
     });
     
