@@ -899,7 +899,7 @@ a{
 
 @media (max-width: 800px) {
     .center_text{
-        padding: 15px 0;
+        text-align: initial;
     }
     #hours_page_content .hours_container tbody tr td:first-of-type {
         width: 40%;
