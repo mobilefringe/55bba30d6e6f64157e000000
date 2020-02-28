@@ -1849,8 +1849,7 @@ g.mapplic-active > * {
 
 @media(max-width:350px){
     .category_icon {
-        width: 15px;
-        margin-right:25px;
+        display: none;
     }
 }
 
