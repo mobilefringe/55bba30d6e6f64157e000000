@@ -330,6 +330,9 @@ body{
     text-align: center;
 }
 
+.category_icon {
+    width: 25px;
+}
 
 .middle_align{
     position: relative;
