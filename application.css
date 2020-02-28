@@ -171,7 +171,7 @@ body{
 
 .show_all_stores,
 .show_cat_stores {
-    padding: 0 10px;
+    padding: 10 0px;
 }
 
 .show_all_stores:hover,
