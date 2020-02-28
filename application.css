@@ -900,8 +900,8 @@ a{
 @media (max-width: 800px) {
     .center_text{
         text-align: initial;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        /*padding-top: 10px;*/
+        /*padding-bottom: 10px;*/
     }
     .cat_text_right {
         text-align: right;
