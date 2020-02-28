@@ -328,7 +328,6 @@ body{
 
 .center_text {
     text-align: center;
-    padding: 15px 0;
 }
 
 
@@ -874,6 +873,9 @@ a{
 }    
 
 @media (max-width: 800px) {
+    .center_text{
+        padding: 15px 0;
+    }
     #hours_page_content .hours_container tbody tr td:first-of-type {
         width: 40%;
         white-space: normal;
