@@ -28,6 +28,9 @@ body{
     padding: 2px;
 }
 
+.pad_numbers {
+    padding-right: 25px;
+}
 
 #post_container{
 }
