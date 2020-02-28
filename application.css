@@ -1851,6 +1851,9 @@ g.mapplic-active > * {
     .category_icon {
         display: none;
     }
+    .pad_numbers {
+        padding-right: 0;
+    }
 }
 
 
