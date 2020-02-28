@@ -169,7 +169,7 @@ body{
     font-size:14px;   
 }
 
-.show_all_stores,
+.dropdown-menu, .show_all_stores,
 .show_cat_stores {
     padding: 10px 0px;
 }
