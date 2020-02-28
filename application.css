@@ -901,6 +901,9 @@ a{
     .center_text{
         text-align: initial;
     }
+    .cat_text_right {
+        text-align: right;
+    }
     #hours_page_content .hours_container tbody tr td:first-of-type {
         width: 40%;
         white-space: normal;
