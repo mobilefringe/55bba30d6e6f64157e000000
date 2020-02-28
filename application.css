@@ -163,6 +163,19 @@ body{
     display: none;
 }
 
+.flex-viewport {
+    margin-bottom: 25px;
+}
+.flex-control-paging li a {
+    background: #ccc;
+}
+.flex-control-paging li a.flex-active {
+    background: #000;
+}
+.flex-control-nav {
+    bottom: -20px;
+}
+
 #newsletter_form{
     font-size:14px;   
 }
