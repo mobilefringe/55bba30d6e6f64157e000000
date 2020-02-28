@@ -171,7 +171,7 @@ body{
 
 .dropdown-menu, .show_all_stores,
 .show_cat_stores {
-    padding: 10px 0px;
+    padding: 0px 10px;
 }
 
 .show_all_stores:hover,
