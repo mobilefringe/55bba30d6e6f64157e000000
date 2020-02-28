@@ -172,6 +172,12 @@ body{
     padding: 0 10px;
 }
 
+.show_all_stores:hover,
+.show_cat_stores:hover {
+    background: #0000FF;
+    color: #fff;
+}
+
 .dropdown-menu2 .sub-menu {
     left: 100%;
     position: absolute;
