@@ -167,6 +167,11 @@ body{
     font-size:14px;   
 }
 
+.show_all_stores,
+.show_cat_stores {
+    padding: 0 10px;
+}
+
 .dropdown-menu2 .sub-menu {
     left: 100%;
     position: absolute;
