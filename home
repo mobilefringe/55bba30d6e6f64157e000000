@@ -290,5 +290,8 @@
     .flex-control-paging li a {
         background: #ccc;
     }
+    .flex-control-nav {
+        bottom: -20px;
+    }
     
 </style>
