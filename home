@@ -282,19 +282,3 @@
     }
 
 </script>
-
-<style>
-    .flex-viewport {
-        margin-bottom: 25px;
-    }
-    .flex-control-paging li a {
-        background: #ccc;
-    }
-    .flex-control-paging li a.flex-active {
-        background: #000;
-    }
-    .flex-control-nav {
-        bottom: -20px;
-    }
-    
-</style>
