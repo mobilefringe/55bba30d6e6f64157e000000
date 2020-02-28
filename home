@@ -282,3 +282,13 @@
     }
 
 </script>
+
+<style>
+    .flex-viewport {
+        margin-bottom: 25px;
+    }
+    .flex-control-paging li a {
+        background: #ccc;
+    }
+    
+</style>
