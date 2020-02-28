@@ -896,13 +896,10 @@ a{
 
 @media (max-width: 800px) {
     .mobile_20_padding{
-        text-align: initial;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .cat_text_right {
-        text-align: right;
-    }
+
     #hours_page_content .hours_container tbody tr td:first-of-type {
         width: 40%;
         white-space: normal;
