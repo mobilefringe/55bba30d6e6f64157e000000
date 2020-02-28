@@ -169,7 +169,10 @@ body{
     font-size:14px;   
 }
 
-
+.show_all_stores,
+.show_cat_stores {
+    padding: 10px 0px;
+}
 
 .show_all_stores:hover,
 .show_cat_stores:hover {
