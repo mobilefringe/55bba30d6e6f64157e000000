@@ -19,7 +19,7 @@
 </style>
 <div class="green_bar"></div>
 <div id="fullwidth" class="page_main_container hidden_now">
-    <div class="row">
+    <div class="margin_28">
         <div class="col-md-12">
             <h2 class="feature_2_header page_header" id="page_title"></h2>
             <div id="page_content"></div>
