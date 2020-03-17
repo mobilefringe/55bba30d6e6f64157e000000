@@ -18,10 +18,16 @@
     
 </style>
 <div class="green_bar"></div>
-<div class="page_main_container">
+<div id="fullwidth" class="page_main_container hidden_now">
+    <div class="page_left">
+        <h2 class="feature_2_header page_header" id="page_title"></h2>
+        <div id="page_content"></div>
+    </div>
+</div>
+<div id="regular" class="page_main_container hidden_now">
     <div class="page_left">
         <div id="404_msg" class="hidden_now"><p>Sorry we can't find the page you're looking for</p></div>
-        <h2 class="feature_2_header page_header" id="page_title"></h2>
+        <h2 class="feature_2_header page_header" id="mm_page_title"></h2>
         <div id="mm_page_content"></div>
     </div>
     <div class="page_right">
@@ -81,8 +87,15 @@
             prefix = get_prefix();
             var pages_json = "//midtown2.mallmaverick.com/pages/" + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                $('#page_title').text(data.title);
-                $('#mm_page_content').html(data.body);
+                if (slug.includes()){
+                    $('#page_title').text(data.title);
+                    $('#page_content').html(data.body); 
+                    $('#fullwidth').show();
+                } else {
+                    $('#mm_page_title').text(data.title);
+                    $('#mm_page_content').html(data.body);    
+                    $('#regulqar').show();
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
