@@ -33,6 +33,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        {{#unit}}<p>Unit: {{unit}}</p>{{/unit}}
+                        {{#z_coordinate}}<p>Floor: {{z_coordinate}}</p>{{/z_coordinate}}
                         <div class="store_details_description {{desc_pad}}">{{description}}</div>
                     </div>
                 </div>
