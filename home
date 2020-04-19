@@ -204,7 +204,7 @@
                 var contest = popup.contest;
                 if(contest.id){
                     //show form popup
-                    $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
+                    $(".popup_img").attr("src", "//assets.mallmaverick.com"+ popup.photo_url)
                     $("#popup_description").text(popup.description1);
                         $('<div class="modal-backdrop custom_backdrop popup_backdrop hide_phone"></div>').appendTo(document.body);
                         $('.popup_home_form').show();
@@ -236,7 +236,7 @@
 //code for expired cookie pop-up
                 // if(contest.id){
                 //     //show form popup
-                //     $(".popup_img").attr("src", "//mallmaverick.com"+ popup.photo_url)
+                //     $(".popup_img").attr("src", "//assets.mallmaverick.com"+ popup.photo_url)
                 //     $("#popup_description").text(popup.description1);
                 //     if($.cookie("popup_viewed") != "true"){
                 //         $.cookie("popup_viewed", "true", { expires: 1 });
