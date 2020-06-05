@@ -179,7 +179,7 @@ body{
 
 .show_all_stores:hover,
 .show_cat_stores:hover {
-    background: #6793a6;
+    background: #BDA1A1;
     color: #fff;
 }
 
@@ -800,7 +800,7 @@ a{
 .store_list_heading {
     margin-top: 15px;
     font-size: 18px;
-    color: #6793a6;
+    color: #BDA1A1;
     font-weight: bold;
     margin-bottom: 36px;
     font-family:museo;
@@ -858,7 +858,7 @@ a{
 }
 .hours_heading{
     font-size: 18px;
-    color: #6793a6;
+    color: #BDA1A1;
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 0;
@@ -869,7 +869,7 @@ a{
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #6793a6;
+    color: #BDA1A1;
     text-transform: uppercase;
 }
 
@@ -924,7 +924,7 @@ a{
     margin-top: 15px;
     font-size:15px;
     margin-bottom:36px;
-    color: #6793a6 ;
+    color: #BDA1A1 ;
     text-decoration:underline;
     display:inline-block;
 }
@@ -1187,7 +1187,7 @@ g.mapplic-active > * {
 }
 
 .closing_date{
-    color: #6793a6 ;
+    color: #BDA1A1 ;
     font-weight: 500;
     font-size: 16px;
     margin: 5px 0;
@@ -1196,7 +1196,7 @@ g.mapplic-active > * {
 .careers_heading{
     margin-top: 15px;
     font-size: 18px;
-    color: #6793a6;
+    color: #BDA1A1;
     font-weight: bold;
     border-bottom: 1px solid #ccc;
     padding-bottom: 17px;
@@ -1207,7 +1207,7 @@ g.mapplic-active > * {
 .jobs_arrow{
     position: absolute;
     left:65%;
-    color: #6793a6;
+    color: #BDA1A1;
 }
 
 .job_div{
@@ -1268,7 +1268,7 @@ g.mapplic-active > * {
 
 .promo_name_header{
     font-size: 18px;
-    color: #6793a6;
+    color: #BDA1A1;
     font-weight: 500;
     margin-bottom: 5px;
     margin-top: 0;
@@ -1288,7 +1288,7 @@ g.mapplic-active > * {
     margin-bottom:0;
     line-height:35px;
     text-transform:uppercase;
-    color: #6793a6;
+    color: #BDA1A1;
     font-family:museo;
 }
 .blog_name_header{
@@ -1343,7 +1343,7 @@ g.mapplic-active > * {
 }
 .fashion_heading{
     font-size: 16px;
-    color: #6793a6;
+    color: #BDA1A1;
     margin:10px 0;
 }
 
@@ -1380,7 +1380,7 @@ g.mapplic-active > * {
     color:#000;
 }
 .blog_heading{
-    color: #6793a6;
+    color: #BDA1A1;
     font-weight:bold;
     font-size:18px;
     margin-top:0;
